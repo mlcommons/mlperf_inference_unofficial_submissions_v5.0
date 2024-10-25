@@ -1,23 +1,27 @@
 Please download [summary.xlsx](summary.xlsx) to view the most recent results. [This page](https://docs.google.com/spreadsheets/d/e/2PACX-1vSCu8F7Hwck-AGJ5kWxi2G3xhO5MJoc_igybvsxjCt-2fEEYyf2BIcR0rTXW0eUzg/pubhtml) shows the results which may not be the latest. 
  ```
-[2024-10-21 11:16:56,707 submission_checker.py:2936 INFO] Results=0, NoResults=0, Power Results=0
-[2024-10-21 11:16:56,707 submission_checker.py:2943 INFO] ---
-[2024-10-21 11:16:56,707 submission_checker.py:2944 INFO] Closed Results=0, Closed Power Results=0
+[2024-10-25 14:42:16,774 submission_checker.py:2936 INFO] Results=4, NoResults=0, Power Results=0
+[2024-10-25 14:42:16,775 submission_checker.py:2943 INFO] ---
+[2024-10-25 14:42:16,775 submission_checker.py:2944 INFO] Closed Results=4, Closed Power Results=0
 
-[2024-10-21 11:16:56,707 submission_checker.py:2949 INFO] Open Results=0, Open Power Results=0
+[2024-10-25 14:42:16,775 submission_checker.py:2949 INFO] Open Results=0, Open Power Results=0
 
-[2024-10-21 11:16:56,707 submission_checker.py:2954 INFO] Network Results=0, Network Power Results=0
+[2024-10-25 14:42:16,775 submission_checker.py:2954 INFO] Network Results=0, Network Power Results=0
 
-[2024-10-21 11:16:56,707 submission_checker.py:2959 INFO] ---
-[2024-10-21 11:16:56,707 submission_checker.py:2961 INFO] Systems=0, Power Systems=0
-[2024-10-21 11:16:56,707 submission_checker.py:2962 INFO] Closed Systems=0, Closed Power Systems=0
-[2024-10-21 11:16:56,707 submission_checker.py:2967 INFO] Open Systems=0, Open Power Systems=0
-[2024-10-21 11:16:56,707 submission_checker.py:2972 INFO] Network Systems=0, Network Power Systems=0
-[2024-10-21 11:16:56,707 submission_checker.py:2977 INFO] ---
-[2024-10-21 11:16:56,707 submission_checker.py:2982 INFO] SUMMARY: submission looks OK
+[2024-10-25 14:42:16,775 submission_checker.py:2959 INFO] ---
+[2024-10-25 14:42:16,775 submission_checker.py:2961 INFO] Systems=1, Power Systems=0
+[2024-10-25 14:42:16,775 submission_checker.py:2962 INFO] Closed Systems=1, Closed Power Systems=0
+[2024-10-25 14:42:16,775 submission_checker.py:2967 INFO] Open Systems=0, Open Power Systems=0
+[2024-10-25 14:42:16,775 submission_checker.py:2972 INFO] Network Systems=0, Network Power Systems=0
+[2024-10-25 14:42:16,775 submission_checker.py:2977 INFO] ---
+[2024-10-25 14:42:16,775 submission_checker.py:2982 INFO] SUMMARY: submission looks OK
 INFO:root:       ! call "postprocess" from /home/runner/CM/repos/mlcommons@cm4mlops/script/run-mlperf-inference-submission-checker/customize.py
 
 ```
 
-| Organization   | Availability   | Division   | SystemType   | SystemName   | Platform   | Model   | MlperfModel   | Scenario   | Result   | Accuracy   | number_of_nodes   | host_processor_model_name   | host_processors_per_node   | host_processor_core_count   | accelerator_model_name   | accelerators_per_node   | Location   | framework   | operating_system   | notes   | compliance   | errors   | version   | inferred   | has_power   | Units   | weight_data_types   |
-|----------------|----------------|------------|--------------|--------------|------------|---------|---------------|------------|----------|------------|-------------------|-----------------------------|----------------------------|-----------------------------|--------------------------|-------------------------|------------|-------------|--------------------|---------|--------------|----------|-----------|------------|-------------|---------|---------------------|
+|    | Organization   | Availability   | Division   | SystemType      | SystemName    | Platform                                         | Model    | MlperfModel   | Scenario     |       Result | Accuracy    |   number_of_nodes | host_processor_model_name   |   host_processors_per_node |   host_processor_core_count | accelerator_model_name   |   accelerators_per_node | Location                                                                                        | framework   | operating_system                                | notes                             |   compliance |   errors | version   |   inferred | has_power   | Units        | weight_data_types   |
+|---:|:---------------|:---------------|:-----------|:----------------|:--------------|:-------------------------------------------------|:---------|:--------------|:-------------|-------------:|:------------|------------------:|:----------------------------|---------------------------:|----------------------------:|:-------------------------|------------------------:|:------------------------------------------------------------------------------------------------|:------------|:------------------------------------------------|:----------------------------------|-------------:|---------:|:----------|-----------:|:------------|:-------------|:--------------------|
+|  0 | MLCommons      | available      | closed     | datacenter,edge | gh_ubuntu_x86 | gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config | resnet50 | resnet        | Server       | 73015.2      | acc: 76.078 |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | closed/MLCommons/results/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config/resnet50/server       | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Queries/s    | int8                |
+|  1 | MLCommons      | available      | closed     | datacenter,edge | gh_ubuntu_x86 | gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config | resnet50 | resnet        | Offline      | 87471.2      | acc: 76.078 |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | closed/MLCommons/results/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config/resnet50/offline      | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Samples/s    | int8                |
+|  2 | MLCommons      | available      | closed     | datacenter,edge | gh_ubuntu_x86 | gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config | resnet50 | resnet        | SingleStream |     0.342055 | acc: 76.078 |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | closed/MLCommons/results/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config/resnet50/singlestream | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Latency (ms) | int8                |
+|  3 | MLCommons      | available      | closed     | datacenter,edge | gh_ubuntu_x86 | gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config | resnet50 | resnet        | MultiStream  |     0.951987 | acc: 76.078 |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | closed/MLCommons/results/gh_ubuntu_x86-nvidia-gpu-TensorRT-default_config/resnet50/multistream  | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Latency (ms) | int8                |
