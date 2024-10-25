@@ -10,6 +10,7 @@ fi
 
 cp docs/docinit.sh .
 
+
 export default_division="closed";
 export default_category="datacenter";
 
