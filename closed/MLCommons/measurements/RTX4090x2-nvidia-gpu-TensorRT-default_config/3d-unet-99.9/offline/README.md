@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=a6050dd9b4c3e6da83997f0a54707c772304a470
+cm pull repo gateoverflow@cm4mlops --checkout=b4601b70d1d52ce3e35c9b97befb15258e462275
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_3d-unet-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -64,7 +64,7 @@ cm run script \
 	--env.CM_MLPERF_LOADGEN_MODES,=performance,accuracy \
 	--env.CM_OUTPUT_FOLDER_NAME=valid_results \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=59a29a16c0a7 \
+	--env.CM_DOCKER_CONTAINER_ID=665fe0667858 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST05 \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
@@ -118,4 +118,4 @@ Model Precision: int8
 `DICE`: `0.86236`, Required accuracy for closed division `>= 0.86084`
 
 ### Performance Results 
-`Samples per second`: `8.27131`
+`Samples per second`: `8.29596`
