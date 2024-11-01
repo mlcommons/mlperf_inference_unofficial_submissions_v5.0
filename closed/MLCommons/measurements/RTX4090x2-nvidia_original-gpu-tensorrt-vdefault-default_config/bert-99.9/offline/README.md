@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=13c177a6fa78d98c9a70026d32bff73694efa395
+cm pull repo gateoverflow@cm4mlops --checkout=f467f5c99848b221dcf312d5832ce9b6a41c0995
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -116,4 +116,4 @@ Model Precision: int8
 `F1`: `90.88324`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Samples per second`: `3321.63`
+`Samples per second`: `3319.65`
