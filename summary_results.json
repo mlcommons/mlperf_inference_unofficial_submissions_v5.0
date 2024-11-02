@@ -284,7 +284,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 3319.65,
+    "Performance_Result": 3314.54,
     "Performance_Units": "Samples/s"
   },
   {
