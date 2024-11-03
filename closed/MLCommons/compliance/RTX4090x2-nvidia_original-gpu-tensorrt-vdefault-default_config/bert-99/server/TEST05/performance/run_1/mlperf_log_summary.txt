@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : BERT SERVER
 Scenario : Server
 Mode     : PerformanceOnly
-Scheduled samples per second : 0.91
+Scheduled samples per second : 5873.34
 Result is : VALID
   Performance constraints satisfied : Yes
   Min duration satisfied : Yes
@@ -16,23 +16,23 @@ Early Stopping Result:
 ================================================
 Additional Stats
 ================================================
-Completed samples per second    : 0.91
+Completed samples per second    : 5873.20
 
-Min latency (ns)                : 2735239
-Max latency (ns)                : 3867054
-Mean latency (ns)               : 3135423
-50.00 percentile latency (ns)   : 3073991
-90.00 percentile latency (ns)   : 3602783
-95.00 percentile latency (ns)   : 3731931
-97.00 percentile latency (ns)   : 3794293
-99.00 percentile latency (ns)   : 3834841
-99.90 percentile latency (ns)   : 3867054
+Min latency (ns)                : 3420700
+Max latency (ns)                : 36351875
+Mean latency (ns)               : 15646016
+50.00 percentile latency (ns)   : 15303180
+90.00 percentile latency (ns)   : 20373489
+95.00 percentile latency (ns)   : 21956441
+97.00 percentile latency (ns)   : 23012895
+99.00 percentile latency (ns)   : 25074473
+99.90 percentile latency (ns)   : 29043389
 
 ================================================
 Test Parameters Used
 ================================================
 samples_per_query : 1
-target_qps : 0.97
+target_qps : 5878.2
 target_latency (ns): 130000000
 max_async_queries : 0
 min_duration (ms): 600000
