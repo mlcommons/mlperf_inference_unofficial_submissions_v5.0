@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=d5554b021ce155dc98260eaa04981b511a75daf1
+cm pull repo gateoverflow@cm4mlops --checkout=18f46a8763fe6e202601688ea43a8a5e23feec6a
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -37,6 +37,8 @@ cm run script \
 	--env.CM_MLPERF_USE_DOCKER=True \
 	--env.CM_NVIDIA_GPU_NAME=rtx_4090 \
 	--env.CM_HW_NAME=RTX4090x2 \
+	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=yes \
+	--env.CM_MLPERF_INFERENCE_PULL_CODE_CHANGES=yes \
 	--env.OUTPUT_BASE_DIR=/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
@@ -116,4 +118,4 @@ Model Precision: int8
 `F1`: `90.26682`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1049945.0`
+`90th percentile latency (ns)`: `1039560.0`
