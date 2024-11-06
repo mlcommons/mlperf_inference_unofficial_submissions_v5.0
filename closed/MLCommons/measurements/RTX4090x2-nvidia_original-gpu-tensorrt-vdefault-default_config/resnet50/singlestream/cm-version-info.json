@@ -67,17 +67,17 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "download-file,9cdc8dc41aae437e ( wget,_url.https://www.dropbox.com/s/92n2fyej3lzy3s3/caffe_ilsvrc12.tar.gz )"
+        "parent": "download-file,9cdc8dc41aae437e ( wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "download,file,_wget,_url.https://www.dropbox.com/s/92n2fyej3lzy3s3/caffe_ilsvrc12.tar.gz": {
+      "download,file,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz": {
         "script_uid": "9cdc8dc41aae437e",
         "script_alias": "download-file",
         "script_tags": "download,file,download-file",
-        "script_variations": "wget,url.https://www.dropbox.com/s/92n2fyej3lzy3s3/caffe_ilsvrc12.tar.gz",
+        "script_variations": "wget,url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz",
         "version": "",
-        "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.https://www.dropbox.com/s/92n2fyej3lzy3s3/caffe_ilsvrc12.tar.gz )"
+        "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
@@ -87,25 +87,25 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./home/cmuser/CM/repos/local/cache/76eab1be68e4416a/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./home/cmuser/CM/repos/local/cache/c0c31a3e2492406b/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_path./home/cmuser/CM/repos/local/cache/76eab1be68e4416a/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_path./home/cmuser/CM/repos/local/cache/c0c31a3e2492406b/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./home/cmuser/CM/repos/local/cache/76eab1be68e4416a/caffe_ilsvrc12.tar.gz",
+        "script_variations": "path./home/cmuser/CM/repos/local/cache/c0c31a3e2492406b/caffe_ilsvrc12.tar.gz",
         "version": "",
-        "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.https://www.dropbox.com/s/92n2fyej3lzy3s3/caffe_ilsvrc12.tar.gz )"
+        "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "download-and-extract,_extract,_wget,_url.https://www.dropbox.com/s/92n2fyej3lzy3s3/caffe_ilsvrc12.tar.gz": {
+      "download-and-extract,_extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz": {
         "script_uid": "c67e81a4ce2649f5",
         "script_alias": "download-and-extract",
         "script_tags": "dae,file,download-and-extract",
-        "script_variations": "extract,wget,url.https://www.dropbox.com/s/92n2fyej3lzy3s3/caffe_ilsvrc12.tar.gz",
+        "script_variations": "extract,wget,url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "get-dataset-imagenet-aux,bb2c6dd8c8c64217"
       }
@@ -357,6 +357,26 @@
         "script_tags": "get,nvidia,mlperf,inference,common-code",
         "script_variations": "mlcommons",
         "version": "r4.0",
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_cuda,_singlestream,_resnet50,_rtx_4090 )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "pull-git-repo,c23132ed65c4421d"
+      }
+    },
+    {
+      "pull,git,repo": {
+        "script_uid": "c23132ed65c4421d",
+        "script_alias": "pull-git-repo",
+        "script_tags": "pull,git,repo,repository",
+        "script_variations": "",
+        "version": "",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_cuda,_singlestream,_resnet50,_rtx_4090 )"
       }
     },
@@ -1191,6 +1211,26 @@
       }
     },
     {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "pull-git-repo,c23132ed65c4421d"
+      }
+    },
+    {
+      "pull,git,repo": {
+        "script_uid": "c23132ed65c4421d",
+        "script_alias": "pull-git-repo",
+        "script_tags": "pull,git,repo,repository",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_cuda,_singlestream,_resnet50,_batch_size.1,_v4.1-dev )"
+      }
+    },
+    {
       "get,generic-python-lib,_package.pycuda": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -1337,6 +1377,26 @@
         "script_tags": "get,nvidia,mlperf,inference,common-code",
         "script_variations": "mlcommons",
         "version": "r4.0",
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_cuda,_resnet50,_v4.1-dev )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "pull-git-repo,c23132ed65c4421d"
+      }
+    },
+    {
+      "pull,git,repo": {
+        "script_uid": "c23132ed65c4421d",
+        "script_alias": "pull-git-repo",
+        "script_tags": "pull,git,repo,repository",
+        "script_variations": "",
+        "version": "",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_cuda,_resnet50,_v4.1-dev )"
       }
     },

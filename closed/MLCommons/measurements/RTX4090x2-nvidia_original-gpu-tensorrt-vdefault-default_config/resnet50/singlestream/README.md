@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=ffa3966c10932a5868c5876b36fc50edc8c8cfc7
+cm pull repo gateoverflow@cm4mlops --checkout=d23e18d512a59c092abe5812ed163b0855c1bf01
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_resnet50,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -37,6 +37,8 @@ cm run script \
 	--env.CM_MLPERF_USE_DOCKER=True \
 	--env.CM_NVIDIA_GPU_NAME=rtx_4090 \
 	--env.CM_HW_NAME=RTX4090x2 \
+	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=yes \
+	--env.CM_MLPERF_INFERENCE_PULL_CODE_CHANGES=yes \
 	--env.OUTPUT_BASE_DIR=/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
@@ -64,6 +66,7 @@ cm run script \
 	--env.CM_MLPERF_LOADGEN_MODES,=performance,accuracy \
 	--env.CM_OUTPUT_FOLDER_NAME=valid_results \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=no \
+	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
 	--add_deps_recursive.coco2014-preprocessed.tags=_full \
@@ -117,4 +120,4 @@ Model Precision: fp32
 `acc`: `76.064`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `610335.0`
+`90th percentile latency (ns)`: `759742.0`
