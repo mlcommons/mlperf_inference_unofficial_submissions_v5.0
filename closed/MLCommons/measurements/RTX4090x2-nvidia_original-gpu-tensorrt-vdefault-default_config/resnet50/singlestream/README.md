@@ -8,7 +8,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Sep 11 2024, 16:02:53) 
 [GCC 9.4.0]
-* MLCommons CM version: 3.2.9
+* MLCommons CM version: 3.3.4
 
 ## CM Run Command
 
@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=d23e18d512a59c092abe5812ed163b0855c1bf01
+cm pull repo gateoverflow@cm4mlops --checkout=aa5bfac317f98ff152c24b24a8d144f9681abf30
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_resnet50,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -39,6 +39,7 @@ cm run script \
 	--env.CM_HW_NAME=RTX4090x2 \
 	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=yes \
 	--env.CM_MLPERF_INFERENCE_PULL_CODE_CHANGES=yes \
+	--env.CM_MLPERF_INFERENCE_PULL_SRC_CHANGES=yes \
 	--env.OUTPUT_BASE_DIR=/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
@@ -120,4 +121,4 @@ Model Precision: fp32
 `acc`: `76.064`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `759742.0`
+`90th percentile latency (ns)`: `323576.0`
