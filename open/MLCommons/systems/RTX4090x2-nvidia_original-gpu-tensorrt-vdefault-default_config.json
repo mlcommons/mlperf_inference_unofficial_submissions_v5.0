@@ -9,7 +9,7 @@
   "accelerator_on-chip_memories": "",
   "accelerators_per_node": 2,
   "cooling": "air",
-  "division": "closed",
+  "division": "open",
   "framework": "TensorRT",
   "host_memory_capacity": "192G",
   "host_memory_configuration": "undefined",
