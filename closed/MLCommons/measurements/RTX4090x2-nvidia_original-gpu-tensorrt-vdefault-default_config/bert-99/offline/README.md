@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=aa5bfac317f98ff152c24b24a8d144f9681abf30
+cm pull repo gateoverflow@cm4mlops --checkout=eeba8ff6a45cfb95248cd915956f2170cadad386
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -29,6 +29,7 @@ cm run script \
 	--env.CM_MLPERF_MODEL=bert-99 \
 	--env.CM_MLPERF_RUN_STYLE=valid \
 	--env.CM_MLPERF_SKIP_SUBMISSION_GENERATION=False \
+	--env.CM_DOCKER_PRIVILEGED_MODE=True \
 	--env.CM_MLPERF_BACKEND=tensorrt \
 	--env.CM_MLPERF_SUBMISSION_SYSTEM_TYPE=datacenter,edge \
 	--env.CM_MLPERF_CLEAN_ALL=True \
@@ -54,6 +55,7 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
 	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
 	--env.CM_TMP_CURRENT_PATH=/home/arjun/actions-runner/_work/cm4mlops/cm4mlops \
 	--env.CM_TMP_PIP_VERSION_STRING= \
@@ -69,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=44ec4c6ea8a8 \
+	--env.CM_DOCKER_CONTAINER_ID=49349f0811af \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST05 \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
@@ -123,4 +125,4 @@ Model Precision: int8
 `F1`: `90.15674`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`Samples per second`: `8219.2`
+`Samples per second`: `8205.14`
