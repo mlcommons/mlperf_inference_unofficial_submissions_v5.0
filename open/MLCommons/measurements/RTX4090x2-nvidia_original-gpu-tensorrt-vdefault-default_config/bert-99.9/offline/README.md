@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=9aecee87a3027de8e20c63f9976584850a09ed9e
+cm pull repo gateoverflow@cm4mlops --checkout=eeba8ff6a45cfb95248cd915956f2170cadad386
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -29,6 +29,7 @@ cm run script \
 	--env.CM_MLPERF_MODEL=bert-99.9 \
 	--env.CM_MLPERF_RUN_STYLE=valid \
 	--env.CM_MLPERF_SKIP_SUBMISSION_GENERATION=False \
+	--env.CM_DOCKER_PRIVILEGED_MODE=True \
 	--env.CM_MLPERF_BACKEND=tensorrt \
 	--env.CM_MLPERF_SUBMISSION_SYSTEM_TYPE=datacenter,edge \
 	--env.CM_MLPERF_CLEAN_ALL=True \
@@ -121,4 +122,4 @@ Model Precision: fp16
 `F1`: `90.88324`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Samples per second`: `3342.39`
+`Samples per second`: `3319.72`
