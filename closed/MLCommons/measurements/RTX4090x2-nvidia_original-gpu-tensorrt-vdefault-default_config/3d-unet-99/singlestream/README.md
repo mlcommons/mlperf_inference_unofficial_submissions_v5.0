@@ -4,11 +4,11 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.2.0-39-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-40-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Sep 11 2024, 16:02:53) 
 [GCC 9.4.0]
-* MLCommons CM version: 3.3.4
+* MLCommons CM version: 3.4.1
 
 ## CM Run Command
 
@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=439285432aaa61a6262ab67d0a03cf2aaeb94d4f
+cm pull repo gateoverflow@cm4mlops --checkout=eeba8ff6a45cfb95248cd915956f2170cadad386
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_3d-unet-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -29,6 +29,7 @@ cm run script \
 	--env.CM_MLPERF_MODEL=3d-unet-99.9 \
 	--env.CM_MLPERF_RUN_STYLE=valid \
 	--env.CM_MLPERF_SKIP_SUBMISSION_GENERATION=False \
+	--env.CM_DOCKER_PRIVILEGED_MODE=True \
 	--env.CM_MLPERF_BACKEND=tensorrt \
 	--env.CM_MLPERF_SUBMISSION_SYSTEM_TYPE=datacenter,edge \
 	--env.CM_MLPERF_CLEAN_ALL=True \
@@ -55,8 +56,7 @@ cm run script \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
 	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
-	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
-	--env.CM_TMP_CURRENT_PATH=/home/arjun/actions-runner/_work/cm4mlops/cm4mlops \
+	--env.CM_MLPERF_LAST_RELEASE=v4.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=3d-unet-99.9 \
 	--env.CM_MLPERF_CLEAN_SUBMISSION_DIR=yes \
@@ -99,7 +99,7 @@ cm run script \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/e066920512fd47b7
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -115,10 +115,10 @@ cm rm cache -f
 
 Platform: RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config
 
-Model Precision: int8
+Model Precision: fp32
 
 ### Accuracy Results 
 `DICE`: `0.86236`, Required accuracy for closed division `>= 0.86084`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `431211868.0`
+`90th percentile latency (ns)`: `433449810.0`
