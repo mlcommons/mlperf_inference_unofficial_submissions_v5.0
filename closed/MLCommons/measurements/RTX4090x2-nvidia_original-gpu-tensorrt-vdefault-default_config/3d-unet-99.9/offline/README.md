@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=dfbf6c2b5cb6b35e72914ad92cc1f1f6254547cb
+cm pull repo gateoverflow@cm4mlops --checkout=fed53ef8889585647e75df9d1f07fae97b2250c5
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_3d-unet-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -71,8 +71,9 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=ade6c9aea045 \
+	--env.CM_DOCKER_CONTAINER_ID=838fd6861142 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST05 \
+	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
 	--add_deps_recursive.coco2014-preprocessed.tags=_full \
@@ -85,6 +86,7 @@ cm run script \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
+	--adr.submission-checker-src.tags=_branch.dev \
 	--adr.compiler.tags=gcc \
 	--adr.coco2014-original.tags=_full \
 	--adr.coco2014-preprocessed.tags=_full \
@@ -125,4 +127,4 @@ Model Precision: int8
 `DICE`: `0.86236`, Required accuracy for closed division `>= 0.86084`
 
 ### Performance Results 
-`Samples per second`: `8.26638`
+`Samples per second`: `8.27882`
