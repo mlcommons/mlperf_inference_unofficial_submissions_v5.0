@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=eeba8ff6a45cfb95248cd915956f2170cadad386
+cm pull repo gateoverflow@cm4mlops --checkout=dfbf6c2b5cb6b35e72914ad92cc1f1f6254547cb
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99,_tensorrt,_cuda,_valid,_r4.1-dev_default,_server \
@@ -71,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=49349f0811af \
+	--env.CM_DOCKER_CONTAINER_ID=fc2b122e81cb \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST05 \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
@@ -125,4 +125,4 @@ Model Precision: int8
 `F1`: `90.25898`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`Scheduled samples per second`: `6061.45`
+`Scheduled samples per second`: `6061.5`
