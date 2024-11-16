@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=dfbf6c2b5cb6b35e72914ad92cc1f1f6254547cb
+cm pull repo gateoverflow@cm4mlops --checkout=4b3d2ee9a56d2f88885ace86b1c8f2e94f91ef41
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -70,6 +70,7 @@ cm run script \
 	--env.CM_OUTPUT_FOLDER_NAME=valid_results \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=no \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
+	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
 	--add_deps_recursive.coco2014-preprocessed.tags=_full \
@@ -82,6 +83,7 @@ cm run script \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
+	--adr.submission-checker-src.tags=_branch.dev \
 	--adr.compiler.tags=gcc \
 	--adr.coco2014-original.tags=_full \
 	--adr.coco2014-preprocessed.tags=_full \
@@ -122,4 +124,4 @@ Model Precision: fp16
 `F1`: `90.88324`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Samples per second`: `3308.7`
+`Samples per second`: `3316.75`
