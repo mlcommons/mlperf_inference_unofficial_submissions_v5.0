@@ -696,9 +696,9 @@
     "Scenario": "Offline",
     "Accuracy": "DICE: 0.86236",
     "Nodes": 1,
-    "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
+    "Processor": "13th Gen Intel(R) Core(TM) i9-13900K",
     "host_processors_per_node": 1,
-    "host_processor_core_count": 16,
+    "host_processor_core_count": 24,
     "Accelerator": "NVIDIA GeForce RTX 4090",
     "a#": 1,
     "Location": "open/MLCommons/results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline",
@@ -716,7 +716,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 4.16856,
+    "Performance_Result": 4.1374,
     "Performance_Units": "Samples/s"
   },
   {
@@ -732,9 +732,9 @@
     "Scenario": "SingleStream",
     "Accuracy": "DICE: 0.86236",
     "Nodes": 1,
-    "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
+    "Processor": "13th Gen Intel(R) Core(TM) i9-13900K",
     "host_processors_per_node": 1,
-    "host_processor_core_count": 16,
+    "host_processor_core_count": 24,
     "Accelerator": "NVIDIA GeForce RTX 4090",
     "a#": 1,
     "Location": "open/MLCommons/results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/singlestream",
@@ -752,7 +752,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 433.720809,
+    "Performance_Result": 436.904793,
     "Performance_Units": "Latency (ms)"
   },
   {
