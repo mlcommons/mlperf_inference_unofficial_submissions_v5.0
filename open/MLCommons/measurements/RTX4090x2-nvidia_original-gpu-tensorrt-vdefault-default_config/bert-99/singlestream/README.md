@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=1dd0379b94d3c2eda3d70241e9fa8951080a8efc
+cm pull repo gateoverflow@cm4mlops --checkout=4b3d2ee9a56d2f88885ace86b1c8f2e94f91ef41
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -29,6 +29,7 @@ cm run script \
 	--env.CM_MLPERF_MODEL=bert-99 \
 	--env.CM_MLPERF_RUN_STYLE=valid \
 	--env.CM_MLPERF_SKIP_SUBMISSION_GENERATION=False \
+	--env.CM_DOCKER_PRIVILEGED_MODE=True \
 	--env.CM_MLPERF_BACKEND=tensorrt \
 	--env.CM_MLPERF_SUBMISSION_SYSTEM_TYPE=datacenter,edge \
 	--env.CM_MLPERF_CLEAN_ALL=True \
@@ -69,6 +70,7 @@ cm run script \
 	--env.CM_OUTPUT_FOLDER_NAME=valid_results \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=no \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
+	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
 	--add_deps_recursive.coco2014-preprocessed.tags=_full \
@@ -81,6 +83,7 @@ cm run script \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
+	--adr.submission-checker-src.tags=_branch.dev \
 	--adr.compiler.tags=gcc \
 	--adr.coco2014-original.tags=_full \
 	--adr.coco2014-preprocessed.tags=_full \
@@ -121,4 +124,4 @@ Model Precision: int8
 `F1`: `90.26682`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1040500.0`
+`90th percentile latency (ns)`: `1042396.0`
