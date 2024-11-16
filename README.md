@@ -1,27 +1,27 @@
 Please download [summary.xlsx](summary.xlsx) to view the most recent results. [This page](https://docs.google.com/spreadsheets/d/e/2PACX-1vSCu8F7Hwck-AGJ5kWxi2G3xhO5MJoc_igybvsxjCt-2fEEYyf2BIcR0rTXW0eUzg/pubhtml) shows the results which may not be the latest. 
  ```
-[2024-11-15 16:43:01,068 submission_checker.py:3108 INFO] Results=26, NoResults=0, Power Results=0
-[2024-11-15 16:43:01,068 submission_checker.py:3115 INFO] ---
-[2024-11-15 16:43:01,068 submission_checker.py:3116 INFO] Closed Results=19, Closed Power Results=0
+[2024-11-16 05:15:01,599 submission_checker.py:3108 INFO] Results=26, NoResults=0, Power Results=0
+[2024-11-16 05:15:01,599 submission_checker.py:3115 INFO] ---
+[2024-11-16 05:15:01,599 submission_checker.py:3116 INFO] Closed Results=19, Closed Power Results=0
 
-[2024-11-15 16:43:01,068 submission_checker.py:3121 INFO] Open Results=7, Open Power Results=0
+[2024-11-16 05:15:01,599 submission_checker.py:3121 INFO] Open Results=7, Open Power Results=0
 
-[2024-11-15 16:43:01,068 submission_checker.py:3126 INFO] Network Results=0, Network Power Results=0
+[2024-11-16 05:15:01,599 submission_checker.py:3126 INFO] Network Results=0, Network Power Results=0
 
-[2024-11-15 16:43:01,068 submission_checker.py:3131 INFO] ---
-[2024-11-15 16:43:01,068 submission_checker.py:3133 INFO] Systems=3, Power Systems=0
-[2024-11-15 16:43:01,068 submission_checker.py:3137 INFO] Closed Systems=3, Closed Power Systems=0
-[2024-11-15 16:43:01,068 submission_checker.py:3142 INFO] Open Systems=1, Open Power Systems=0
-[2024-11-15 16:43:01,069 submission_checker.py:3147 INFO] Network Systems=0, Network Power Systems=0
-[2024-11-15 16:43:01,069 submission_checker.py:3152 INFO] ---
-[2024-11-15 16:43:01,069 submission_checker.py:3157 INFO] SUMMARY: submission looks OK
+[2024-11-16 05:15:01,599 submission_checker.py:3131 INFO] ---
+[2024-11-16 05:15:01,599 submission_checker.py:3133 INFO] Systems=3, Power Systems=0
+[2024-11-16 05:15:01,599 submission_checker.py:3137 INFO] Closed Systems=3, Closed Power Systems=0
+[2024-11-16 05:15:01,599 submission_checker.py:3142 INFO] Open Systems=1, Open Power Systems=0
+[2024-11-16 05:15:01,599 submission_checker.py:3147 INFO] Network Systems=0, Network Power Systems=0
+[2024-11-16 05:15:01,599 submission_checker.py:3152 INFO] ---
+[2024-11-16 05:15:01,599 submission_checker.py:3157 INFO] SUMMARY: submission looks OK
 INFO:root:       ! call "postprocess" from /home/runner/CM/repos/mlcommons@cm4mlops/script/run-mlperf-inference-submission-checker/customize.py
 
 ```
 
 |    | Organization   | Availability   | Division   | SystemType      | SystemName    | Platform                                                       | Model        | MlperfModel   | Scenario     |       Result | Accuracy              |   number_of_nodes | host_processor_model_name   |   host_processors_per_node |   host_processor_core_count | accelerator_model_name   |   accelerators_per_node | Location                                                                                                          | framework   | operating_system                                | notes                             |   compliance |   errors | version   |   inferred | has_power   | Units        | weight_data_types   |
 |---:|:---------------|:---------------|:-----------|:----------------|:--------------|:---------------------------------------------------------------|:-------------|:--------------|:-------------|-------------:|:----------------------|------------------:|:----------------------------|---------------------------:|----------------------------:|:-------------------------|------------------------:|:------------------------------------------------------------------------------------------------------------------|:------------|:------------------------------------------------|:----------------------------------|-------------:|---------:|:----------|-----------:|:------------|:-------------|:--------------------|
-|  0 | MLCommons      | available      | open       | datacenter,edge | RTX4090x2     | RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config | bert-99.9    | bert-99.9     | Offline      |  3308.7      | F1: 90.8832407068292  |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | open/MLCommons/results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/offline           | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Samples/s    | fp16                |
+|  0 | MLCommons      | available      | open       | datacenter,edge | RTX4090x2     | RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config | bert-99.9    | bert-99.9     | Offline      |  3316.75     | F1: 90.8832407068292  |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | open/MLCommons/results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/offline           | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Samples/s    | fp16                |
 |  1 | MLCommons      | available      | open       | datacenter,edge | RTX4090x2     | RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config | bert-99      | bert-99       | Server       |  6061.49     | F1: 90.25897829249658 |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | open/MLCommons/results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99/server              | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Queries/s    | int8                |
 |  2 | MLCommons      | available      | open       | datacenter,edge | RTX4090x2     | RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config | bert-99      | bert-99       | Offline      |  8204.1      | F1: 90.15673510616978 |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | open/MLCommons/results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99/offline             | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Samples/s    | int8                |
 |  3 | MLCommons      | available      | open       | datacenter,edge | RTX4090x2     | RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config | bert-99      | bert-99       | SingleStream |     1.0405   | F1: 90.26682135974633 |                 1 | Intel(R) Xeon(R) w7-2495X   |                          1 |                          24 | NVIDIA GeForce RTX 4090  |                       2 | open/MLCommons/results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99/singlestream        | TensorRT    | Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31) | Automated by MLCommons CM v3.2.6. |            1 |        0 | v4.1      |          0 | False       | Latency (ms) | int8                |
