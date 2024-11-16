@@ -869,6 +869,42 @@
     "Availability": "available",
     "Category": "open",
     "Suite": "datacenter,edge",
+    "System": "RTX4090x1",
+    "Platform": "RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config",
+    "UsedModel": "bert-99.9",
+    "Model": "bert-99.9",
+    "Scenario": "Offline",
+    "Accuracy": "F1: 90.8832407068292",
+    "Nodes": 1,
+    "Processor": "13th Gen Intel(R) Core(TM) i9-13900K",
+    "host_processors_per_node": 1,
+    "host_processor_core_count": 24,
+    "Accelerator": "NVIDIA GeForce RTX 4090",
+    "a#": 1,
+    "Location": "open/MLCommons/results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/offline",
+    "Software": "TensorRT",
+    "operating_system": "Ubuntu 20.04 (linux-6.8.0-48-generic-glibc2.31)",
+    "Notes": "Automated by MLCommons CM v3.4.1. ",
+    "compliance": 1,
+    "errors": 0,
+    "version": "v4.1",
+    "inferred": 0,
+    "has_power": false,
+    "weight_data_types": "fp16",
+    "p#": 1,
+    "Details": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config",
+    "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
+    "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9",
+    "ColorKey": "availableMLCommons",
+    "Performance_Result": 1675.34,
+    "Performance_Units": "Samples/s"
+  },
+  {
+    "ID": "4.1-0007",
+    "Submitter": "MLCommons",
+    "Availability": "available",
+    "Category": "open",
+    "Suite": "datacenter,edge",
     "System": "RTX4090x2",
     "Platform": "RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
     "UsedModel": "3d-unet-99.9",
@@ -900,7 +936,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "4.1-0006",
+    "ID": "4.1-0007",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -936,7 +972,7 @@
     "Performance_Units": "Latency (ms)"
   },
   {
-    "ID": "4.1-0007",
+    "ID": "4.1-0008",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -972,7 +1008,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "4.1-0007",
+    "ID": "4.1-0008",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1008,7 +1044,7 @@
     "Performance_Units": "Queries/s"
   },
   {
-    "ID": "4.1-0007",
+    "ID": "4.1-0008",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1044,7 +1080,7 @@
     "Performance_Units": "Latency (ms)"
   },
   {
-    "ID": "4.1-0008",
+    "ID": "4.1-0009",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1080,7 +1116,7 @@
     "Performance_Units": "Samples/s"
   },
   {
-    "ID": "4.1-0009",
+    "ID": "4.1-0010",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1116,7 +1152,7 @@
     "Performance_Units": "Latency (ms)"
   },
   {
-    "ID": "4.1-0009",
+    "ID": "4.1-0010",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
@@ -1152,7 +1188,7 @@
     "Performance_Units": "Queries/s"
   },
   {
-    "ID": "4.1-0009",
+    "ID": "4.1-0010",
     "Submitter": "MLCommons",
     "Availability": "available",
     "Category": "open",
