@@ -1436,7 +1436,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.045526,
+    "Performance_Result": 1.047145,
     "Performance_Units": "Latency (ms)"
   },
   {
@@ -1472,7 +1472,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 87685.9,
+    "Performance_Result": 87824.6,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1508,7 +1508,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 73743.9,
+    "Performance_Result": 73744.0,
     "Performance_Units": "Queries/s"
   },
   {
@@ -1544,7 +1544,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/resnet50",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.31936,
+    "Performance_Result": 0.674121,
     "Performance_Units": "Latency (ms)"
   },
   {
