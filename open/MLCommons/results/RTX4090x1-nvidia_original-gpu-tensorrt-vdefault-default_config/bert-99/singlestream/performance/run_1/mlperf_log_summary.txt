@@ -4,38 +4,38 @@ MLPerf Results Summary
 SUT name : BERT SERVER
 Scenario : SingleStream
 Mode     : PerformanceOnly
-90th percentile latency (ns) : 1039154
+90th percentile latency (ns) : 1036166
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
   Early stopping satisfied: Yes
 Early Stopping Result:
- * Processed at least 64 queries (630902).
- * Would discard 62534 highest latency queries.
- * Early stopping 90th percentile estimate: 1039877
- * Early stopping 99th percentile estimate: 1222688
+ * Processed at least 64 queries (631193).
+ * Would discard 62563 highest latency queries.
+ * Early stopping 90th percentile estimate: 1039349
+ * Early stopping 99th percentile estimate: 1222677
 
 ================================================
 Additional Stats
 ================================================
-QPS w/ loadgen overhead         : 1051.50
-QPS w/o loadgen overhead        : 1053.90
+QPS w/ loadgen overhead         : 1051.99
+QPS w/o loadgen overhead        : 1054.39
 
-Min latency (ns)                : 870249
-Max latency (ns)                : 1631148
-Mean latency (ns)               : 948860
-50.00 percentile latency (ns)   : 927769
-90.00 percentile latency (ns)   : 1039154
-95.00 percentile latency (ns)   : 1109194
-97.00 percentile latency (ns)   : 1206372
-99.00 percentile latency (ns)   : 1222674
-99.90 percentile latency (ns)   : 1226402
+Min latency (ns)                : 871563
+Max latency (ns)                : 1346969
+Mean latency (ns)               : 948414
+50.00 percentile latency (ns)   : 927646
+90.00 percentile latency (ns)   : 1036166
+95.00 percentile latency (ns)   : 1111249
+97.00 percentile latency (ns)   : 1206295
+99.00 percentile latency (ns)   : 1222659
+99.90 percentile latency (ns)   : 1230928
 
 ================================================
 Test Parameters Used
 ================================================
 samples_per_query : 1
-target_qps : 2500
+target_qps : 2000
 target_latency (ns): 0
 max_async_queries : 1
 min_duration (ms): 600000
