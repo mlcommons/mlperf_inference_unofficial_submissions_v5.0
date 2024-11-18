@@ -669,8 +669,8 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"Server",
-        "Result":1213.53,
-        "Accuracy":"mAP: 37.335",
+        "Result":1414.99,
+        "Accuracy":"mAP: 37.329",
         "number_of_nodes":1,
         "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
         "host_processors_per_node":1,
@@ -698,9 +698,39 @@
         "Platform":"RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
         "Model":"retinanet",
         "MlperfModel":"retinanet",
+        "Scenario":"Offline",
+        "Result":1729.66,
+        "Accuracy":"mAP: 37.349",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":2,
+        "Location":"open\/MLCommons\/results\/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config\/retinanet\/offline",
+        "framework":"TensorRT",
+        "operating_system":"Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31)",
+        "notes":"Automated by MLCommons CM v3.2.6. ",
+        "compliance":1,
+        "errors":0,
+        "version":"v4.1",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"int8"
+    },
+    "24":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter,edge",
+        "SystemName":"RTX4090x2",
+        "Platform":"RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
+        "Model":"retinanet",
+        "MlperfModel":"retinanet",
         "Scenario":"SingleStream",
-        "Result":2.361735,
-        "Accuracy":"mAP: 37.345",
+        "Result":2.367664,
+        "Accuracy":"mAP: 37.338",
         "number_of_nodes":1,
         "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
         "host_processors_per_node":1,
@@ -719,7 +749,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "24":{
+    "25":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -729,8 +759,8 @@
         "Model":"retinanet",
         "MlperfModel":"retinanet",
         "Scenario":"MultiStream",
-        "Result":6.420049,
-        "Accuracy":"mAP: 37.376",
+        "Result":6.376737,
+        "Accuracy":"mAP: 37.317",
         "number_of_nodes":1,
         "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
         "host_processors_per_node":1,
@@ -749,7 +779,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "25":{
+    "26":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -779,7 +809,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "26":{
+    "27":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -809,7 +839,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "27":{
+    "28":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -839,7 +869,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "28":{
+    "29":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -869,7 +899,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "29":{
+    "30":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -899,7 +929,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "30":{
+    "31":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -929,7 +959,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "31":{
+    "32":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -959,7 +989,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "32":{
+    "33":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -989,7 +1019,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "33":{
+    "34":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1019,7 +1049,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "34":{
+    "35":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1049,7 +1079,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "35":{
+    "36":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1079,7 +1109,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "36":{
+    "37":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1109,7 +1139,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "37":{
+    "38":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1139,7 +1169,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "38":{
+    "39":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1169,7 +1199,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "39":{
+    "40":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1199,7 +1229,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "40":{
+    "41":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1229,7 +1259,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "41":{
+    "42":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1259,7 +1289,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "42":{
+    "43":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1289,7 +1319,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "43":{
+    "44":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1319,7 +1349,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "44":{
+    "45":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
@@ -1349,7 +1379,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "45":{
+    "46":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"closed",
