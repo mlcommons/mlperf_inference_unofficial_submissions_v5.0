@@ -22,7 +22,7 @@ cm rm cache -f
 cm pull repo gateoverflow@cm4mlops --checkout=88e9a0d37f06b414170966bf51347978767e6340
 
 cm run script \
-	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_server \
+	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
 	--quiet=true \
 	--env.CM_QUIET=yes \
 	--env.CM_MLPERF_IMPLEMENTATION=nvidia \
@@ -64,7 +64,7 @@ cm run script \
 	--env.CM_RERUN=yes \
 	--env.CM_MLPERF_LOADGEN_EXTRA_OPTIONS= \
 	--env.CM_MLPERF_LOADGEN_MODE=performance \
-	--env.CM_MLPERF_LOADGEN_SCENARIO=Server \
+	--env.CM_MLPERF_LOADGEN_SCENARIO=Offline \
 	--env.CM_MLPERF_LOADGEN_SCENARIOS,=SingleStream,Offline,MultiStream,Server \
 	--env.CM_MLPERF_LOADGEN_MODES,=performance,accuracy \
 	--env.CM_OUTPUT_FOLDER_NAME=valid_results \
@@ -127,7 +127,7 @@ Platform: RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.329`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.349`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Scheduled samples per second`: `1414.99`
+`Samples per second`: `1729.66`
