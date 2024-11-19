@@ -101,7 +101,7 @@ cm run script \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -123,4 +123,4 @@ Model Precision: fp32
 `DICE`: `0.86236`, Required accuracy for closed division `>= 0.86084`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `437066143.0`
+`90th percentile latency (ns)`: `432702878.0`
