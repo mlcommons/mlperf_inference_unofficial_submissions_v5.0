@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=88e9a0d37f06b414170966bf51347978767e6340
+cm pull repo gateoverflow@cm4mlops --checkout=173648e5e1664344ef6b78a6d557d257836feb5e
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_resnet50,_tensorrt,_cuda,_valid,_r4.1-dev_default,_server \
@@ -70,7 +70,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=d01059ac9fca \
+	--env.CM_DOCKER_CONTAINER_ID=61968c587e3c \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST04 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -102,10 +102,10 @@ cm run script \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
-	--env.CM_DATASET_IMAGENET_PATH=/home/cmuser/CM/repos/local/cache/14a94e79cca24141/imagenet-2012-val \
+	--env.CM_DATASET_IMAGENET_PATH=/home/cmuser/CM/repos/local/cache/ca6a4aaf13e34e0e/imagenet-2012-val \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -127,4 +127,4 @@ Model Precision: fp32
 `acc`: `76.078`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`Scheduled samples per second`: `35357.8`
+`Scheduled samples per second`: `35357.7`
