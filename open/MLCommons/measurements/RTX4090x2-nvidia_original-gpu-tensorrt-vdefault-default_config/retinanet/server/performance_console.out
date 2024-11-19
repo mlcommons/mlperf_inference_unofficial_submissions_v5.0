@@ -1,9 +1,9 @@
-[2024-11-18 03:27:02,490 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x2
-[2024-11-18 03:27:02,600 harness.py:249 INFO] The harness will load 2 plugins: ['build/plugins/NMSOptPlugin/libnmsoptplugin.so', 'build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so']
-[2024-11-18 03:27:02,600 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x2_TRT/retinanet/Server
-[2024-11-18 03:27:02,600 harness.py:326 INFO] Updated LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libjemalloc.so.2
-[2024-11-18 03:27:02,600 __init__.py:46 INFO] Running command: ./build/bin/harness_default --plugins="build/plugins/NMSOptPlugin/libnmsoptplugin.so,build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet/server/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=64 --test_mode="PerformanceOnly" --gpu_copy_streams=2 --gpu_inference_streams=2 --use_cuda_thread_per_device=true --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/open-images-v6-mlperf/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/f9762ed4688147e9/inference/mlperf.conf" --tensor_path="build/preprocessed_data/open-images-v6-mlperf/validation/Retinanet/int8_linear" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/7978f71792ef4d7c8b82b129bcbd06bb.conf" --gpu_engines="./build/engines/RTX4090x2/retinanet/Server/retinanet-Server-gpu-b8-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario Server --model retinanet --response_postprocess openimageeffnms
-[2024-11-18 03:27:02,600 __init__.py:53 INFO] Overriding Environment
+[2024-11-18 23:31:50,592 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x2
+[2024-11-18 23:31:50,697 harness.py:249 INFO] The harness will load 2 plugins: ['build/plugins/NMSOptPlugin/libnmsoptplugin.so', 'build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so']
+[2024-11-18 23:31:50,698 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x2_TRT/retinanet/Server
+[2024-11-18 23:31:50,698 harness.py:326 INFO] Updated LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+[2024-11-18 23:31:50,698 __init__.py:46 INFO] Running command: ./build/bin/harness_default --plugins="build/plugins/NMSOptPlugin/libnmsoptplugin.so,build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet/server/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=64 --test_mode="PerformanceOnly" --gpu_copy_streams=2 --gpu_inference_streams=2 --use_cuda_thread_per_device=true --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/open-images-v6-mlperf/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/767ddfa44daf44b2/inference/mlperf.conf" --tensor_path="build/preprocessed_data/open-images-v6-mlperf/validation/Retinanet/int8_linear" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/a50ceaba6de043909854d52064866c62.conf" --gpu_engines="./build/engines/RTX4090x2/retinanet/Server/retinanet-Server-gpu-b8-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario Server --model retinanet --response_postprocess openimageeffnms
+[2024-11-18 23:31:50,698 __init__.py:53 INFO] Overriding Environment
 ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
 ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
 benchmark : Benchmark.Retinanet
@@ -14,9 +14,9 @@ gpu_copy_streams : 2
 gpu_inference_streams : 2
 input_dtype : int8
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/f042d2560d924ad6/repo/closed/NVIDIA/build/logs/2024.11.18-03.27.01
+log_dir : /home/cmuser/CM/repos/local/cache/f042d2560d924ad6/repo/closed/NVIDIA/build/logs/2024.11.18-23.31.49
 map_path : data_maps/open-images-v6-mlperf/val_map.txt
-mlperf_conf_path : /home/cmuser/CM/repos/local/cache/f9762ed4688147e9/inference/mlperf.conf
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/767ddfa44daf44b2/inference/mlperf.conf
 precision : int8
 preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data
 scenario : Scenario.Server
@@ -28,7 +28,7 @@ test_mode : PerformanceOnly
 use_cuda_thread_per_device : True
 use_deque_limit : True
 use_graphs : False
-user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/7978f71792ef4d7c8b82b129bcbd06bb.conf
+user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/a50ceaba6de043909854d52064866c62.conf
 system_id : RTX4090x2
 config_name : RTX4090x2_retinanet_Server
 workload_setting : WorkloadSetting(HarnessType.LWIS, AccuracyTarget.k_99, PowerSetting.MaxP)
@@ -41,35 +41,35 @@ skip_file_checks : False
 power_limit : None
 cpu_freq : None
 &&&& RUNNING Default_Harness # ./build/bin/harness_default
-[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/f9762ed4688147e9/inference/mlperf.conf
-[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/7978f71792ef4d7c8b82b129bcbd06bb.conf
+[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/767ddfa44daf44b2/inference/mlperf.conf
+[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/a50ceaba6de043909854d52064866c62.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
 [I] [TRT] Loaded engine size: 73 MiB
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +6, GPU +10, now: CPU 122, GPU 883 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +2, GPU +10, now: CPU 124, GPU 893 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +6, GPU +10, now: CPU 121, GPU 881 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 122, GPU 891 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +68, now: CPU 0, GPU 68 (MiB)
 [I] Device:0.GPU: [0] ./build/engines/RTX4090x2/retinanet/Server/retinanet-Server-gpu-b8-int8.lwis_k_99_MaxP.plan has been successfully loaded.
 [I] [TRT] Loaded engine size: 73 MiB
 [W] [TRT] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +6, GPU +10, now: CPU 155, GPU 593 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 156, GPU 603 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +7, GPU +10, now: CPU 154, GPU 590 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 155, GPU 600 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +1, GPU +69, now: CPU 1, GPU 137 (MiB)
 [I] Device:1.GPU: [0] ./build/engines/RTX4090x2/retinanet/Server/retinanet-Server-gpu-b8-int8.lwis_k_99_MaxP.plan has been successfully loaded.
 [E] [TRT] 3: [runtime.cpp::~Runtime::401] Error Code 3: API Usage Error (Parameter check failed at: runtime/rt/runtime.cpp::~Runtime::401, condition: mEngineCounter.use_count() == 1 Destroying a runtime before destroying deserialized engines created by the runtime leads to undefined behavior.)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 83, GPU 905 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +8, now: CPU 84, GPU 913 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 82, GPU 903 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 82, GPU 911 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +6111, now: CPU 1, GPU 6248 (MiB)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 84, GPU 7033 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +12, now: CPU 85, GPU 7045 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 83, GPU 7031 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +12, now: CPU 84, GPU 7043 (MiB)
 [I] [TRT] Could not set default profile 0 for execution context. Profile index must be set explicitly.
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +6111, now: CPU 2, GPU 12359 (MiB)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 86, GPU 615 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 86, GPU 623 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 84, GPU 612 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +8, now: CPU 85, GPU 620 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +6111, now: CPU 2, GPU 18470 (MiB)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 87, GPU 6743 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +12, now: CPU 87, GPU 6755 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 85, GPU 6740 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +12, now: CPU 86, GPU 6752 (MiB)
 [I] [TRT] Could not set default profile 0 for execution context. Profile index must be set explicitly.
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +6111, now: CPU 3, GPU 24581 (MiB)
 [I] Creating batcher thread: 0 EnableBatcherThreadPerDevice: false
@@ -77,7 +77,7 @@ Setting up SUT.
 [I] Creating cuda thread: 1
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.12702s.
+Finished warmup. Ran for 5.15629s.
 Starting running actual test.
 ================================================
 MLPerf Results Summary
@@ -99,15 +99,15 @@ Additional Stats
 ================================================
 Completed samples per second    : 1414.99
 
-Min latency (ns)                : 3015258
-Max latency (ns)                : 32501750
-Mean latency (ns)               : 14115426
-50.00 percentile latency (ns)   : 13872570
-90.00 percentile latency (ns)   : 17441185
-95.00 percentile latency (ns)   : 18499963
-97.00 percentile latency (ns)   : 19204880
-99.00 percentile latency (ns)   : 20649772
-99.90 percentile latency (ns)   : 24149062
+Min latency (ns)                : 2856377
+Max latency (ns)                : 32449817
+Mean latency (ns)               : 14120955
+50.00 percentile latency (ns)   : 13878822
+90.00 percentile latency (ns)   : 17446962
+95.00 percentile latency (ns)   : 18507899
+97.00 percentile latency (ns)   : 19217700
+99.00 percentile latency (ns)   : 20677039
+99.90 percentile latency (ns)   : 24247474
 
 ================================================
 Test Parameters Used
@@ -138,30 +138,30 @@ No errors encountered during test.
 Finished running actual test.
 Device Device:0.GPU processed:
   1 batches of size 1
-  2 batches of size 2
-  14 batches of size 3
-  57 batches of size 4
-  140 batches of size 5
-  351 batches of size 6
-  699 batches of size 7
-  52058 batches of size 8
+  3 batches of size 2
+  17 batches of size 3
+  51 batches of size 4
+  149 batches of size 5
+  352 batches of size 6
+  721 batches of size 7
+  52029 batches of size 8
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 424437
+  PerSampleCudaMemcpy Calls: 424397
   BatchedCudaMemcpy Calls: 1
 Device Device:1.GPU processed:
-  1 batches of size 1
+  2 batches of size 1
   3 batches of size 2
-  14 batches of size 3
-  45 batches of size 4
-  135 batches of size 5
-  325 batches of size 6
-  755 batches of size 7
-  52055 batches of size 8
+  10 batches of size 3
+  64 batches of size 4
+  119 batches of size 5
+  320 batches of size 6
+  718 batches of size 7
+  52098 batches of size 8
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 424578
-  BatchedCudaMemcpy Calls: 1
+  PerSampleCudaMemcpy Calls: 424617
+  BatchedCudaMemcpy Calls: 2
 &&&& PASSED Default_Harness # ./build/bin/harness_default
-[2024-11-18 03:37:09,273 run_harness.py:166 INFO] Result: result_scheduled_samples_per_sec: 1415.02, Result is VALID
+[2024-11-18 23:41:57,389 run_harness.py:166 INFO] Result: result_scheduled_samples_per_sec: 1415.02, Result is VALID
  
 ======================== Result summaries: ========================
 
