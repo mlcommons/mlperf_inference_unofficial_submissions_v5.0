@@ -16,17 +16,17 @@ Early Stopping Result:
 ================================================
 Additional Stats
 ================================================
-Completed samples per second    : 3841.13
+Completed samples per second    : 3841.09
 
-Min latency (ns)                : 2981536
-Max latency (ns)                : 100773558
-Mean latency (ns)               : 37285250
-50.00 percentile latency (ns)   : 36238167
-90.00 percentile latency (ns)   : 49590268
-95.00 percentile latency (ns)   : 54058990
-97.00 percentile latency (ns)   : 57121546
-99.00 percentile latency (ns)   : 63296586
-99.90 percentile latency (ns)   : 76137679
+Min latency (ns)                : 3016631
+Max latency (ns)                : 103503898
+Mean latency (ns)               : 39754033
+50.00 percentile latency (ns)   : 38424149
+90.00 percentile latency (ns)   : 53542818
+95.00 percentile latency (ns)   : 58604941
+97.00 percentile latency (ns)   : 62147259
+99.00 percentile latency (ns)   : 69235327
+99.90 percentile latency (ns)   : 82151185
 
 ================================================
 Test Parameters Used
