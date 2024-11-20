@@ -1,8 +1,8 @@
-[2024-11-18 15:15:47,324 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x2
-[2024-11-18 15:15:47,568 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
-[2024-11-18 15:15:47,569 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x2_TRT/3d-unet-99.9/SingleStream
-[2024-11-18 15:15:47,569 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/singlestream/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=1 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/3bdbf87a70de4149/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/8ff5e8beff774d1e872dc3631f910eeb.conf" --unet3d_sw_gaussian_patch_path="/home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/RTX4090x2/3d-unet/SingleStream/3d-unet-SingleStream-gpu-b1-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario SingleStream --model 3d-unet
-[2024-11-18 15:15:47,569 __init__.py:53 INFO] Overriding Environment
+[2024-11-19 15:15:40,894 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x2
+[2024-11-19 15:15:41,127 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
+[2024-11-19 15:15:41,127 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x2_TRT/3d-unet-99.9/SingleStream
+[2024-11-19 15:15:41,128 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/singlestream/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=1 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/4e9821085eef4247/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/83bc56579dca4874a75484088b1668f0.conf" --unet3d_sw_gaussian_patch_path="/home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/RTX4090x2/3d-unet/SingleStream/3d-unet-SingleStream-gpu-b1-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario SingleStream --model 3d-unet
+[2024-11-19 15:15:41,128 __init__.py:53 INFO] Overriding Environment
 benchmark : Benchmark.UNET3D
 buffer_manager_thread_count : 0
 data_dir : /home/cmuser/CM/repos/local/cache/e066920512fd47b7/data
@@ -11,9 +11,9 @@ gpu_copy_streams : 1
 gpu_inference_streams : 1
 input_dtype : int8
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/f042d2560d924ad6/repo/closed/NVIDIA/build/logs/2024.11.18-15.15.46
+log_dir : /home/cmuser/CM/repos/local/cache/f042d2560d924ad6/repo/closed/NVIDIA/build/logs/2024.11.19-15.15.39
 map_path : data_maps/kits19/val_map.txt
-mlperf_conf_path : /home/cmuser/CM/repos/local/cache/3bdbf87a70de4149/inference/mlperf.conf
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/4e9821085eef4247/inference/mlperf.conf
 precision : int8
 preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data
 scenario : Scenario.SingleStream
@@ -25,7 +25,7 @@ test_mode : PerformanceOnly
 unet3d_sw_gaussian_patch_path : /home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data/KiTS19/etc/gaussian_patches.npy
 use_deque_limit : True
 use_graphs : False
-user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/8ff5e8beff774d1e872dc3631f910eeb.conf
+user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/83bc56579dca4874a75484088b1668f0.conf
 system_id : RTX4090x2
 config_name : RTX4090x2_3d-unet_SingleStream
 workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99_9, PowerSetting.MaxP)
@@ -38,8 +38,8 @@ skip_file_checks : False
 power_limit : None
 cpu_freq : None
 &&&& RUNNING MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/3bdbf87a70de4149/inference/mlperf.conf
-[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/8ff5e8beff774d1e872dc3631f910eeb.conf
+[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/4e9821085eef4247/inference/mlperf.conf
+[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/83bc56579dca4874a75484088b1668f0.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
@@ -65,7 +65,7 @@ Setting up SUT.
 [I] Creating batcher thread: 1 EnableBatcherThreadPerDevice: true
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.05189s.
+Finished warmup. Ran for 5.05192s.
 Starting running actual test.
 ================================================
 MLPerf Results Summary
@@ -73,7 +73,7 @@ MLPerf Results Summary
 SUT name : Server_3DUNet
 Scenario : SingleStream
 Mode     : PerformanceOnly
-90th percentile latency (ns) : 430056154
+90th percentile latency (ns) : 429822159
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -81,24 +81,24 @@ Result is : VALID
 Early Stopping Result:
  * Processed at least 64 queries (3010).
  * Would discard 261 highest latency queries.
- * Early stopping 90th percentile estimate: 430774978
- * Early stopping 99th percentile estimate: 497186534
+ * Early stopping 90th percentile estimate: 431359077
+ * Early stopping 99th percentile estimate: 496912664
 
 ================================================
 Additional Stats
 ================================================
-QPS w/ loadgen overhead         : 4.51
+QPS w/ loadgen overhead         : 4.52
 QPS w/o loadgen overhead        : 4.52
 
-Min latency (ns)                : 28118891
-Max latency (ns)                : 497668028
-Mean latency (ns)               : 221406894
-50.00 percentile latency (ns)   : 172930338
-90.00 percentile latency (ns)   : 430056154
-95.00 percentile latency (ns)   : 494395202
-97.00 percentile latency (ns)   : 495323597
-99.00 percentile latency (ns)   : 496966969
-99.90 percentile latency (ns)   : 497507917
+Min latency (ns)                : 28176606
+Max latency (ns)                : 497374331
+Mean latency (ns)               : 221324808
+50.00 percentile latency (ns)   : 172896304
+90.00 percentile latency (ns)   : 429822159
+95.00 percentile latency (ns)   : 494173289
+97.00 percentile latency (ns)   : 495098382
+99.00 percentile latency (ns)   : 496746793
+99.90 percentile latency (ns)   : 497135082
 
 ================================================
 Test Parameters Used
@@ -128,17 +128,17 @@ No warnings encountered during test.
 No errors encountered during test.
 Finished running actual test.
 Device Device:0 processed:
-  96462 batches of size 1
+  98254 batches of size 1
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 1510
+  PerSampleCudaMemcpy Calls: 1508
   BatchedCudaMemcpy Calls: 0
 Device Device:1 processed:
-  96808 batches of size 1
+  95016 batches of size 1
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 1500
+  PerSampleCudaMemcpy Calls: 1502
   BatchedCudaMemcpy Calls: 0
 &&&& PASSED MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[2024-11-18 15:27:01,147 run_harness.py:166 INFO] Result: result_90.00_percentile_latency_ns: 430056154, Result is VALID
+[2024-11-19 15:26:54,417 run_harness.py:166 INFO] Result: result_90.00_percentile_latency_ns: 429822159, Result is VALID
  
 ======================== Result summaries: ========================
 
