@@ -9,7 +9,7 @@
         "Model":"bert-99.9",
         "MlperfModel":"bert-99.9",
         "Scenario":"Offline",
-        "Result":1687.81,
+        "Result":1675.39,
         "Accuracy":"F1: 90.8832407068292",
         "number_of_nodes":1,
         "host_processor_model_name":"13th Gen Intel(R) Core(TM) i9-13900K",
