@@ -123,4 +123,4 @@ Model Precision: fp32
 `F1`: `90.88324`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Samples per second`: `1675.39`
+`Samples per second`: `1674.7`
