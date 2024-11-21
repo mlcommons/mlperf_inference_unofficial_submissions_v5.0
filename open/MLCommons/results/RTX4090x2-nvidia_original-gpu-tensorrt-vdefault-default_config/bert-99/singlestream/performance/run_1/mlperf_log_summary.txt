@@ -10,26 +10,26 @@ Result is : VALID
   Min queries satisfied : Yes
   Early stopping satisfied: Yes
 Early Stopping Result:
- * Processed at least 64 queries (628376).
- * Would discard 62283 highest latency queries.
- * Early stopping 90th percentile estimate: 1046928
- * Early stopping 99th percentile estimate: 1211714
+ * Processed at least 64 queries (629264).
+ * Would discard 62371 highest latency queries.
+ * Early stopping 90th percentile estimate: 1046869
+ * Early stopping 99th percentile estimate: 1213767
 
 ================================================
 Additional Stats
 ================================================
-QPS w/ loadgen overhead         : 1047.29
-QPS w/o loadgen overhead        : 1056.96
+QPS w/ loadgen overhead         : 1048.77
+QPS w/o loadgen overhead        : 1058.57
 
-Min latency (ns)                : 866206
-Max latency (ns)                : 15789037
-Mean latency (ns)               : 946109
-50.00 percentile latency (ns)   : 923296
+Min latency (ns)                : 856495
+Max latency (ns)                : 4389682
+Mean latency (ns)               : 944669
+50.00 percentile latency (ns)   : 921530
 90.00 percentile latency (ns)   : 1045640
-95.00 percentile latency (ns)   : 1150172
-97.00 percentile latency (ns)   : 1195028
-99.00 percentile latency (ns)   : 1210737
-99.90 percentile latency (ns)   : 1289466
+95.00 percentile latency (ns)   : 1151441
+97.00 percentile latency (ns)   : 1195500
+99.00 percentile latency (ns)   : 1213359
+99.90 percentile latency (ns)   : 1287595
 
 ================================================
 Test Parameters Used
