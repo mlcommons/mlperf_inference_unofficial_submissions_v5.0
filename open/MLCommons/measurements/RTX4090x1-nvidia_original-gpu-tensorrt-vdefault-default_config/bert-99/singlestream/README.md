@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=3a60122724e9b3cf3d08f74d6800cc6a4c7e304e
+cm pull repo gateoverflow@cm4mlops --checkout=58cf0b8bffd7e1cc7dcb4a8b75989ff95bf5c413
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -101,7 +101,7 @@ cm run script \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -117,10 +117,10 @@ cm rm cache -f
 
 Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 
-Model Precision: fp32
+Model Precision: int8
 
 ### Accuracy Results 
 `F1`: `90.26682`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1009964.0`
+`90th percentile latency (ns)`: `1039022.0`
