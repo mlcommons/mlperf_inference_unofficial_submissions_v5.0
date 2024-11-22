@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=3a60122724e9b3cf3d08f74d6800cc6a4c7e304e
+cm pull repo gateoverflow@cm4mlops --checkout=b37b7ddfd861c47df3a024339ed317902351c274
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_multistream \
@@ -45,6 +45,7 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
 	--env.CM_USE_DATASET_FROM_HOST=yes \
+	--env.CM_USE_MODEL_FROM_HOST=yes \
 	--env.CM_MLPERF_LOADGEN_ALL_SCENARIOS=yes \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE=yes \
 	--env.CM_MLPERF_SUBMISSION_RUN=yes \
@@ -70,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=4f0acfadff18 \
+	--env.CM_DOCKER_CONTAINER_ID=31e4f10d9f24 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -102,12 +103,12 @@ cm run script \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
-	--env.CM_DATASET_OPENIMAGES_PATH=/home/cmuser/CM/repos/local/cache/a606a3727a184f2d/install/validation/data \
-	--env.CM_OPENIMAGES_CALIBRATION_DATASET_PATH=/home/cmuser/CM/repos/local/cache/f15d1b6254ee45ab/install/calibration/data \
-	--env.CM_DATASET_OPENIMAGES_ANNOTATIONS_DIR_PATH=/home/cmuser/CM/repos/local/cache/fe39e632e1a04393 \
+	--env.CM_DATASET_OPENIMAGES_PATH=/home/cmuser/CM/repos/local/cache/a0a0d3a06d08433f/install/validation/data \
+	--env.CM_OPENIMAGES_CALIBRATION_DATASET_PATH=/home/cmuser/CM/repos/local/cache/5fd3118f48654bf7/install/calibration/data \
+	--env.CM_DATASET_OPENIMAGES_ANNOTATIONS_DIR_PATH=/home/cmuser/CM/repos/local/cache/963b6d6671ce444c \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -123,10 +124,10 @@ cm rm cache -f
 
 Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 
-Model Precision: fp32
+Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.303`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.339`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per query`: `11471067.0`
+`Samples per query`: `10920167.0`
