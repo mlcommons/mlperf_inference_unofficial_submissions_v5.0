@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=3a60122724e9b3cf3d08f74d6800cc6a4c7e304e
+cm pull repo gateoverflow@cm4mlops --checkout=b37b7ddfd861c47df3a024339ed317902351c274
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_resnet50,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -45,6 +45,7 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
 	--env.CM_USE_DATASET_FROM_HOST=yes \
+	--env.CM_USE_MODEL_FROM_HOST=yes \
 	--env.CM_MLPERF_LOADGEN_ALL_SCENARIOS=yes \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE=yes \
 	--env.CM_MLPERF_SUBMISSION_RUN=yes \
@@ -71,7 +72,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=200916c047a1 \
+	--env.CM_DOCKER_CONTAINER_ID=f2cadb2f3b2f \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST04 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -122,10 +123,10 @@ cm rm cache -f
 
 Platform: RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config
 
-Model Precision: fp32
+Model Precision: int8
 
 ### Accuracy Results 
 `acc`: `76.078`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`Samples per second`: `87878.6`
+`Samples per second`: `86422.3`
