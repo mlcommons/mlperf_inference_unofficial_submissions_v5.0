@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=8b42ced9cda464a35bd36f8f1a879ee8374accb7
+cm pull repo gateoverflow@cm4mlops --checkout=4109129057f4953f1513f4dcac8c60ceef79b728
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -45,6 +45,7 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
 	--env.CM_USE_DATASET_FROM_HOST=yes \
+	--env.CM_USE_MODEL_FROM_HOST=yes \
 	--env.CM_MLPERF_LOADGEN_ALL_SCENARIOS=yes \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE=yes \
 	--env.CM_MLPERF_SUBMISSION_RUN=yes \
@@ -80,6 +81,7 @@ cm run script \
 	--add_deps_recursive.openimages-preprocessed.tags=_full \
 	--add_deps_recursive.openorca-original.tags=_full \
 	--add_deps_recursive.openorca-preprocessed.tags=_full \
+	--add_deps_recursive.coco2014-dataset.tags=_full \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -93,6 +95,7 @@ cm run script \
 	--adr.openimages-preprocessed.tags=_full \
 	--adr.openorca-original.tags=_full \
 	--adr.openorca-preprocessed.tags=_full \
+	--adr.coco2014-dataset.tags=_full \
 	--adr.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--adr.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--adr.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -124,4 +127,4 @@ Model Precision: fp16
 `F1`: `90.88324`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Samples per second`: `3307.01`
+`Samples per second`: `3342.37`
