@@ -2,10 +2,10 @@ Platform Details
 
 ------------------------------------------------------------
 1. uname -a
-Linux 31e4f10d9f24 6.8.0-48-generic #48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Linux ddf26381223e 6.8.0-48-generic #48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ------------------------------------------------------------
 2. w
- 22:48:57 up 11 days, 14:36,  0 users,  load average: 0.32, 0.50, 0.75
+ 22:45:03 up 12 days, 14:32,  0 users,  load average: 0.57, 0.41, 0.61
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 ------------------------------------------------------------
 3. Username
@@ -40,7 +40,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 5500.000
+cpu MHz		: 5506.235
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -68,7 +68,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 5100.489
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -124,7 +124,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 5500.000
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -292,7 +292,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.000
+cpu MHz		: 5500.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -376,7 +376,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 5500.000
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -432,7 +432,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 5500.000
+cpu MHz		: 5507.959
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -516,7 +516,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.000
+cpu MHz		: 4300.039
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -544,7 +544,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 4300.867
+cpu MHz		: 4302.888
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -600,7 +600,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.000
+cpu MHz		: 4275.480
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -628,7 +628,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 4294.285
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -768,7 +768,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 4299.804
+cpu MHz		: 4287.500
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -824,7 +824,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 800.000
+cpu MHz		: 4299.905
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -908,7 +908,7 @@ model		: 183
 model name	: 13th Gen Intel(R) Core(TM) i9-13900K
 stepping	: 1
 microcode	: 0x129
-cpu MHz		: 4319.728
+cpu MHz		: 800.000
 cache size	: 36864 KB
 physical id	: 0
 siblings	: 32
@@ -946,7 +946,7 @@ CPU family:                           6
 Model:                                183
 Model name:                           13th Gen Intel(R) Core(TM) i9-13900K
 Stepping:                             1
-CPU MHz:                              5500.000
+CPU MHz:                              5461.805
 CPU max MHz:                          5800.0000
 CPU min MHz:                          800.0000
 BogoMIPS:                             5990.40
@@ -975,49 +975,49 @@ Flags:                                fpu vme de pse tsc msr pae mce cx8 apic se
 available: 1 nodes (0)
 node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 node 0 size: 128549 MB
-node 0 free: 16507 MB
+node 0 free: 16696 MB
 node distances:
 node   0 
   0:  10 
 ------------------------------------------------------------
 9. /proc/meminfo
 MemTotal:       131634460 kB
-MemFree:        16903300 kB
-MemAvailable:   126077000 kB
-Buffers:         1300272 kB
-Cached:         105720116 kB
-SwapCached:       165616 kB
-Active:         54630708 kB
-Inactive:       54279408 kB
-Active(anon):    1899988 kB
-Inactive(anon):    81020 kB
-Active(file):   52730720 kB
-Inactive(file): 54198388 kB
-Unevictable:       90440 kB
+MemFree:        17097660 kB
+MemAvailable:   127117320 kB
+Buffers:          283636 kB
+Cached:         106863012 kB
+SwapCached:       147776 kB
+Active:          3313600 kB
+Inactive:       104604464 kB
+Active(anon):     550180 kB
+Inactive(anon):   312500 kB
+Active(file):    2763420 kB
+Inactive(file): 104291964 kB
+Unevictable:       90448 kB
 Mlocked:               0 kB
 SwapTotal:      1023999996 kB
-SwapFree:       1023571964 kB
+SwapFree:       1022459900 kB
 Zswap:                 0 kB
 Zswapped:              0 kB
-Dirty:                 0 kB
-Writeback:             0 kB
-AnonPages:       1974824 kB
-Mapped:           576268 kB
-Shmem:             91280 kB
-KReclaimable:    3496404 kB
-Slab:            4318904 kB
-SReclaimable:    3496404 kB
-SUnreclaim:       822500 kB
-KernelStack:       19536 kB
-PageTables:        31048 kB
+Dirty:               316 kB
+Writeback:             4 kB
+AnonPages:        858388 kB
+Mapped:           277260 kB
+Shmem:             91256 kB
+KReclaimable:    4216088 kB
+Slab:            5078420 kB
+SReclaimable:    4216088 kB
+SUnreclaim:       862332 kB
+KernelStack:       19792 kB
+PageTables:        31412 kB
 SecPageTables:         0 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    1089817224 kB
-Committed_AS:   16214096 kB
+Committed_AS:   16291436 kB
 VmallocTotal:   34359738367 kB
-VmallocUsed:      391900 kB
+VmallocUsed:      392272 kB
 VmallocChunk:          0 kB
 Percpu:            46080 kB
 HardwareCorrupted:     0 kB
@@ -1033,8 +1033,8 @@ HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
 Hugetlb:               0 kB
-DirectMap4k:    99390924 kB
-DirectMap2M:    33513472 kB
+DirectMap4k:    99880396 kB
+DirectMap2M:    33024000 kB
 DirectMap1G:     1048576 kB
 ------------------------------------------------------------
 10. who -r
@@ -1291,16 +1291,16 @@ dev.tty.ldisc_autoload = 1
 dev.tty.legacy_tiocsti = 0
 fs.aio-max-nr = 65536
 fs.aio-nr = 0
-fs.dentry-state = 2621483	2229733	45	0	1242116	0
+fs.dentry-state = 1640925	1251911	45	0	488684	0
 fs.dir-notify-enable = 1
 fs.epoll.max_user_watches = 29287112
 fs.fanotify.max_queued_events = 16384
 fs.fanotify.max_user_groups = 128
 fs.fanotify.max_user_marks = 1048576
 fs.file-max = 9223372036854775807
-fs.file-nr = 6496	0	9223372036854775807
-fs.inode-nr = 1599650	276667
-fs.inode-state = 1599650	276667	0	0	0	0	0
+fs.file-nr = 6688	0	9223372036854775807
+fs.inode-nr = 1331931	193531
+fs.inode-state = 1331931	193531	0	0	0	0	0
 fs.inotify.max_queued_events = 16384
 fs.inotify.max_user_instances = 128
 fs.inotify.max_user_watches = 65536
@@ -1328,7 +1328,7 @@ fs.quota.drops = 0
 fs.quota.free_dquots = 0
 fs.quota.lookups = 0
 fs.quota.reads = 0
-fs.quota.syncs = 1182
+fs.quota.syncs = 1216
 fs.quota.writes = 0
 fs.suid_dumpable = 2
 fs.verity.require_signatures = 0
@@ -1355,7 +1355,7 @@ kernel.ftrace_dump_on_oops = 0
 kernel.ftrace_enabled = 1
 kernel.hardlockup_all_cpu_backtrace = 0
 kernel.hardlockup_panic = 0
-kernel.hostname = 31e4f10d9f24
+kernel.hostname = ddf26381223e
 kernel.hotplug = 
 kernel.hung_task_all_cpu_backtrace = 0
 kernel.hung_task_check_count = 4194304
@@ -1418,13 +1418,13 @@ kernel.printk_devkmsg = on
 kernel.printk_ratelimit = 5
 kernel.printk_ratelimit_burst = 10
 kernel.pty.max = 4096
-kernel.pty.nr = 7
+kernel.pty.nr = 8
 kernel.pty.reserve = 1024
 kernel.random.boot_id = 8e6e9835-2938-40ec-8292-65dbe8b76d80
 kernel.random.entropy_avail = 256
 kernel.random.poolsize = 256
 kernel.random.urandom_min_reseed_secs = 60
-kernel.random.uuid = d4b4e99b-2f89-45f5-9362-54a98e22fe91
+kernel.random.uuid = 206ba010-c0df-43bc-803e-973c5861b5f0
 kernel.random.write_wakeup_threshold = 256
 kernel.randomize_va_space = 2
 kernel.real-root-dev = 0

@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=b37b7ddfd861c47df3a024339ed317902351c274
+cm pull repo gateoverflow@cm4mlops --checkout=4109129057f4953f1513f4dcac8c60ceef79b728
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -80,6 +80,7 @@ cm run script \
 	--add_deps_recursive.openimages-preprocessed.tags=_full \
 	--add_deps_recursive.openorca-original.tags=_full \
 	--add_deps_recursive.openorca-preprocessed.tags=_full \
+	--add_deps_recursive.coco2014-dataset.tags=_full \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -93,6 +94,7 @@ cm run script \
 	--adr.openimages-preprocessed.tags=_full \
 	--adr.openorca-original.tags=_full \
 	--adr.openorca-preprocessed.tags=_full \
+	--adr.coco2014-dataset.tags=_full \
 	--adr.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--adr.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--adr.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -124,7 +126,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.331`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.33`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1754959.0`
+`90th percentile latency (ns)`: `1750922.0`
