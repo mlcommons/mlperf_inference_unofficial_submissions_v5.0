@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=3a60122724e9b3cf3d08f74d6800cc6a4c7e304e
+cm pull repo gateoverflow@cm4mlops --checkout=4109129057f4953f1513f4dcac8c60ceef79b728
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_multistream \
@@ -45,6 +45,7 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
 	--env.CM_USE_DATASET_FROM_HOST=yes \
+	--env.CM_USE_MODEL_FROM_HOST=yes \
 	--env.CM_MLPERF_LOADGEN_ALL_SCENARIOS=yes \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE=yes \
 	--env.CM_MLPERF_SUBMISSION_RUN=yes \
@@ -71,7 +72,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=d85f713a0505 \
+	--env.CM_DOCKER_CONTAINER_ID=259f40aef550 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -83,6 +84,7 @@ cm run script \
 	--add_deps_recursive.openimages-preprocessed.tags=_full \
 	--add_deps_recursive.openorca-original.tags=_full \
 	--add_deps_recursive.openorca-preprocessed.tags=_full \
+	--add_deps_recursive.coco2014-dataset.tags=_full \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -96,6 +98,7 @@ cm run script \
 	--adr.openimages-preprocessed.tags=_full \
 	--adr.openorca-original.tags=_full \
 	--adr.openorca-preprocessed.tags=_full \
+	--adr.coco2014-dataset.tags=_full \
 	--adr.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--adr.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--adr.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -127,7 +130,7 @@ Platform: RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.332`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.335`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per query`: `6356176.0`
+`Samples per query`: `6370555.0`
