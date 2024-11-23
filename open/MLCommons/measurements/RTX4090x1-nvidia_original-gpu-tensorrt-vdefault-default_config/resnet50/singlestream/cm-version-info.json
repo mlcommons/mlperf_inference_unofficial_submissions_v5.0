@@ -121,56 +121,6 @@
       }
     },
     {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "download-file,9cdc8dc41aae437e ( wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz )"
-      }
-    },
-    {
-      "download,file,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz": {
-        "script_uid": "9cdc8dc41aae437e",
-        "script_alias": "download-file",
-        "script_tags": "download,file,download-file",
-        "script_variations": "wget,url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz",
-        "version": "",
-        "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./home/cmuser/CM/repos/local/cache/bd542c183af14212/caffe_ilsvrc12.tar.gz )"
-      }
-    },
-    {
-      "extract,file,_path./home/cmuser/CM/repos/local/cache/bd542c183af14212/caffe_ilsvrc12.tar.gz": {
-        "script_uid": "3f0b76219d004817",
-        "script_alias": "extract-file",
-        "script_tags": "extract,file",
-        "script_variations": "path./home/cmuser/CM/repos/local/cache/bd542c183af14212/caffe_ilsvrc12.tar.gz",
-        "version": "",
-        "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz )"
-      }
-    },
-    {
-      "download-and-extract,_extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz": {
-        "script_uid": "c67e81a4ce2649f5",
-        "script_alias": "download-and-extract",
-        "script_tags": "dae,file,download-and-extract",
-        "script_variations": "extract,wget,url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz",
-        "version": "",
-        "parent": "get-dataset-imagenet-aux,bb2c6dd8c8c64217"
-      }
-    },
-    {
       "get,dataset-aux,imagenet-aux": {
         "script_uid": "bb2c6dd8c8c64217",
         "script_alias": "get-dataset-imagenet-aux",
@@ -486,7 +436,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_cuda,_singlestream,_resnet50,_tensorrt,_rtx_4090 )"
       }
     },
@@ -498,36 +448,6 @@
         "script_variations": "full",
         "version": "",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_cuda,_singlestream,_resnet50,_tensorrt,_rtx_4090 )"
-      }
-    },
-    {
-      "detect,os": {
-        "script_uid": "863735b7db8c44fc",
-        "script_alias": "detect-os",
-        "script_tags": "detect-os,detect,os,info",
-        "script_variations": "",
-        "version": "",
-        "parent": "download-file,9cdc8dc41aae437e ( cmutil,_url.https://zenodo.org/record/2592612/files/resnet50_v1.onnx )"
-      }
-    },
-    {
-      "download,file,_cmutil,_url.https://zenodo.org/record/2592612/files/resnet50_v1.onnx": {
-        "script_uid": "9cdc8dc41aae437e",
-        "script_alias": "download-file",
-        "script_tags": "download,file,download-file",
-        "script_variations": "cmutil,url.https://zenodo.org/record/2592612/files/resnet50_v1.onnx",
-        "version": "",
-        "parent": "download-and-extract,c67e81a4ce2649f5 ( url.https://zenodo.org/record/2592612/files/resnet50_v1.onnx )"
-      }
-    },
-    {
-      "download-and-extract,_url.https://zenodo.org/record/2592612/files/resnet50_v1.onnx": {
-        "script_uid": "c67e81a4ce2649f5",
-        "script_alias": "download-and-extract",
-        "script_tags": "dae,file,download-and-extract",
-        "script_variations": "url.https://zenodo.org/record/2592612/files/resnet50_v1.onnx",
-        "version": "",
-        "parent": "get-ml-model-resnet50,56203e4e998b4bc0 ( fp32,_onnx,_opset-8 )"
       }
     },
     {
@@ -1646,7 +1566,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_cuda,_singlestream,_resnet50,_tensorrt,_batch_size.1,_v4.1-dev )"
       }
     },
@@ -1816,7 +1736,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_cuda,_resnet50,_tensorrt,_v4.1-dev )"
       }
     },

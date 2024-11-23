@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=b37b7ddfd861c47df3a024339ed317902351c274
+cm pull repo gateoverflow@cm4mlops --checkout=4109129057f4953f1513f4dcac8c60ceef79b728
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_resnet50,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -80,6 +80,7 @@ cm run script \
 	--add_deps_recursive.openimages-preprocessed.tags=_full \
 	--add_deps_recursive.openorca-original.tags=_full \
 	--add_deps_recursive.openorca-preprocessed.tags=_full \
+	--add_deps_recursive.coco2014-dataset.tags=_full \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -93,6 +94,7 @@ cm run script \
 	--adr.openimages-preprocessed.tags=_full \
 	--adr.openorca-original.tags=_full \
 	--adr.openorca-preprocessed.tags=_full \
+	--adr.coco2014-dataset.tags=_full \
 	--adr.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--adr.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--adr.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -100,10 +102,10 @@ cm run script \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
-	--env.CM_DATASET_IMAGENET_PATH=/home/cmuser/CM/repos/local/cache/ca6a4aaf13e34e0e/imagenet-2012-val \
+	--env.CM_DATASET_IMAGENET_PATH=/home/cmuser/CM/repos/local/cache/14a94e79cca24141/imagenet-2012-val \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -125,4 +127,4 @@ Model Precision: int8
 `acc`: `76.064`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `277424.0`
+`90th percentile latency (ns)`: `289701.0`
