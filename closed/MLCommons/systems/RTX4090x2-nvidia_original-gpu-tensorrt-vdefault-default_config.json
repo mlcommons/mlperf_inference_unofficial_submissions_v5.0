@@ -30,7 +30,7 @@
   "other_software_stack": "Python: 3.8.10, GCC-9.4.0 , CUDA 12.2",
   "status": "available",
   "submitter": "MLCommons",
-  "sw_notes": "Automated by MLCommons CM v3.2.6. ",
+  "sw_notes": "",
   "system_name": "RTX4090x2",
   "system_type": "datacenter,edge",
   "system_type_detail": "edge server"
