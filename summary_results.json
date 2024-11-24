@@ -1594,7 +1594,7 @@
     "UsedModel": "retinanet",
     "Model": "retinanet",
     "Scenario": "MultiStream",
-    "Accuracy": "mAP: 37.335",
+    "Accuracy": "mAP: 37.338",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
@@ -1616,7 +1616,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 6.370555,
+    "Performance_Result": 6.374619,
     "Performance_Units": "Latency (ms)"
   },
   {
@@ -1630,7 +1630,7 @@
     "UsedModel": "retinanet",
     "Model": "retinanet",
     "Scenario": "Offline",
-    "Accuracy": "mAP: 37.338",
+    "Accuracy": "mAP: 37.306",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
@@ -1652,7 +1652,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1729.15,
+    "Performance_Result": 1727.38,
     "Performance_Units": "Samples/s"
   },
   {
@@ -1666,7 +1666,7 @@
     "UsedModel": "retinanet",
     "Model": "retinanet",
     "Scenario": "Server",
-    "Accuracy": "mAP: 37.353",
+    "Accuracy": "mAP: 37.318",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
@@ -1702,7 +1702,7 @@
     "UsedModel": "retinanet",
     "Model": "retinanet",
     "Scenario": "SingleStream",
-    "Accuracy": "mAP: 37.324",
+    "Accuracy": "mAP: 37.348",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
@@ -1724,7 +1724,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 2.36648,
+    "Performance_Result": 2.36389,
     "Performance_Units": "Latency (ms)"
   }
 ]
