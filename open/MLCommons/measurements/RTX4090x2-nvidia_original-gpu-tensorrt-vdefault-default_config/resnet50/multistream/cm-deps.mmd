@@ -17,18 +17,18 @@ graph TD
     get-cuda-devices,7a3ede4d3558427a_(_with-pycuda_) --> get,generic-python-lib,_package.pycuda
     get-cuda-devices,7a3ede4d3558427a_(_with-pycuda_) --> get,generic-python-lib,_package.numpy
     app-mlperf-inference,d775cac873ee4231_(_nvidia,_resnet50,_tensorrt,_cuda,_valid,_r4.1-dev_default,_multistream_) --> get,cuda-devices,_with-pycuda
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> detect,os
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> detect,cpu
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,sys-utils-cm
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,mlperf,inference,nvidia,scratch,space
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,generic-python-lib,_mlperf_logging
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,dataset,original,imagenet,_full
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,ml-model,resnet50,_fp32,_onnx,_opset-8
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,mlcommons,inference,src
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> detect,cpu
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,sys-utils-cm
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,mlperf,inference,nvidia,scratch,space
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,generic-python-lib,_mlperf_logging
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,dataset,original,imagenet,_full
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,ml-model,resnet50,_fp32,_onnx,_opset-8
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,mlcommons,inference,src
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
     pull-git-repo,c23132ed65c4421d --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> pull,git,repo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> pull,git,repo
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
@@ -36,38 +36,38 @@ graph TD
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src
     get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> generate,user-conf,mlperf,inference
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,generic-python-lib,_package.pycuda
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,nvidia,mitten
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,cuda,_cudnn
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,tensorrt
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> build,nvidia,inference,server,_mlcommons
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> detect,os
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,generic-python-lib,_package.pycuda
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,nvidia,mitten
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,cuda,_cudnn
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,tensorrt
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> build,nvidia,inference,server,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> detect,cpu
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,sys-utils-cm
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,mlperf,inference,nvidia,scratch,space,_version.4_0
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,generic-python-lib,_mlperf_logging
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,dataset,original,imagenet,_full
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,ml-model,resnet50,_fp32,_onnx,_opset-8
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,mlcommons,inference,src
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> detect,cpu
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,sys-utils-cm
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,mlperf,inference,nvidia,scratch,space,_version.4_0
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,generic-python-lib,_mlperf_logging
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,dataset,original,imagenet,_full
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,ml-model,resnet50,_fp32,_onnx,_opset-8
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,mlcommons,inference,src
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
     pull-git-repo,c23132ed65c4421d --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> pull,git,repo
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,generic-python-lib,_package.pycuda
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,nvidia,mitten
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,cuda,_cudnn
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,tensorrt
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> build,nvidia,inference,server,_mlcommons
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,generic-python-lib,_onnx-graphsurgeon
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> get,generic-python-lib,_package.onnx
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8_) --> save,mlperf,inference,state
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> reproduce,mlperf,inference,nvidia,harness,_build_engine,_tensorrt,_resnet50,_cuda,_multistream,_v4.1-dev,_batch_size.8
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,generic-python-lib,_onnx-graphsurgeon
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> get,generic-python-lib,_package.onnx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> pull,git,repo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,generic-python-lib,_package.pycuda
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,nvidia,mitten
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,cuda,_cudnn
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,tensorrt
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> build,nvidia,inference,server,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_resnet50,_cuda,_tensorrt,_v4.1-dev
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,generic-python-lib,_onnx-graphsurgeon
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> get,generic-python-lib,_package.onnx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8_) --> save,mlperf,inference,state
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> reproduce,mlperf,inference,nvidia,harness,_build_engine,_resnet50,_cuda,_multistream,_tensorrt,_v4.1-dev,_batch_size.8
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_resnet50,_cuda,_tensorrt,_v4.1-dev
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,generic-python-lib,_onnx-graphsurgeon
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> get,generic-python-lib,_package.onnx
     detect-cpu,586c8a43320142f7 --> detect,os
     benchmark-program,19f369ef47084895 --> detect,cpu
     benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_resnet50,_cuda,_multistream,_rtx_4090_) --> benchmark-mlperf
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_resnet50,_cuda,_multistream,_tensorrt,_rtx_4090_) --> benchmark-mlperf
