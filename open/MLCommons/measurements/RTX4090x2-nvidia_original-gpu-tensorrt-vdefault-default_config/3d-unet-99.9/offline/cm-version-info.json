@@ -141,6 +141,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pycuda )"
+      }
+    },
+    {
       "get,generic-python-lib,_package.pycuda": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -148,6 +158,16 @@
         "script_variations": "package.pycuda",
         "version": "2022.2.2",
         "parent": "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
       }
     },
     {
@@ -218,6 +238,16 @@
         "script_variations": "",
         "version": "",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_cuda,_offline,_3d-unet-99.9,_tensorrt,_rtx_4090 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( mlperf_logging )"
       }
     },
     {
@@ -351,6 +381,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pycuda )"
+      }
+    },
+    {
       "get,generic-python-lib,_package.pycuda": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -451,6 +491,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( mlperf_logging )"
+      }
+    },
+    {
       "get,generic-python-lib,_mlperf_logging": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -498,6 +548,16 @@
         "script_variations": "",
         "version": "",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_cuda,_offline,_3d-unet-99.9,_tensorrt,_3d-unet_,_batch_size.8,_v4.1-dev )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pycuda )"
       }
     },
     {
@@ -571,6 +631,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( transformers )"
+      }
+    },
+    {
       "get,generic-python-lib,_transformers": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -578,6 +648,16 @@
         "script_variations": "transformers",
         "version": "4.46.2",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_cuda,_offline,_3d-unet-99.9,_tensorrt,_3d-unet_,_batch_size.8,_v4.1-dev )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.nibabel )"
       }
     },
     {
@@ -591,6 +671,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pandas )"
+      }
+    },
+    {
       "get,generic-python-lib,_pandas": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -601,6 +691,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx-graphsurgeon )"
+      }
+    },
+    {
       "get,generic-python-lib,_onnx-graphsurgeon": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -608,6 +708,16 @@
         "script_variations": "onnx-graphsurgeon",
         "version": "0.3.27",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_cuda,_offline,_3d-unet-99.9,_tensorrt,_3d-unet_,_batch_size.8,_v4.1-dev )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.onnx )"
       }
     },
     {
@@ -661,6 +771,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( transformers )"
+      }
+    },
+    {
       "get,generic-python-lib,_transformers": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -668,6 +788,16 @@
         "script_variations": "transformers",
         "version": "4.46.2",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_cuda,_offline,_3d-unet-99.9,_tensorrt,_rtx_4090 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.nibabel )"
       }
     },
     {
@@ -681,6 +811,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pandas )"
+      }
+    },
+    {
       "get,generic-python-lib,_pandas": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -691,6 +831,16 @@
       }
     },
     {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( onnx-graphsurgeon )"
+      }
+    },
+    {
       "get,generic-python-lib,_onnx-graphsurgeon": {
         "script_uid": "94b62a682bc44791",
         "script_alias": "get-generic-python-lib",
@@ -698,6 +848,16 @@
         "script_variations": "onnx-graphsurgeon",
         "version": "0.3.27",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_cuda,_offline,_3d-unet-99.9,_tensorrt,_rtx_4090 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.8.10",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.onnx )"
       }
     },
     {
