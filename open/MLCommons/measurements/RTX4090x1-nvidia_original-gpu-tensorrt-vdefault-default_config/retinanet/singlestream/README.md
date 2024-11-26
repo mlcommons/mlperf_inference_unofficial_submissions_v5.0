@@ -102,12 +102,12 @@ cm run script \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
-	--env.CM_DATASET_OPENIMAGES_PATH=/home/cmuser/CM/repos/local/cache/a0a0d3a06d08433f/install/validation/data \
-	--env.CM_OPENIMAGES_CALIBRATION_DATASET_PATH=/home/cmuser/CM/repos/local/cache/5fd3118f48654bf7/install/calibration/data \
-	--env.CM_DATASET_OPENIMAGES_ANNOTATIONS_DIR_PATH=/home/cmuser/CM/repos/local/cache/963b6d6671ce444c \
+	--env.CM_DATASET_OPENIMAGES_PATH=/home/cmuser/CM/repos/local/cache/a606a3727a184f2d/install/validation/data \
+	--env.CM_OPENIMAGES_CALIBRATION_DATASET_PATH=/home/cmuser/CM/repos/local/cache/f15d1b6254ee45ab/install/calibration/data \
+	--env.CM_DATASET_OPENIMAGES_ANNOTATIONS_DIR_PATH=/home/cmuser/CM/repos/local/cache/fe39e632e1a04393 \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -126,7 +126,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.328`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.301`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1754692.0`
+`90th percentile latency (ns)`: `1711024.0`
