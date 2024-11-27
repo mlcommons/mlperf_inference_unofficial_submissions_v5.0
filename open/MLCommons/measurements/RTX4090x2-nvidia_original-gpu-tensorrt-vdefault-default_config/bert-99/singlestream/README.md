@@ -82,6 +82,7 @@ cm run script \
 	--add_deps_recursive.openorca-original.tags=_full \
 	--add_deps_recursive.openorca-preprocessed.tags=_full \
 	--add_deps_recursive.coco2014-dataset.tags=_full \
+	--add_deps_recursive.igbh-dataset.tags=_full \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -96,6 +97,7 @@ cm run script \
 	--adr.openorca-original.tags=_full \
 	--adr.openorca-preprocessed.tags=_full \
 	--adr.coco2014-dataset.tags=_full \
+	--adr.igbh-dataset.tags=_full \
 	--adr.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--adr.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--adr.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
@@ -127,4 +129,4 @@ Model Precision: int8
 `F1`: `90.26682`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1048137.0`
+`90th percentile latency (ns)`: `1046700.0`
