@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=bcc1151c7efdb810a05937fe4bc8b1bb4a97ae71
+cm pull repo gateoverflow@cm4mlops --checkout=bdeb9213aefedf4ed6c4ab6140466abbb9c2ae4b
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -72,7 +72,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=48171335197b \
+	--env.CM_DOCKER_CONTAINER_ID=1583e8e4051e \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -132,7 +132,7 @@ Platform: RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.321`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.312`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `1734.07`
+`Samples per second`: `1729.52`
