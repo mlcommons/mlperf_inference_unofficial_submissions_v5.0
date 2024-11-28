@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=ea6a31007f0354c5548a8c5d75ab2911f8b070bd
+cm pull repo gateoverflow@cm4mlops --checkout=6a09ef4596d537e45b4a4772112284fca73347af
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -125,7 +125,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: fp16
 
 ### Accuracy Results 
-`F1`: `90.8917`, Required accuracy for closed division `>= 90.78313`
+`F1`: `90.88324`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Samples per second`: `1669.8`
+`Samples per second`: `1675.18`
