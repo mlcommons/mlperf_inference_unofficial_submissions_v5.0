@@ -4,7 +4,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.8.0-48-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Sep 11 2024, 16:02:53) 
 [GCC 9.4.0]
@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=ea6a31007f0354c5548a8c5d75ab2911f8b070bd
+cm pull repo gateoverflow@cm4mlops --checkout=2f1ebd1b0608d878148a5fa21655bc5e280ad4ff
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -71,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=2e3ae1e9ddb5 \
+	--env.CM_DOCKER_CONTAINER_ID=49ff150a6c9f \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -131,7 +131,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.342`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.351`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Samples per second`: `870.952`
+`Samples per second`: `867.917`

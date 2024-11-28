@@ -4,7 +4,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.8.0-48-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Sep 11 2024, 16:02:53) 
 [GCC 9.4.0]
@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=ea6a31007f0354c5548a8c5d75ab2911f8b070bd
+cm pull repo gateoverflow@cm4mlops --checkout=01b942081d94342ff8f55fc44d514928bc303a24
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -128,7 +128,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.364`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.303`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1705934.0`
+`90th percentile latency (ns)`: `1706087.0`
