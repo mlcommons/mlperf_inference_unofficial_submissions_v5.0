@@ -1,31 +1,31 @@
 loading annotations into memory...
-Done (t=0.41s)
+Done (t=0.37s)
 creating index...
 index created!
 Loading and preparing results...
-DONE (t=15.04s)
+DONE (t=11.20s)
 creating index...
 index created!
 Running per image evaluation...
 Evaluate annotation type *bbox*
-DONE (t=132.68s).
+DONE (t=99.86s).
 Accumulating evaluation results...
-DONE (t=29.60s).
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.374
- Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.523
+DONE (t=22.59s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.373
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.522
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.404
  Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.023
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.125
- Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.413
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.412
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.419
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.599
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.628
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.598
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.627
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.082
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.345
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.344
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.677
-mAP=37.351%
+mAP=37.298%
 found 24781 results
 found 24781 images
 found 0 images with no results
 ignored 0 dupes
-hash=6ae5fe6590975cd44d37119f856dda9bac16a5cc1bdf775461ea43c4e05964ea
+hash=a6259d3dc0b7b81af845f53a91eb37ad39ae188d85c4015b1890167fa8ba367c
