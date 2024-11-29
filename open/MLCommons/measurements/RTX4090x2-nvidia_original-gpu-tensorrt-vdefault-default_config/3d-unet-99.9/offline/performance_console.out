@@ -1,8 +1,8 @@
-[2024-11-27 23:41:01,417 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x2
-[2024-11-27 23:41:01,784 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
-[2024-11-27 23:41:01,785 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x2_TRT/3d-unet-99.9/Offline
-[2024-11-27 23:41:01,785 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/6de3d9d0a0794376/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/43f6ede41af948efa48870a11af96be0.conf" --unet3d_sw_gaussian_patch_path="/home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/RTX4090x2/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario Offline --model 3d-unet
-[2024-11-27 23:41:01,785 __init__.py:53 INFO] Overriding Environment
+[2024-11-28 23:52:27,344 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x2
+[2024-11-28 23:52:27,699 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
+[2024-11-28 23:52:27,699 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x2_TRT/3d-unet-99.9/Offline
+[2024-11-28 23:52:27,700 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/643ae74c7d704a1e/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/2039334fb4b745499ced0dd4d3539ada.conf" --unet3d_sw_gaussian_patch_path="/home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/RTX4090x2/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario Offline --model 3d-unet
+[2024-11-28 23:52:27,700 __init__.py:53 INFO] Overriding Environment
 benchmark : Benchmark.UNET3D
 buffer_manager_thread_count : 0
 data_dir : /home/cmuser/CM/repos/local/cache/e066920512fd47b7/data
@@ -11,9 +11,9 @@ gpu_copy_streams : 1
 gpu_inference_streams : 1
 input_dtype : int8
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/f042d2560d924ad6/repo/closed/NVIDIA/build/logs/2024.11.27-23.40.59
+log_dir : /home/cmuser/CM/repos/local/cache/f042d2560d924ad6/repo/closed/NVIDIA/build/logs/2024.11.28-23.52.26
 map_path : data_maps/kits19/val_map.txt
-mlperf_conf_path : /home/cmuser/CM/repos/local/cache/6de3d9d0a0794376/inference/mlperf.conf
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/643ae74c7d704a1e/inference/mlperf.conf
 offline_expected_qps : 0.0
 precision : int8
 preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data
@@ -25,7 +25,7 @@ test_mode : PerformanceOnly
 unet3d_sw_gaussian_patch_path : /home/cmuser/CM/repos/local/cache/e066920512fd47b7/preprocessed_data/KiTS19/etc/gaussian_patches.npy
 use_deque_limit : True
 use_graphs : False
-user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/43f6ede41af948efa48870a11af96be0.conf
+user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/2039334fb4b745499ced0dd4d3539ada.conf
 system_id : RTX4090x2
 config_name : RTX4090x2_3d-unet_Offline
 workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99_9, PowerSetting.MaxP)
@@ -38,34 +38,34 @@ skip_file_checks : False
 power_limit : None
 cpu_freq : None
 &&&& RUNNING MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/6de3d9d0a0794376/inference/mlperf.conf
-[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/43f6ede41af948efa48870a11af96be0.conf
+[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/643ae74c7d704a1e/inference/mlperf.conf
+[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/2039334fb4b745499ced0dd4d3539ada.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
 [I] [TRT] Loaded engine size: 31 MiB
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 80, GPU 1097 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 80, GPU 1107 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 81, GPU 1097 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 81, GPU 1107 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +29, now: CPU 0, GPU 29 (MiB)
 [I] Device:0: ./build/engines/RTX4090x2/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan has been successfully loaded.
 [I] [TRT] Loaded engine size: 31 MiB
 [W] [TRT] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 113, GPU 805 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 113, GPU 815 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 114, GPU 805 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 115, GPU 815 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +30, now: CPU 0, GPU 59 (MiB)
 [I] Device:1: ./build/engines/RTX4090x2/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan has been successfully loaded.
 [E] [TRT] 3: [runtime.cpp::~Runtime::401] Error Code 3: API Usage Error (Parameter check failed at: runtime/rt/runtime.cpp::~Runtime::401, condition: mEngineCounter.use_count() == 1 Destroying a runtime before destroying deserialized engines created by the runtime leads to undefined behavior.)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 82, GPU 1813 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 82, GPU 1821 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 83, GPU 1813 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 83, GPU 1821 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +2218, now: CPU 0, GPU 2277 (MiB)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 89, GPU 1521 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 89, GPU 1529 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 90, GPU 1521 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 90, GPU 1529 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +2217, now: CPU 0, GPU 4494 (MiB)
 [I] Creating batcher thread: 0 EnableBatcherThreadPerDevice: true
 [I] Creating batcher thread: 1 EnableBatcherThreadPerDevice: true
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.44101s.
+Finished warmup. Ran for 5.43019s.
 Starting running actual test.
 ================================================
 MLPerf Results Summary
@@ -73,7 +73,7 @@ MLPerf Results Summary
 SUT name : Server_3DUNet
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 8.30131
+Samples per second: 8.29872
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -82,15 +82,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 185688288
-Max latency (ns)                : 642308176302
-Mean latency (ns)               : 320978624699
-50.00 percentile latency (ns)   : 320962261203
-90.00 percentile latency (ns)   : 578036420969
-95.00 percentile latency (ns)   : 610510727889
-97.00 percentile latency (ns)   : 622752563140
-99.00 percentile latency (ns)   : 636242750863
-99.90 percentile latency (ns)   : 641534597700
+Min latency (ns)                : 186626293
+Max latency (ns)                : 642508959987
+Mean latency (ns)               : 321094941602
+50.00 percentile latency (ns)   : 321093965712
+90.00 percentile latency (ns)   : 578222215668
+95.00 percentile latency (ns)   : 610703449740
+97.00 percentile latency (ns)   : 622946887482
+99.00 percentile latency (ns)   : 636459398570
+99.90 percentile latency (ns)   : 641743946562
 
 ================================================
 Test Parameters Used
@@ -120,25 +120,25 @@ No warnings encountered during test.
 No errors encountered during test.
 Finished running actual test.
 Device Device:0 processed:
-  484 batches of size 2
-  126 batches of size 3
-  433 batches of size 4
-  180 batches of size 5
-  20881 batches of size 8
+  516 batches of size 2
+  111 batches of size 3
+  418 batches of size 4
+  185 batches of size 5
+  20872 batches of size 8
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 2675
+  PerSampleCudaMemcpy Calls: 2693
   BatchedCudaMemcpy Calls: 0
 Device Device:1 processed:
-  508 batches of size 2
-  122 batches of size 3
-  435 batches of size 4
-  192 batches of size 5
-  20907 batches of size 8
+  476 batches of size 2
+  137 batches of size 3
+  450 batches of size 4
+  187 batches of size 5
+  20916 batches of size 8
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 2657
+  PerSampleCudaMemcpy Calls: 2639
   BatchedCudaMemcpy Calls: 0
 &&&& PASSED MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[2024-11-27 23:51:51,769 run_harness.py:166 INFO] Result: result_samples_per_second: 8.30131, Result is VALID
+[2024-11-29 00:03:17,907 run_harness.py:166 INFO] Result: result_samples_per_second: 8.29872, Result is VALID
  
 ======================== Result summaries: ========================
 
