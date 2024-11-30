@@ -63,12 +63,12 @@
 { "seq_id" : 61, "qsl_idx" : 47098, "data" : "DC010000" },
 { "seq_id" : 62, "qsl_idx" : 33915, "data" : "97000000" },
 { "seq_id" : 63, "qsl_idx" : 17063, "data" : "55030000" },
-{ "seq_id" : 128, "qsl_idx" : 36810, "data" : "A7010000" },
-{ "seq_id" : 129, "qsl_idx" : 15327, "data" : "63020000" },
-{ "seq_id" : 130, "qsl_idx" : 45274, "data" : "4E010000" },
-{ "seq_id" : 131, "qsl_idx" : 35518, "data" : "3E020000" },
-{ "seq_id" : 132, "qsl_idx" : 11395, "data" : "72010000" },
-{ "seq_id" : 133, "qsl_idx" : 41132, "data"
+{ "seq_id" : 64, "qsl_idx" : 8568, "data" : "A1010000" },
+{ "seq_id" : 65, "qsl_idx" : 44166, "data" : "5E020000" },
+{ "seq_id" : 66, "qsl_idx" : 13729, "data" : "3D000000" },
+{ "seq_id" : 67, "qsl_idx" : 8207, "data" : "4E010000" },
+{ "seq_id" : 68, "qsl_idx" : 32653, "data" : "E5030000" },
+{ "seq_id" : 69, "qsl_idx" : 45286, "data" : "0C02
 
 ...
 
