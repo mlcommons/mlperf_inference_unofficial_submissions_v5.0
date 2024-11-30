@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=389595bbf168f51573cf4f9f186b73e026e3f43b
+cm pull repo gateoverflow@cm4mlops --checkout=87d03bfea4bff56ef0d823ff232fc37030acfea5
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -129,7 +129,7 @@ Platform: RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.354`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.334`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `2322852.0`
+`90th percentile latency (ns)`: `2352126.0`
