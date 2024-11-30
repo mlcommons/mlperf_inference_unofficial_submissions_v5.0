@@ -896,7 +896,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1670.53,
+    "Performance_Result": 1679.73,
     "Performance_Units": "Samples/s"
   },
   {
@@ -910,7 +910,7 @@
     "UsedModel": "bert-99.9",
     "Model": "bert-99.9",
     "Scenario": "Server",
-    "Accuracy": "F1: 90.89127264236201",
+    "Accuracy": "F1: 90.89074704580993",
     "Nodes": 1,
     "Processor": "13th Gen Intel(R) Core(TM) i9-13900K",
     "host_processors_per_node": 1,
@@ -932,7 +932,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1414.97,
+    "Performance_Result": 1414.96,
     "Performance_Units": "Queries/s"
   },
   {
