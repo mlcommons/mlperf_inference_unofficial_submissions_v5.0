@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : Server_3DUNet
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 8.29872
+Samples per second: 8.28855
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -13,15 +13,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 186626293
-Max latency (ns)                : 642508959987
-Mean latency (ns)               : 321094941602
-50.00 percentile latency (ns)   : 321093965712
-90.00 percentile latency (ns)   : 578222215668
-95.00 percentile latency (ns)   : 610703449740
-97.00 percentile latency (ns)   : 622946887482
-99.00 percentile latency (ns)   : 636459398570
-99.90 percentile latency (ns)   : 641743946562
+Min latency (ns)                : 186066880
+Max latency (ns)                : 643297276696
+Mean latency (ns)               : 321488660490
+50.00 percentile latency (ns)   : 321523975088
+90.00 percentile latency (ns)   : 578956975279
+95.00 percentile latency (ns)   : 611468260726
+97.00 percentile latency (ns)   : 623717021058
+99.00 percentile latency (ns)   : 637231830452
+99.90 percentile latency (ns)   : 642517279070
 
 ================================================
 Test Parameters Used
