@@ -72,7 +72,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=5538be0ef53b \
+	--env.CM_DOCKER_CONTAINER_ID=fdb22f5b1ef2 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
