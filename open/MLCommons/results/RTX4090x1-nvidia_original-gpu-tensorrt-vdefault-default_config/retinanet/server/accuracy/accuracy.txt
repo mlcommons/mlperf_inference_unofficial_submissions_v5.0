@@ -1,19 +1,19 @@
 loading annotations into memory...
-Done (t=0.42s)
+Done (t=0.35s)
 creating index...
 index created!
 Loading and preparing results...
-DONE (t=15.13s)
+DONE (t=11.19s)
 creating index...
 index created!
 Running per image evaluation...
 Evaluate annotation type *bbox*
-DONE (t=118.67s).
+DONE (t=100.74s).
 Accumulating evaluation results...
-DONE (t=29.52s).
+DONE (t=22.69s).
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.373
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.522
- Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.404
  Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.023
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.125
  Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.413
@@ -22,10 +22,10 @@ DONE (t=29.52s).
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.628
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.083
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.344
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.678
-mAP=37.342%
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.677
+mAP=37.323%
 found 24781 results
 found 24781 images
 found 0 images with no results
 ignored 0 dupes
-hash=639d8a9bcc0faceb27c82cc7dfafd09cccc90d199da2f8016af6ae8ebeafd209
+hash=036876bcc7d3a9ac68f4dcfc418e513aa4c6df3bbbceb0332355eabd271cd291
