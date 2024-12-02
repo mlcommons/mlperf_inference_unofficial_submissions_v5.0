@@ -128,7 +128,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.29`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.328`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1708529.0`
+`90th percentile latency (ns)`: `1707679.0`
