@@ -256,7 +256,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "3.0.0",
+        "version": "4.1.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_3d-unet-99.9,_offline,_tensorrt,_cuda,_rtx_4090 )"
       }
     },
@@ -506,7 +506,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "3.0.0",
+        "version": "4.1.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_3d-unet-99.9,_offline,_tensorrt,_cuda,_3d-unet_,_batch_size.8,_v4.1-dev )"
       }
     },
@@ -646,7 +646,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "transformers",
-        "version": "4.46.3",
+        "version": "4.46.2",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_3d-unet-99.9,_offline,_tensorrt,_cuda,_3d-unet_,_batch_size.8,_v4.1-dev )"
       }
     },
@@ -786,7 +786,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "transformers",
-        "version": "4.46.3",
+        "version": "4.46.2",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_3d-unet-99.9,_offline,_tensorrt,_cuda,_rtx_4090 )"
       }
     },
