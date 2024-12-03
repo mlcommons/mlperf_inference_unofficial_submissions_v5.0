@@ -446,7 +446,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_cuda,_singlestream,_retinanet,_tensorrt,_rtx_4090 )"
       }
     },
@@ -1686,7 +1686,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_cuda,_singlestream,_retinanet,_tensorrt,_batch_size.1,_v4.1-dev )"
       }
     },
@@ -1876,7 +1876,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_cuda,_retinanet,_tensorrt,_v4.1-dev )"
       }
     },
@@ -2566,7 +2566,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( download_model,_cuda,_retinanet,_tensorrt,_v4.1-dev )"
       }
     },
@@ -2966,7 +2966,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( calibrate,_cuda,_retinanet,_tensorrt,_v4.1-dev )"
       }
     },
@@ -3126,7 +3126,7 @@
         "script_alias": "get-generic-python-lib",
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
-        "version": "4.1.0",
+        "version": "3.0.0",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( download_model,_cuda,_retinanet,_tensorrt,_v4.1-dev,_num-gpus.1 )"
       }
     },
