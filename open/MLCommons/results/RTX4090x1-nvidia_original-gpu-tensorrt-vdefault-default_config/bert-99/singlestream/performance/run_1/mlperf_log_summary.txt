@@ -4,32 +4,32 @@ MLPerf Results Summary
 SUT name : BERT SERVER
 Scenario : SingleStream
 Mode     : PerformanceOnly
-90th percentile latency (ns) : 1034533
+90th percentile latency (ns) : 1011115
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
   Early stopping satisfied: Yes
 Early Stopping Result:
- * Processed at least 64 queries (634340).
- * Would discard 62877 highest latency queries.
- * Early stopping 90th percentile estimate: 1034641
- * Early stopping 99th percentile estimate: 1215664
+ * Processed at least 64 queries (644982).
+ * Would discard 63936 highest latency queries.
+ * Early stopping 90th percentile estimate: 1011576
+ * Early stopping 99th percentile estimate: 1184087
 
 ================================================
 Additional Stats
 ================================================
-QPS w/ loadgen overhead         : 1057.23
-QPS w/o loadgen overhead        : 1059.78
+QPS w/ loadgen overhead         : 1074.97
+QPS w/o loadgen overhead        : 1080.81
 
-Min latency (ns)                : 852282
-Max latency (ns)                : 1429246
-Mean latency (ns)               : 943589
-50.00 percentile latency (ns)   : 924536
-90.00 percentile latency (ns)   : 1034533
-95.00 percentile latency (ns)   : 1109087
-97.00 percentile latency (ns)   : 1198460
-99.00 percentile latency (ns)   : 1215620
-99.90 percentile latency (ns)   : 1225901
+Min latency (ns)                : 851969
+Max latency (ns)                : 1377548
+Mean latency (ns)               : 925235
+50.00 percentile latency (ns)   : 904115
+90.00 percentile latency (ns)   : 1011115
+95.00 percentile latency (ns)   : 1078921
+97.00 percentile latency (ns)   : 1169600
+99.00 percentile latency (ns)   : 1184027
+99.90 percentile latency (ns)   : 1198946
 
 ================================================
 Test Parameters Used
