@@ -459,7 +459,7 @@
         "Model":"bert-99.9",
         "MlperfModel":"bert-99.9",
         "Scenario":"Offline",
-        "Result":3323.72,
+        "Result":3330.39,
         "Accuracy":"F1: 90.8832407068292",
         "number_of_nodes":1,
         "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
