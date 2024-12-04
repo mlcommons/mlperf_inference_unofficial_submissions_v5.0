@@ -4,7 +4,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.8.0-48-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Sep 11 2024, 16:02:53) 
 [GCC 9.4.0]
@@ -71,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=60930c8cf849 \
+	--env.CM_DOCKER_CONTAINER_ID=8d8cc68cb311 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -109,7 +109,7 @@ cm run script \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -128,7 +128,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: fp16
 
 ### Accuracy Results 
-`F1`: `90.89075`, Required accuracy for closed division `>= 90.78313`
+`F1`: `90.89127`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Scheduled samples per second`: `1414.96`
+`Scheduled samples per second`: `1414.97`
