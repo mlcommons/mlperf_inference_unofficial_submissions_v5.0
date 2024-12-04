@@ -76,7 +76,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "deeplearningexamples",
-        "version": "master-git-d28a53009c4390cc43ccde00fba160b9fbf4c30e",
+        "version": "master-git-feca9f610bc55cfe269404438b6fd4f7d2295b11",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( nvidia,_bert-99,_tensorrt,_cuda,_valid,_r4.1-dev_default,_server )"
       }
     },
@@ -106,7 +106,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "deeplearningexamples",
-        "version": "master-git-d28a53009c4390cc43ccde00fba160b9fbf4c30e",
+        "version": "master-git-feca9f610bc55cfe269404438b6fd4f7d2295b11",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -316,7 +316,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "deeplearningexamples",
-        "version": "master-git-d28a53009c4390cc43ccde00fba160b9fbf4c30e",
+        "version": "master-git-feca9f610bc55cfe269404438b6fd4f7d2295b11",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_bert-99,_cuda,_server,_tensorrt,_rtx_4090 )"
       }
     },
@@ -396,7 +396,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "deeplearningexamples",
-        "version": "master-git-d28a53009c4390cc43ccde00fba160b9fbf4c30e",
+        "version": "master-git-feca9f610bc55cfe269404438b6fd4f7d2295b11",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93"
       }
     },
@@ -596,7 +596,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "deeplearningexamples",
-        "version": "master-git-d28a53009c4390cc43ccde00fba160b9fbf4c30e",
+        "version": "master-git-feca9f610bc55cfe269404438b6fd4f7d2295b11",
         "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_bert-99,_cuda,_server,_tensorrt,_bert_,_batch_size.256,_v4.1-dev )"
       }
     },
