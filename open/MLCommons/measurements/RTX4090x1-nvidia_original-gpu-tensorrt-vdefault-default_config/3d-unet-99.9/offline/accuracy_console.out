@@ -1,8 +1,8 @@
-[2024-12-03 20:14:10,695 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
-[2024-12-03 20:14:10,977 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
-[2024-12-03 20:14:10,977 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/3d-unet-99.9/Offline
-[2024-12-03 20:14:10,977 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/accuracy" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="AccuracyOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/9a4de8a604f7484e/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/c81c0f5efd464228ac35e843a7217870.conf" --unet3d_sw_gaussian_patch_path="/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/RTX4090x1/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario Offline --model 3d-unet
-[2024-12-03 20:14:10,977 __init__.py:53 INFO] Overriding Environment
+[2024-12-04 20:14:35,235 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
+[2024-12-04 20:14:35,526 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
+[2024-12-04 20:14:35,526 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/3d-unet-99.9/Offline
+[2024-12-04 20:14:35,526 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/accuracy" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="AccuracyOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/e7c043beafe0407b/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/047c4c84e58d4d89b4581b1fe8b20b8f.conf" --unet3d_sw_gaussian_patch_path="/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/RTX4090x1/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario Offline --model 3d-unet
+[2024-12-04 20:14:35,526 __init__.py:53 INFO] Overriding Environment
 benchmark : Benchmark.UNET3D
 buffer_manager_thread_count : 0
 data_dir : /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/data
@@ -11,9 +11,9 @@ gpu_copy_streams : 1
 gpu_inference_streams : 1
 input_dtype : int8
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/6bf76155ad874a21/repo/closed/NVIDIA/build/logs/2024.12.03-20.14.09
+log_dir : /home/cmuser/CM/repos/local/cache/6bf76155ad874a21/repo/closed/NVIDIA/build/logs/2024.12.04-20.14.34
 map_path : data_maps/kits19/val_map.txt
-mlperf_conf_path : /home/cmuser/CM/repos/local/cache/9a4de8a604f7484e/inference/mlperf.conf
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/e7c043beafe0407b/inference/mlperf.conf
 offline_expected_qps : 0.0
 precision : int8
 preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data
@@ -25,7 +25,7 @@ test_mode : AccuracyOnly
 unet3d_sw_gaussian_patch_path : /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data/KiTS19/etc/gaussian_patches.npy
 use_deque_limit : True
 use_graphs : False
-user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/c81c0f5efd464228ac35e843a7217870.conf
+user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/047c4c84e58d4d89b4581b1fe8b20b8f.conf
 system_id : RTX4090x1
 config_name : RTX4090x1_3d-unet_Offline
 workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99_9, PowerSetting.MaxP)
@@ -38,8 +38,8 @@ skip_file_checks : False
 power_limit : None
 cpu_freq : None
 &&&& RUNNING MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/9a4de8a604f7484e/inference/mlperf.conf
-[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/c81c0f5efd464228ac35e843a7217870.conf
+[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/e7c043beafe0407b/inference/mlperf.conf
+[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/047c4c84e58d4d89b4581b1fe8b20b8f.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
@@ -55,7 +55,7 @@ Setting up SUT.
 [I] Creating batcher thread: 0 EnableBatcherThreadPerDevice: true
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.46645s.
+Finished warmup. Ran for 5.4453s.
 Starting running actual test.
 
 No warnings encountered during test.
@@ -72,8 +72,8 @@ Device Device:0 processed:
   PerSampleCudaMemcpy Calls: 43
   BatchedCudaMemcpy Calls: 0
 &&&& PASSED MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[2024-12-03 20:14:28,133 run_harness.py:166 INFO] Result: Accuracy run detected.
-[2024-12-03 20:14:28,134 __init__.py:46 INFO] Running command: python3 code/3d-unet/tensorrt/accuracy_kits.py --log_file /cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/accuracy/mlperf_log_accuracy.json
+[2024-12-04 20:14:52,664 run_harness.py:166 INFO] Result: Accuracy run detected.
+[2024-12-04 20:14:52,664 __init__.py:46 INFO] Running command: python3 code/3d-unet/tensorrt/accuracy_kits.py --log_file /cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/accuracy/mlperf_log_accuracy.json
 Loading necessary metadata...
 Loading loadgen accuracy log...
 Running postprocessing...

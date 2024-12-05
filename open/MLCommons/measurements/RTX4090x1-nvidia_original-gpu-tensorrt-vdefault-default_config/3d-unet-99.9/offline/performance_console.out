@@ -1,8 +1,8 @@
-[2024-12-03 20:02:57,938 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
-[2024-12-03 20:02:58,223 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
-[2024-12-03 20:02:58,224 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/3d-unet-99.9/Offline
-[2024-12-03 20:02:58,224 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/84db4dea2ed14777/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/154eafd86b5f4816ae27df78478add44.conf" --unet3d_sw_gaussian_patch_path="/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/RTX4090x1/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario Offline --model 3d-unet
-[2024-12-03 20:02:58,224 __init__.py:53 INFO] Overriding Environment
+[2024-12-04 20:03:20,266 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
+[2024-12-04 20:03:20,542 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
+[2024-12-04 20:03:20,542 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/3d-unet-99.9/Offline
+[2024-12-04 20:03:20,542 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/f0ab92134aed446b/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/711b9c93f1f24eb38f7aa6050da4bd80.conf" --unet3d_sw_gaussian_patch_path="/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/RTX4090x1/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario Offline --model 3d-unet
+[2024-12-04 20:03:20,542 __init__.py:53 INFO] Overriding Environment
 benchmark : Benchmark.UNET3D
 buffer_manager_thread_count : 0
 data_dir : /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/data
@@ -11,9 +11,9 @@ gpu_copy_streams : 1
 gpu_inference_streams : 1
 input_dtype : int8
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/6bf76155ad874a21/repo/closed/NVIDIA/build/logs/2024.12.03-20.02.57
+log_dir : /home/cmuser/CM/repos/local/cache/6bf76155ad874a21/repo/closed/NVIDIA/build/logs/2024.12.04-20.03.19
 map_path : data_maps/kits19/val_map.txt
-mlperf_conf_path : /home/cmuser/CM/repos/local/cache/84db4dea2ed14777/inference/mlperf.conf
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/f0ab92134aed446b/inference/mlperf.conf
 offline_expected_qps : 0.0
 precision : int8
 preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data
@@ -25,7 +25,7 @@ test_mode : PerformanceOnly
 unet3d_sw_gaussian_patch_path : /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data/KiTS19/etc/gaussian_patches.npy
 use_deque_limit : True
 use_graphs : False
-user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/154eafd86b5f4816ae27df78478add44.conf
+user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/711b9c93f1f24eb38f7aa6050da4bd80.conf
 system_id : RTX4090x1
 config_name : RTX4090x1_3d-unet_Offline
 workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99_9, PowerSetting.MaxP)
@@ -38,8 +38,8 @@ skip_file_checks : False
 power_limit : None
 cpu_freq : None
 &&&& RUNNING MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/84db4dea2ed14777/inference/mlperf.conf
-[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/154eafd86b5f4816ae27df78478add44.conf
+[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/f0ab92134aed446b/inference/mlperf.conf
+[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/711b9c93f1f24eb38f7aa6050da4bd80.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
@@ -55,7 +55,7 @@ Setting up SUT.
 [I] Creating batcher thread: 0 EnableBatcherThreadPerDevice: true
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.4544s.
+Finished warmup. Ran for 5.47429s.
 Starting running actual test.
 ================================================
 MLPerf Results Summary
@@ -63,7 +63,7 @@ MLPerf Results Summary
 SUT name : Server_3DUNet
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 4.13764
+Samples per second: 4.12985
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -72,15 +72,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 187730360
-Max latency (ns)                : 644328556053
-Mean latency (ns)               : 322178228424
-50.00 percentile latency (ns)   : 322204254243
-90.00 percentile latency (ns)   : 580138584888
-95.00 percentile latency (ns)   : 611546303590
-97.00 percentile latency (ns)   : 625412555068
-99.00 percentile latency (ns)   : 638326223254
-99.90 percentile latency (ns)   : 643899062145
+Min latency (ns)                : 188692737
+Max latency (ns)                : 645543841905
+Mean latency (ns)               : 322905607635
+50.00 percentile latency (ns)   : 322928224619
+90.00 percentile latency (ns)   : 581252730328
+95.00 percentile latency (ns)   : 612702409644
+97.00 percentile latency (ns)   : 626591669403
+99.00 percentile latency (ns)   : 639531686768
+99.90 percentile latency (ns)   : 645113826319
 
 ================================================
 Test Parameters Used
@@ -119,7 +119,7 @@ Device Device:0 processed:
   PerSampleCudaMemcpy Calls: 2666
   BatchedCudaMemcpy Calls: 0
 &&&& PASSED MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[2024-12-03 20:13:49,048 run_harness.py:166 INFO] Result: result_samples_per_second: 4.13764, Result is VALID
+[2024-12-04 20:14:12,649 run_harness.py:166 INFO] Result: result_samples_per_second: 4.12985, Result is VALID
  
 ======================== Result summaries: ========================
 
