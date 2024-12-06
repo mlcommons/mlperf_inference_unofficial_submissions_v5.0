@@ -129,4 +129,4 @@ Model Precision: int8
 `DICE`: `0.86236`, Required accuracy for closed division `>= 0.86084`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `434766566.0`
+`90th percentile latency (ns)`: `431038168.0`
