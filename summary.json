@@ -39,7 +39,7 @@
         "Model":"bert-99.9",
         "MlperfModel":"bert-99.9",
         "Scenario":"Offline",
-        "Result":1666.39,
+        "Result":1676.23,
         "Accuracy":"F1: 90.8832407068292",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD Ryzen 9 7950X 16-Core Processor",
