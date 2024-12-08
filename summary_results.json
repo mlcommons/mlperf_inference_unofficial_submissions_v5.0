@@ -874,7 +874,7 @@
     "UsedModel": "bert-99.9",
     "Model": "bert-99.9",
     "Scenario": "Offline",
-    "Accuracy": "F1: 90.89170281131781",
+    "Accuracy": "F1: 90.8832407068292",
     "Nodes": 1,
     "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
     "host_processors_per_node": 1,
@@ -896,7 +896,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1675.84,
+    "Performance_Result": 1679.95,
     "Performance_Units": "Samples/s"
   },
   {
@@ -910,7 +910,7 @@
     "UsedModel": "bert-99.9",
     "Model": "bert-99.9",
     "Scenario": "Server",
-    "Accuracy": "F1: 90.89074704580993",
+    "Accuracy": "F1: 90.89127264236201",
     "Nodes": 1,
     "Processor": "AMD Ryzen 9 7950X 16-Core Processor",
     "host_processors_per_node": 1,
@@ -932,7 +932,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/open/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1414.97,
+    "Performance_Result": 1414.95,
     "Performance_Units": "Queries/s"
   },
   {
