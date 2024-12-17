@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=d63d6b560994f51a9a794073effaee741785af95
+cm pull repo gateoverflow@cm4mlops --checkout=859970a069c2565493774626345588818606750d
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -106,7 +106,7 @@ cm run script \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -128,4 +128,4 @@ Model Precision: fp16
 `F1`: `90.8917`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Samples per second`: `1674.57`
+`Samples per second`: `1673.6`
