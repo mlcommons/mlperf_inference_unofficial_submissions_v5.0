@@ -71,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=4478f4a7c66b \
+	--env.CM_DOCKER_CONTAINER_ID=c64cc2902052 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -128,7 +128,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: fp16
 
 ### Accuracy Results 
-`F1`: `90.89127`, Required accuracy for closed division `>= 90.78313`
+`F1`: `90.89075`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Scheduled samples per second`: `1414.96`
+`Scheduled samples per second`: `1414.97`
