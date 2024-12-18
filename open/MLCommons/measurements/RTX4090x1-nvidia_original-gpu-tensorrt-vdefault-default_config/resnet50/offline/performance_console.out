@@ -1,7 +1,7 @@
-[2024-12-17 01:51:43,849 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
-[2024-12-17 01:51:44,061 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/resnet50/Offline
-[2024-12-17 01:51:44,061 __init__.py:46 INFO] Running command: ./build/bin/harness_default --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/resnet50/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=2048 --test_mode="PerformanceOnly" --gpu_res2res3_loop_count=1 --gpu_copy_streams=2 --gpu_inference_streams=1 --run_infer_on_copy_streams=false --use_deque_limit=true --gpu_batch_size=64 --map_path="data_maps/imagenet/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/f8926460978e4644/inference/mlperf.conf" --tensor_path="build/preprocessed_data/imagenet/ResNet50/int8_linear" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/158a2e39e2c944a6afff32411fe2640f.conf" --gpu_engines="./build/engines/RTX4090x1/resnet50/Offline/resnet50-Offline-gpu-b64-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario Offline --model resnet50
-[2024-12-17 01:51:44,061 __init__.py:53 INFO] Overriding Environment
+[2024-12-17 23:32:12,313 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
+[2024-12-17 23:32:12,528 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/resnet50/Offline
+[2024-12-17 23:32:12,528 __init__.py:46 INFO] Running command: ./build/bin/harness_default --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/resnet50/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=2048 --test_mode="PerformanceOnly" --gpu_res2res3_loop_count=1 --gpu_copy_streams=2 --gpu_inference_streams=1 --run_infer_on_copy_streams=false --use_deque_limit=true --gpu_batch_size=64 --map_path="data_maps/imagenet/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/140bd1f0878041e1/inference/mlperf.conf" --tensor_path="build/preprocessed_data/imagenet/ResNet50/int8_linear" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/21db1ce861da4a318ecceaa8e1646477.conf" --gpu_engines="./build/engines/RTX4090x1/resnet50/Offline/resnet50-Offline-gpu-b64-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario Offline --model resnet50
+[2024-12-17 23:32:12,528 __init__.py:53 INFO] Overriding Environment
 benchmark : Benchmark.ResNet50
 buffer_manager_thread_count : 0
 data_dir : /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/data
@@ -11,9 +11,9 @@ gpu_inference_streams : 1
 gpu_res2res3_loop_count : 1
 input_dtype : int8
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/6bf76155ad874a21/repo/closed/NVIDIA/build/logs/2024.12.17-01.51.43
+log_dir : /home/cmuser/CM/repos/local/cache/6bf76155ad874a21/repo/closed/NVIDIA/build/logs/2024.12.17-23.32.11
 map_path : data_maps/imagenet/val_map.txt
-mlperf_conf_path : /home/cmuser/CM/repos/local/cache/f8926460978e4644/inference/mlperf.conf
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/140bd1f0878041e1/inference/mlperf.conf
 offline_expected_qps : 0.0
 precision : int8
 preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data
@@ -24,7 +24,7 @@ tensor_path : build/preprocessed_data/imagenet/ResNet50/int8_linear
 test_mode : PerformanceOnly
 use_deque_limit : True
 use_graphs : False
-user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/158a2e39e2c944a6afff32411fe2640f.conf
+user_conf_path : /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/21db1ce861da4a318ecceaa8e1646477.conf
 system_id : RTX4090x1
 config_name : RTX4090x1_resnet50_Offline
 workload_setting : WorkloadSetting(HarnessType.LWIS, AccuracyTarget.k_99, PowerSetting.MaxP)
@@ -37,8 +37,8 @@ skip_file_checks : False
 power_limit : None
 cpu_freq : None
 &&&& RUNNING Default_Harness # ./build/bin/harness_default
-[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/f8926460978e4644/inference/mlperf.conf
-[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/158a2e39e2c944a6afff32411fe2640f.conf
+[I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/140bd1f0878041e1/inference/mlperf.conf
+[I] user.conf path: /home/cmuser/CM/repos/gateoverflow@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/21db1ce861da4a318ecceaa8e1646477.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
@@ -58,7 +58,7 @@ Setting up SUT.
 [I] Creating batcher thread: 0 EnableBatcherThreadPerDevice: false
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.02947s.
+Finished warmup. Ran for 5.0315s.
 Starting running actual test.
 ================================================
 MLPerf Results Summary
@@ -66,7 +66,7 @@ MLPerf Results Summary
 SUT name : LWIS_Server
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 43828.8
+Samples per second: 43811.4
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -75,15 +75,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 129801848
-Max latency (ns)                : 653377145164
-Mean latency (ns)               : 326322500048
-50.00 percentile latency (ns)   : 326239124427
-90.00 percentile latency (ns)   : 587968014971
-95.00 percentile latency (ns)   : 620675675844
-97.00 percentile latency (ns)   : 633756693322
-99.00 percentile latency (ns)   : 646836692235
-99.90 percentile latency (ns)   : 652723591651
+Min latency (ns)                : 135953496
+Max latency (ns)                : 653637184428
+Mean latency (ns)               : 326477593139
+50.00 percentile latency (ns)   : 326404430641
+90.00 percentile latency (ns)   : 588212430443
+95.00 percentile latency (ns)   : 620925782826
+97.00 percentile latency (ns)   : 634009188773
+99.00 percentile latency (ns)   : 647095231280
+99.90 percentile latency (ns)   : 652983741939
 
 ================================================
 Test Parameters Used
@@ -118,7 +118,7 @@ Device Device:0.GPU processed:
   PerSampleCudaMemcpy Calls: 0
   BatchedCudaMemcpy Calls: 447449
 &&&& PASSED Default_Harness # ./build/bin/harness_default
-[2024-12-17 02:02:44,484 run_harness.py:166 INFO] Result: result_samples_per_second: 43828.8, Result is VALID
+[2024-12-17 23:43:13,166 run_harness.py:166 INFO] Result: result_samples_per_second: 43811.4, Result is VALID
  
 ======================== Result summaries: ========================
 

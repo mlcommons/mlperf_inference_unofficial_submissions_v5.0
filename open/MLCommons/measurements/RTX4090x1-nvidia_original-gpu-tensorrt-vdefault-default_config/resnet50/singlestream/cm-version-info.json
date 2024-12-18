@@ -76,7 +76,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-c71b83f92f0cd2c3b2f07ffec9d3108bb227b712",
+        "version": "master-git-aebc0183310fa7f8dd4598d2d19985734c5113d3",
         "parent": "app-mlperf-inference,d775cac873ee4231 ( nvidia,_resnet50,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream )"
       }
     },
@@ -106,7 +106,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-c71b83f92f0cd2c3b2f07ffec9d3108bb227b712",
+        "version": "master-git-aebc0183310fa7f8dd4598d2d19985734c5113d3",
         "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
       }
     },
@@ -147,15 +147,15 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "extract-file,3f0b76219d004817 ( path./home/cmuser/CM/repos/local/cache/3fd8b62e9df04156/caffe_ilsvrc12.tar.gz )"
+        "parent": "extract-file,3f0b76219d004817 ( path./home/cmuser/CM/repos/local/cache/ac3d4cb87ade4652/caffe_ilsvrc12.tar.gz )"
       }
     },
     {
-      "extract,file,_path./home/cmuser/CM/repos/local/cache/3fd8b62e9df04156/caffe_ilsvrc12.tar.gz": {
+      "extract,file,_path./home/cmuser/CM/repos/local/cache/ac3d4cb87ade4652/caffe_ilsvrc12.tar.gz": {
         "script_uid": "3f0b76219d004817",
         "script_alias": "extract-file",
         "script_tags": "extract,file",
-        "script_variations": "path./home/cmuser/CM/repos/local/cache/3fd8b62e9df04156/caffe_ilsvrc12.tar.gz",
+        "script_variations": "path./home/cmuser/CM/repos/local/cache/ac3d4cb87ade4652/caffe_ilsvrc12.tar.gz",
         "version": "",
         "parent": "download-and-extract,c67e81a4ce2649f5 ( extract,_wget,_url.http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz )"
       }
@@ -397,7 +397,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -417,7 +417,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -427,7 +427,7 @@
         "script_tags": "get,sys-utils-cm",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -437,7 +437,7 @@
         "script_tags": "get,mlperf,inference,nvidia,scratch,space",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -507,7 +507,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
         "version": "4.1.0",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -517,7 +517,7 @@
         "script_tags": "get,val,validation,dataset,imagenet,ILSVRC,image-classification,original",
         "script_variations": "full",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -557,7 +557,7 @@
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
         "script_variations": "fp32,onnx,opset-8",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -566,8 +566,8 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-c71b83f92f0cd2c3b2f07ffec9d3108bb227b712",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "version": "master-git-aebc0183310fa7f8dd4598d2d19985734c5113d3",
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -577,7 +577,7 @@
         "script_tags": "get,nvidia,mlperf,inference,common-code",
         "script_variations": "mlcommons",
         "version": "r4.0",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -597,7 +597,7 @@
         "script_tags": "pull,git,repo,repository",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -646,7 +646,7 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-c71b83f92f0cd2c3b2f07ffec9d3108bb227b712",
+        "version": "master-git-aebc0183310fa7f8dd4598d2d19985734c5113d3",
         "parent": "generate-mlperf-inference-user-conf,3af4475745964b93"
       }
     },
@@ -677,7 +677,7 @@
         "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -697,7 +697,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.pycuda",
         "version": "2022.2.2",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -827,7 +827,7 @@
         "script_tags": "get,nvidia,mitten,nvidia-mitten",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -837,7 +837,7 @@
         "script_tags": "get,cuda,cuda-compiler,cuda-lib,toolkit,lib,nvcc,get-nvcc,get-cuda,46d133d9ef92422d",
         "script_variations": "cudnn",
         "version": "12.2",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -847,7 +847,7 @@
         "script_tags": "get,tensorrt,nvidia",
         "script_variations": "",
         "version": "vdetected",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -1707,7 +1707,7 @@
         "script_tags": "build,mlcommons,mlperf,inference,inference-server,server,nvidia-harness,nvidia",
         "script_variations": "mlcommons",
         "version": "r4.0",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -1717,7 +1717,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1737,7 +1737,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1747,7 +1747,7 @@
         "script_tags": "get,sys-utils-cm",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1757,7 +1757,7 @@
         "script_tags": "get,mlperf,inference,nvidia,scratch,space",
         "script_variations": "version.4_0",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1777,7 +1777,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
         "version": "4.1.0",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1787,7 +1787,7 @@
         "script_tags": "get,val,validation,dataset,imagenet,ILSVRC,image-classification,original",
         "script_variations": "full",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1797,7 +1797,7 @@
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
         "script_variations": "fp32,onnx,opset-8",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1806,8 +1806,8 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-c71b83f92f0cd2c3b2f07ffec9d3108bb227b712",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "version": "master-git-aebc0183310fa7f8dd4598d2d19985734c5113d3",
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1817,7 +1817,7 @@
         "script_tags": "get,nvidia,mlperf,inference,common-code",
         "script_variations": "mlcommons",
         "version": "r4.0",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1837,7 +1837,7 @@
         "script_tags": "pull,git,repo,repository",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1857,7 +1857,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.pycuda",
         "version": "2022.2.2",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1867,7 +1867,7 @@
         "script_tags": "get,nvidia,mitten,nvidia-mitten",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1877,7 +1877,7 @@
         "script_tags": "get,cuda,cuda-compiler,cuda-lib,toolkit,lib,nvcc,get-nvcc,get-cuda,46d133d9ef92422d",
         "script_variations": "cudnn",
         "version": "12.2",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1887,7 +1887,7 @@
         "script_tags": "get,tensorrt,nvidia",
         "script_variations": "",
         "version": "vdetected",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1897,7 +1897,7 @@
         "script_tags": "build,mlcommons,mlperf,inference,inference-server,server,nvidia-harness,nvidia",
         "script_variations": "mlcommons",
         "version": "r4.0",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -1907,7 +1907,7 @@
         "script_tags": "detect-os,detect,os,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -1927,7 +1927,7 @@
         "script_tags": "detect,cpu,detect-cpu,info",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -1937,7 +1937,7 @@
         "script_tags": "get,sys-utils-cm",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -1947,7 +1947,7 @@
         "script_tags": "get,mlperf,inference,nvidia,scratch,space",
         "script_variations": "version.4_0",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -1967,7 +1967,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "mlperf_logging",
         "version": "4.1.0",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -1977,7 +1977,7 @@
         "script_tags": "get,val,validation,dataset,imagenet,ILSVRC,image-classification,original",
         "script_variations": "full",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -1987,7 +1987,7 @@
         "script_tags": "get,raw,ml-model,resnet50,ml-model-resnet50,image-classification",
         "script_variations": "fp32,onnx,opset-8",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -1996,8 +1996,8 @@
         "script_alias": "get-mlperf-inference-src",
         "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
         "script_variations": "",
-        "version": "master-git-c71b83f92f0cd2c3b2f07ffec9d3108bb227b712",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "version": "master-git-aebc0183310fa7f8dd4598d2d19985734c5113d3",
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -2007,7 +2007,7 @@
         "script_tags": "get,nvidia,mlperf,inference,common-code",
         "script_variations": "mlcommons",
         "version": "r4.0",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -2027,7 +2027,7 @@
         "script_tags": "pull,git,repo,repository",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -2047,7 +2047,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.pycuda",
         "version": "2022.2.2",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -2057,7 +2057,7 @@
         "script_tags": "get,nvidia,mitten,nvidia-mitten",
         "script_variations": "",
         "version": "master",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -2197,7 +2197,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "onnx-graphsurgeon",
         "version": "0.3.27",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -2267,7 +2267,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.onnx",
         "version": "1.13.1",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
@@ -2277,17 +2277,17 @@
         "script_tags": "save,mlperf,inference,implementation,state",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev )"
       }
     },
     {
-      "reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev": {
+      "reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev": {
         "script_uid": "bc3b17fb430f4732",
         "script_alias": "app-mlperf-inference-nvidia",
         "script_tags": "reproduce,mlcommons,mlperf,inference,harness,nvidia-harness,nvidia",
-        "script_variations": "preprocess_data,tensorrt,resnet50,cuda,v4.1-dev",
+        "script_variations": "preprocess_data,resnet50,tensorrt,cuda,v4.1-dev",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -2307,7 +2307,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "onnx-graphsurgeon",
         "version": "0.3.27",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -2327,7 +2327,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.onnx",
         "version": "1.13.1",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
@@ -2337,27 +2337,27 @@
         "script_tags": "save,mlperf,inference,implementation,state",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev )"
       }
     },
     {
-      "reproduce,mlperf,inference,nvidia,harness,_build_engine,_tensorrt,_resnet50,_cuda,_singlestream,_batch_size.1,_v4.1-dev": {
+      "reproduce,mlperf,inference,nvidia,harness,_build_engine,_resnet50,_tensorrt,_cuda,_singlestream,_batch_size.1,_v4.1-dev": {
         "script_uid": "bc3b17fb430f4732",
         "script_alias": "app-mlperf-inference-nvidia",
         "script_tags": "reproduce,mlcommons,mlperf,inference,harness,nvidia-harness,nvidia",
-        "script_variations": "build_engine,tensorrt,resnet50,cuda,singlestream,batch_size.1,v4.1-dev",
+        "script_variations": "build_engine,resnet50,tensorrt,cuda,singlestream,batch_size.1,v4.1-dev",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
-      "reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_tensorrt,_resnet50,_cuda,_v4.1-dev": {
+      "reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_resnet50,_tensorrt,_cuda,_v4.1-dev": {
         "script_uid": "bc3b17fb430f4732",
         "script_alias": "app-mlperf-inference-nvidia",
         "script_tags": "reproduce,mlcommons,mlperf,inference,harness,nvidia-harness,nvidia",
-        "script_variations": "preprocess_data,tensorrt,resnet50,cuda,v4.1-dev",
+        "script_variations": "preprocess_data,resnet50,tensorrt,cuda,v4.1-dev",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -2377,7 +2377,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "onnx-graphsurgeon",
         "version": "0.3.27",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -2397,7 +2397,7 @@
         "script_tags": "get,install,generic,pip-package,generic-python-lib",
         "script_variations": "package.onnx",
         "version": "1.13.1",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     },
     {
@@ -2437,7 +2437,7 @@
         "script_tags": "mlperf,benchmark-mlperf",
         "script_variations": "",
         "version": "",
-        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_tensorrt,_resnet50,_cuda,_singlestream,_rtx_4090 )"
+        "parent": "app-mlperf-inference-nvidia,bc3b17fb430f4732 ( run_harness,_resnet50,_tensorrt,_cuda,_singlestream,_rtx_4090 )"
       }
     }
   ]
