@@ -4,11 +4,11 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.2.0-39-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
-* Python version: 3.8.10 (default, Sep 11 2024, 16:02:53) 
+* Python version: 3.8.10 (default, Nov  7 2024, 13:10:47) 
 [GCC 9.4.0]
-* MLCommons CM version: 3.3.4
+* MLCommons CM version: 3.5.1.1
 
 ## CM Run Command
 
@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=d63d6b560994f51a9a794073effaee741785af95
+cm pull repo gateoverflow@cm4mlops --checkout=e7ec15626926718bd88f45d5a74e56ef9275cf9b
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_3d-unet-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -53,12 +53,11 @@ cm run script \
 	--env.CM_RUN_SUBMISSION_CHECKER=yes \
 	--env.CM_TAR_SUBMISSION_DIR=yes \
 	--env.CM_MLPERF_SUBMISSION_GENERATION_STYLE=full \
-	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
+	--env.CM_MLPERF_INFERENCE_VERSION=5.0-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
-	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
-	--env.CM_TMP_CURRENT_PATH=/home/arjun/actions-runner/_work/cm4mlops/cm4mlops \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.2 \
+	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=3d-unet-99.9 \
 	--env.CM_MLPERF_CLEAN_SUBMISSION_DIR=yes \
@@ -72,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=cc10acc2a39f \
+	--env.CM_DOCKER_CONTAINER_ID=745a8de58810 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
@@ -110,7 +109,7 @@ cm run script \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/e066920512fd47b7
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/4db00c74da1e44c8
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
@@ -132,4 +131,4 @@ Model Precision: int8
 `DICE`: `0.86236`, Required accuracy for closed division `>= 0.86084`
 
 ### Performance Results 
-`Samples per second`: `8.16675`
+`Samples per second`: `8.32758`
