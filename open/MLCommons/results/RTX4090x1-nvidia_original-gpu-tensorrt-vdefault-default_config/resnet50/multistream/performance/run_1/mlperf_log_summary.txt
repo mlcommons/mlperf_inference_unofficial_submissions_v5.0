@@ -4,29 +4,29 @@ MLPerf Results Summary
 SUT name : LWIS_Server
 Scenario : MultiStream
 Mode     : PerformanceOnly
-99th percentile latency (ns) : 467036
+99th percentile latency (ns) : 469414
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
   Early stopping satisfied: Yes
 Early Stopping Result:
- * Processed at least 662 queries (1289285).
- * Would discard 12629 highest latency queries.
- * Early stopping 99th percentile estimate: 467159
+ * Processed at least 662 queries (1283334).
+ * Would discard 12570 highest latency queries.
+ * Early stopping 99th percentile estimate: 469536
 
 ================================================
 Additional Stats
 ================================================
 Per-query latency:  
-Min latency (ns)                : 446222
-Max latency (ns)                : 1285391
-Mean latency (ns)               : 462974
-50.00 percentile latency (ns)   : 462730
-90.00 percentile latency (ns)   : 463839
-95.00 percentile latency (ns)   : 464314
-97.00 percentile latency (ns)   : 464759
-99.00 percentile latency (ns)   : 467036
-99.90 percentile latency (ns)   : 513237
+Min latency (ns)                : 447863
+Max latency (ns)                : 1618911
+Mean latency (ns)               : 465213
+50.00 percentile latency (ns)   : 464973
+90.00 percentile latency (ns)   : 466110
+95.00 percentile latency (ns)   : 466667
+97.00 percentile latency (ns)   : 467145
+99.00 percentile latency (ns)   : 469414
+99.90 percentile latency (ns)   : 515499
 
 ================================================
 Test Parameters Used
