@@ -18,15 +18,15 @@ Additional Stats
 ================================================
 Completed samples per second    : 637.17
 
-Min latency (ns)                : 2462658
-Max latency (ns)                : 35372584
-Mean latency (ns)               : 14526595
-50.00 percentile latency (ns)   : 14397046
-90.00 percentile latency (ns)   : 19368531
-95.00 percentile latency (ns)   : 20856050
-97.00 percentile latency (ns)   : 21982783
-99.00 percentile latency (ns)   : 24438086
-99.90 percentile latency (ns)   : 29103354
+Min latency (ns)                : 2376659
+Max latency (ns)                : 34953275
+Mean latency (ns)               : 14523576
+50.00 percentile latency (ns)   : 14395810
+90.00 percentile latency (ns)   : 19369980
+95.00 percentile latency (ns)   : 20861987
+97.00 percentile latency (ns)   : 21984843
+99.00 percentile latency (ns)   : 24424048
+99.90 percentile latency (ns)   : 28977171
 
 ================================================
 Test Parameters Used
