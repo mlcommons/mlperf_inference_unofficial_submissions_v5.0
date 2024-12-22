@@ -37,7 +37,7 @@ jobs:
         cm run script --tags=convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
 
         git config --global user.name mlcommons-bot
-          git config --global user.email "mlcommons-bot@users.noreply.github.com"
+        git config --global user.email "mlcommons-bot@users.noreply.github.com"
         git add summary*
         echo -e 'Please download [summary.xlsx](summary.xlsx) to view the most recent results. \n ```' > temp
         tail -n 16 checker_log.txt >> temp
