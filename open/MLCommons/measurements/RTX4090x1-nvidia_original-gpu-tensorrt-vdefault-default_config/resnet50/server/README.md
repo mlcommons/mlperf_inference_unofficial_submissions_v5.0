@@ -4,7 +4,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.8.0-51-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Nov  7 2024, 13:10:47) 
 [GCC 9.4.0]
@@ -56,8 +56,8 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.4 \
-	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
+	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=resnet50 \
 	--env.CM_MLPERF_CLEAN_SUBMISSION_DIR=yes \
@@ -71,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=bdb931e1331b \
+	--env.CM_DOCKER_CONTAINER_ID=1475b4755399 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST04 \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
@@ -105,10 +105,10 @@ cm run script \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
-	--env.CM_DATASET_IMAGENET_PATH=/home/cmuser/CM/repos/local/cache/14a94e79cca24141/imagenet-2012-val \
+	--env.CM_DATASET_IMAGENET_PATH=/home/cmuser/CM/repos/local/cache/ca6a4aaf13e34e0e/imagenet-2012-val \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload mlcommons@mlperf-automations without checkout and clean CM cache as follows:*
