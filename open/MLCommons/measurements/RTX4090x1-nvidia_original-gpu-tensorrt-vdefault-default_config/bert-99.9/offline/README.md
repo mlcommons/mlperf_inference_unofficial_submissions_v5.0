@@ -4,7 +4,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.8.0-51-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Nov  7 2024, 13:10:47) 
 [GCC 9.4.0]
@@ -56,8 +56,8 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.4 \
-	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
+	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=bert-99.9 \
 	--env.CM_MLPERF_CLEAN_SUBMISSION_DIR=yes \
@@ -65,14 +65,11 @@ cm run script \
 	--env.CM_MLPERF_LOADGEN_EXTRA_OPTIONS= \
 	--env.CM_MLPERF_LOADGEN_MODE=performance \
 	--env.CM_MLPERF_LOADGEN_SCENARIO=Offline \
-	--env.CM_MLPERF_LOADGEN_SCENARIOS,=SingleStream,Offline \
+	--env.CM_MLPERF_LOADGEN_SCENARIOS,=Offline,Server \
 	--env.CM_MLPERF_LOADGEN_MODES,=performance,accuracy \
 	--env.CM_OUTPUT_FOLDER_NAME=valid_results \
-	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
+	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=no \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
-	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=ce5908f2be03 \
-	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
 	--add_deps_recursive.coco2014-preprocessed.tags=_full \
@@ -107,7 +104,7 @@ cm run script \
 	--dump_version_info=True \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/a8c152aef5494496
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload mlcommons@mlperf-automations without checkout and clean CM cache as follows:*
@@ -126,7 +123,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: fp16
 
 ### Accuracy Results 
-`F1`: `90.8917`, Required accuracy for closed division `>= 90.78313`
+`F1`: `90.88324`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`Samples per second`: `1669.08`
+`Samples per second`: `1677.15`
