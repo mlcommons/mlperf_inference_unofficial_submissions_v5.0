@@ -36,11 +36,8 @@ jobs:
         cm run script --tags=run,mlperf,inference,submission-checker --quiet --adr.inference-src.tags=_branch.dev --extra_args="  --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
         cm run script --tags=convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
 
-        USER="GitHub Action"
-        EMAIL=admin@gateoverflow.com
-
-        git config --global user.name "$USER"
-        git config --global user.email "$EMAIL"
+        git config --global user.name mlcommons-bot
+          git config --global user.email "mlcommons-bot@users.noreply.github.com"
         git add summary*
         echo -e 'Please download [summary.xlsx](summary.xlsx) to view the most recent results. [This page](https://docs.google.com/spreadsheets/d/e/2PACX-1vSCu8F7Hwck-AGJ5kWxi2G3xhO5MJoc_igybvsxjCt-2fEEYyf2BIcR0rTXW0eUzg/pubhtml) shows the results which may not be the latest. \n ```' > temp
         tail -n 16 checker_log.txt >> temp
