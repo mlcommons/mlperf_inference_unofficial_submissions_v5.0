@@ -2,15 +2,18 @@
 
 name: MLPerf inference results updater
 
-
 on:
   push:
     branches: [ "main", "dev" ]
+    paths-ignore:
+      - 'README.md'
+      - 'summary*'
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'mlcommons-bot' && !contains(github.event.head_commit.message, 'Updated results summary') }}
     env:
       CM_INDEX: "on"
     strategy:
@@ -47,4 +50,4 @@ jobs:
         head -n 100 temp1 > README.md
         git add README.md
         
-        git diff-index --quiet HEAD || (git commit -am "Updated results summary" && git push)
+        git diff-index --quiet HEAD || (git commit -am "Updated results summary [skip ci]" && git push)
