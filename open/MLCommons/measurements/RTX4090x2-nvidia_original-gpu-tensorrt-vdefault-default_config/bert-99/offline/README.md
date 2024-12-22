@@ -8,7 +8,7 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Nov  7 2024, 13:10:47) 
 [GCC 9.4.0]
-* MLCommons CM version: 3.5.1.1
+* MLCommons CM version: 3.5.2
 
 ## CM Run Command
 
@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=e7ec15626926718bd88f45d5a74e56ef9275cf9b
+cm pull repo mlcommons@mlperf-automations --checkout=b051bb1858fc61de02fc68765fc11155fe457b2a
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99,_tensorrt,_cuda,_valid,_r4.1-dev_default,_offline \
@@ -56,7 +56,7 @@ cm run script \
 	--env.CM_MLPERF_INFERENCE_VERSION=5.0-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.2 \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.4 \
 	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=bert-99 \
@@ -71,9 +71,8 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=661de21938ba \
+	--env.CM_DOCKER_CONTAINER_ID=6ada21f976be \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
-	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
 	--add_deps_recursive.coco2014-preprocessed.tags=_full \
@@ -88,7 +87,6 @@ cm run script \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
-	--adr.submission-checker-src.tags=_branch.dev \
 	--adr.compiler.tags=gcc \
 	--adr.coco2014-original.tags=_full \
 	--adr.coco2014-preprocessed.tags=_full \
@@ -112,11 +110,11 @@ cm run script \
 	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/4db00c74da1e44c8
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
- you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
+ you should simply reload mlcommons@mlperf-automations without checkout and clean CM cache as follows:*
 
 ```bash
-cm rm repo gateoverflow@cm4mlops
-cm pull repo gateoverflow@cm4mlops
+cm rm repo mlcommons@mlperf-automations
+cm pull repo mlcommons@mlperf-automations
 cm rm cache -f
 
 ```
@@ -125,10 +123,10 @@ cm rm cache -f
 
 Platform: RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config
 
-Model Precision: fp16
+Model Precision: int8
 
 ### Accuracy Results 
 `F1`: `90.15674`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`Samples per second`: `8296.67`
+`Samples per second`: `8284.02`
