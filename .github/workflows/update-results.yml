@@ -5,7 +5,7 @@ name: MLPerf inference results updater
 
 on:
   push:
-    branches: [ "main", "v4.1" ]
+    branches: [ "main", "dev" ]
 
 jobs:
   build:
