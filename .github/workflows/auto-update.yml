@@ -21,8 +21,8 @@ jobs:
 
       - name: Configure Git User
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config --global user.name mlcommons-bot
+          git config --global user.email "mlcommons-bot@users.noreply.github.com"
 
       - name: Merge auto-update into main
         run: |
