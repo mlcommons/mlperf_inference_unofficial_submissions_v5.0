@@ -4,11 +4,11 @@ This experiment is generated using the [MLCommons Collective Mind automation fra
 
 ## Host platform
 
-* OS version: Linux-6.2.0-39-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-49-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
-* Python version: 3.8.10 (default, Sep 11 2024, 16:02:53) 
+* Python version: 3.8.10 (default, Nov  7 2024, 13:10:47) 
 [GCC 9.4.0]
-* MLCommons CM version: 3.3.4
+* MLCommons CM version: 3.5.2
 
 ## CM Run Command
 
@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo gateoverflow@cm4mlops --checkout=d63d6b560994f51a9a794073effaee741785af95
+cm pull repo mlcommons@mlperf-automations --checkout=b051bb1858fc61de02fc68765fc11155fe457b2a
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_resnet50,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -53,12 +53,11 @@ cm run script \
 	--env.CM_RUN_SUBMISSION_CHECKER=yes \
 	--env.CM_TAR_SUBMISSION_DIR=yes \
 	--env.CM_MLPERF_SUBMISSION_GENERATION_STYLE=full \
-	--env.CM_MLPERF_INFERENCE_VERSION=4.1-dev \
+	--env.CM_MLPERF_INFERENCE_VERSION=5.0-dev \
 	--env.CM_RUN_MLPERF_INFERENCE_APP_DEFAULTS=r4.1-dev_default \
 	--env.CM_MLPERF_LOADGEN_ALL_MODES=yes \
-	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=4.1.23 \
-	--env.CM_MLPERF_LAST_RELEASE=v4.1 \
-	--env.CM_TMP_CURRENT_PATH=/home/arjun/actions-runner/_work/cm4mlops/cm4mlops \
+	--env.CM_MLPERF_INFERENCE_SOURCE_VERSION=5.0.4 \
+	--env.CM_MLPERF_LAST_RELEASE=v5.0 \
 	--env.CM_TMP_PIP_VERSION_STRING= \
 	--env.CM_MODEL=resnet50 \
 	--env.CM_MLPERF_CLEAN_SUBMISSION_DIR=yes \
@@ -71,7 +70,6 @@ cm run script \
 	--env.CM_OUTPUT_FOLDER_NAME=valid_results \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=no \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
-	--add_deps_recursive.submission-checker-src.tags=_branch.dev \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
 	--add_deps_recursive.coco2014-preprocessed.tags=_full \
@@ -86,7 +84,6 @@ cm run script \
 	--add_deps_recursive.get-mlperf-inference-results-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.get-mlperf-inference-submission-dir.tags=_version.r4_1-dev \
 	--add_deps_recursive.mlperf-inference-nvidia-scratch-space.tags=_version.r4_1-dev \
-	--adr.submission-checker-src.tags=_branch.dev \
 	--adr.compiler.tags=gcc \
 	--adr.coco2014-original.tags=_full \
 	--adr.coco2014-preprocessed.tags=_full \
@@ -105,17 +102,17 @@ cm run script \
 	--print_env=False \
 	--print_deps=False \
 	--dump_version_info=True \
-	--env.CM_DATASET_IMAGENET_PATH=/home/cmuser/CM/repos/local/cache/084455e7082544bf/imagenet-2012-val \
+	--env.CM_DATASET_IMAGENET_PATH=/home/cmuser/CM/repos/local/cache/6920a25715cb4646/imagenet-2012-val \
 	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
 	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/e066920512fd47b7
+	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/4db00c74da1e44c8
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
- you should simply reload gateoverflow@cm4mlops without checkout and clean CM cache as follows:*
+ you should simply reload mlcommons@mlperf-automations without checkout and clean CM cache as follows:*
 
 ```bash
-cm rm repo gateoverflow@cm4mlops
-cm pull repo gateoverflow@cm4mlops
+cm rm repo mlcommons@mlperf-automations
+cm pull repo mlcommons@mlperf-automations
 cm rm cache -f
 
 ```
@@ -130,4 +127,4 @@ Model Precision: int8
 `acc`: `76.064`, Required accuracy for closed division `>= 75.6954`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `598655.0`
+`90th percentile latency (ns)`: `304568.0`
