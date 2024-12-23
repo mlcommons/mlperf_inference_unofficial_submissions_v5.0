@@ -6,6 +6,126 @@
         "SystemType":"datacenter,edge",
         "SystemName":"RTX4090x2",
         "Platform":"RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
+        "Model":"retinanet",
+        "MlperfModel":"retinanet",
+        "Scenario":"MultiStream",
+        "Result":5.654438,
+        "Accuracy":"mAP: 37.356",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":2,
+        "Location":"open\/MLCommons\/results\/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config\/retinanet\/multistream",
+        "framework":"TensorRT",
+        "operating_system":"Ubuntu 20.04 (linux-6.8.0-49-generic-glibc2.31)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Latency (ms)",
+        "weight_data_types":"int8"
+    },
+    "1":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter,edge",
+        "SystemName":"RTX4090x2",
+        "Platform":"RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
+        "Model":"retinanet",
+        "MlperfModel":"retinanet",
+        "Scenario":"Server",
+        "Result":1415.0,
+        "Accuracy":"mAP: 37.338",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":2,
+        "Location":"open\/MLCommons\/results\/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config\/retinanet\/server",
+        "framework":"TensorRT",
+        "operating_system":"Ubuntu 20.04 (linux-6.8.0-49-generic-glibc2.31)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Queries\/s",
+        "weight_data_types":"int8"
+    },
+    "2":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter,edge",
+        "SystemName":"RTX4090x2",
+        "Platform":"RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
+        "Model":"retinanet",
+        "MlperfModel":"retinanet",
+        "Scenario":"SingleStream",
+        "Result":1.736348,
+        "Accuracy":"mAP: 37.366",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":2,
+        "Location":"open\/MLCommons\/results\/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config\/retinanet\/singlestream",
+        "framework":"TensorRT",
+        "operating_system":"Ubuntu 20.04 (linux-6.8.0-49-generic-glibc2.31)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Latency (ms)",
+        "weight_data_types":"int8"
+    },
+    "3":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter,edge",
+        "SystemName":"RTX4090x2",
+        "Platform":"RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
+        "Model":"retinanet",
+        "MlperfModel":"retinanet",
+        "Scenario":"Offline",
+        "Result":1735.67,
+        "Accuracy":"mAP: 37.332",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":2,
+        "Location":"open\/MLCommons\/results\/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config\/retinanet\/offline",
+        "framework":"TensorRT",
+        "operating_system":"Ubuntu 20.04 (linux-6.8.0-49-generic-glibc2.31)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"int8"
+    },
+    "4":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter,edge",
+        "SystemName":"RTX4090x2",
+        "Platform":"RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config",
         "Model":"resnet50",
         "MlperfModel":"resnet",
         "Scenario":"MultiStream",
@@ -29,7 +149,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "1":{
+    "5":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -59,7 +179,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "2":{
+    "6":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -89,7 +209,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "3":{
+    "7":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -119,7 +239,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "4":{
+    "8":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -149,7 +269,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"fp16"
     },
-    "5":{
+    "9":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -179,7 +299,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp16"
     },
-    "6":{
+    "10":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -209,7 +329,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "7":{
+    "11":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -239,7 +359,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "8":{
+    "12":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -269,7 +389,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "9":{
+    "13":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -299,7 +419,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "10":{
+    "14":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -329,7 +449,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "11":{
+    "15":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -359,7 +479,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "12":{
+    "16":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -389,7 +509,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "13":{
+    "17":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -419,7 +539,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "14":{
+    "18":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -449,7 +569,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "15":{
+    "19":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -479,7 +599,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "16":{
+    "20":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -509,7 +629,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "17":{
+    "21":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -539,7 +659,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "18":{
+    "22":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -569,7 +689,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"fp16"
     },
-    "19":{
+    "23":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -599,7 +719,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"fp16"
     },
-    "20":{
+    "24":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -629,7 +749,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp16"
     },
-    "21":{
+    "25":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -659,7 +779,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "22":{
+    "26":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -689,7 +809,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "23":{
+    "27":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -719,7 +839,7 @@
         "Units":"Queries\/s",
         "weight_data_types":"int8"
     },
-    "24":{
+    "28":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -749,7 +869,7 @@
         "Units":"Latency (ms)",
         "weight_data_types":"int8"
     },
-    "25":{
+    "29":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
