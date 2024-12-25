@@ -20,17 +20,17 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,generic-python-lib,_pip
     get-cuda-devices,7a3ede4d3558427a_(_with-pycuda_) --> get,generic-python-lib,_package.numpy
     app-mlperf-inference,d775cac873ee4231_(_nvidia,_sdxl,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream_) --> get,cuda-devices,_with-pycuda
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> detect,os
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> detect,cpu
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,sys-utils-cm
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,mlperf,inference,nvidia,scratch,space
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> detect,cpu
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,sys-utils-cm
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,mlperf,inference,nvidia,scratch,space
     get-generic-python-lib,94b62a682bc44791_(_mlperf_logging_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_mlperf_logging
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,mlcommons,inference,src
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_mlperf_logging
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,mlcommons,inference,src
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
     pull-git-repo,c23132ed65c4421d --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> pull,git,repo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> pull,git,repo
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     generate-mlperf-inference-user-conf,3af4475745964b93 --> detect,cpu
@@ -38,9 +38,9 @@ graph TD
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,mlcommons,inference,src
     get-mlperf-inference-sut-configs,c2fbf72009e2445b --> get,cache,dir,_name.mlperf-inference-sut-configs
     generate-mlperf-inference-user-conf,3af4475745964b93 --> get,sut,configs
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> generate,user-conf,mlperf,inference
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> generate,user-conf,mlperf,inference
     get-generic-python-lib,94b62a682bc44791_(_package.pycuda_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.pycuda
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.pycuda
     get-nvidia-mitten,1c045f2902374de9 --> detect,os
     get-nvidia-mitten,1c045f2902374de9 --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pycuda_) --> detect,os
@@ -53,9 +53,9 @@ graph TD
     get-nvidia-mitten,1c045f2902374de9 --> get,generic-python-lib,_pycuda
     get-git-repo,ed603e7292974f10_(_repo.https://github.com/NVIDIA/mitten_) --> detect,os
     get-nvidia-mitten,1c045f2902374de9 --> get,git,_repo.https://github.com/NVIDIA/mitten
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,nvidia,mitten
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,cuda,_cudnn
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,tensorrt
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,nvidia,mitten
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,cuda,_cudnn
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,tensorrt
     build-mlperf-inference-server-nvidia,f37403af5e9f4541_(_mlcommons_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     build-mlperf-inference-server-nvidia,f37403af5e9f4541_(_mlcommons_) --> detect,cpu
@@ -113,294 +113,294 @@ graph TD
     get-generic-python-lib,94b62a682bc44791_(_pycuda_) --> get,python3
     add-custom-nvidia-system,b2e6c46c6e8745a3_(_mlcommons_) --> get,generic-python-lib,_pycuda
     build-mlperf-inference-server-nvidia,f37403af5e9f4541_(_mlcommons_) --> add,custom,system,nvidia,_mlcommons
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> build,nvidia,inference,server,_mlcommons
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> detect,os
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> build,nvidia,inference,server,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> detect,cpu
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,sys-utils-cm
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,mlperf,inference,nvidia,scratch,space,_version.4_0
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> detect,cpu
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,sys-utils-cm
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,mlperf,inference,nvidia,scratch,space,_version.4_0
     get-generic-python-lib,94b62a682bc44791_(_mlperf_logging_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_mlperf_logging
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,mlcommons,inference,src
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_mlperf_logging
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,mlcommons,inference,src
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
     pull-git-repo,c23132ed65c4421d --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> pull,git,repo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> pull,git,repo
     get-generic-python-lib,94b62a682bc44791_(_package.pycuda_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.pycuda
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,nvidia,mitten
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,cuda,_cudnn
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,tensorrt
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> build,nvidia,inference,server,_mlcommons
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> detect,os
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.pycuda
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,nvidia,mitten
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,cuda,_cudnn
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,tensorrt
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> build,nvidia,inference,server,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> detect,cpu
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,sys-utils-cm
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,mlperf,inference,nvidia,scratch,space,_version.4_0
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> detect,cpu
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,sys-utils-cm
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,mlperf,inference,nvidia,scratch,space,_version.4_0
     get-generic-python-lib,94b62a682bc44791_(_mlperf_logging_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_mlperf_logging
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,mlcommons,inference,src
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_mlperf_logging
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,mlcommons,inference,src
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
     pull-git-repo,c23132ed65c4421d --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> pull,git,repo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> pull,git,repo
     get-generic-python-lib,94b62a682bc44791_(_package.pycuda_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.pycuda
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,nvidia,mitten
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.pycuda
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,nvidia,mitten
     get-generic-python-lib,94b62a682bc44791_(_package.diffusers_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.diffusers_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.diffusers_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.diffusers_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.diffusers
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.diffusers
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.transformers
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.transformers
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.accelerate
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.accelerate
     get-generic-python-lib,94b62a682bc44791_(_package.torchmetrics_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.torchmetrics_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.torchmetrics_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.torchmetrics_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.torchmetrics
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.torchmetrics
     get-generic-python-lib,94b62a682bc44791_(_package.torch-fidelity_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.torch-fidelity_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.torch-fidelity_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.torch-fidelity_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.torch-fidelity
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.torch-fidelity
     get-generic-python-lib,94b62a682bc44791_(_package.open_clip_torch_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.open_clip_torch_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.open_clip_torch_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.open_clip_torch_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.open_clip_torch
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.open_clip_torch
     get-generic-python-lib,94b62a682bc44791_(_package.opencv-python_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.opencv-python_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.opencv-python_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.opencv-python_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.opencv-python
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.opencv-python
     get-generic-python-lib,94b62a682bc44791_(_package.polygraphy_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.polygraphy_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.polygraphy_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.polygraphy_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.polygraphy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.polygraphy
     get-generic-python-lib,94b62a682bc44791_(_package.nvtx_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.nvtx_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.nvtx_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.nvtx_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.nvtx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.nvtx
     get-generic-python-lib,94b62a682bc44791_(_package.cuda-python_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.cuda-python_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.cuda-python_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.cuda-python_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.cuda-python
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.cuda-python
     get-generic-python-lib,94b62a682bc44791_(_package.ninja_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.ninja_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.ninja_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.ninja_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.ninja
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.ninja
     get-generic-python-lib,94b62a682bc44791_(_package.onnxruntime_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.onnxruntime_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.onnxruntime_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.onnxruntime_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.onnxruntime
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.onnxruntime
     get-generic-python-lib,94b62a682bc44791_(_package.colored_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.colored_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.colored_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.colored_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.colored
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.colored
     get-generic-python-lib,94b62a682bc44791_(_package.nvidia-ammo_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.nvidia-ammo_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.nvidia-ammo_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.nvidia-ammo_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.nvidia-ammo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.nvidia-ammo
     get-generic-python-lib,94b62a682bc44791_(_package.optimum_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.optimum_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.optimum_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.optimum_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.optimum
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.optimum
     get-generic-python-lib,94b62a682bc44791_(_package.onnx_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.onnx_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.onnx_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.onnx_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.onnx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.onnx
     get-generic-python-lib,94b62a682bc44791_(_package.scipy_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.scipy_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.scipy_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.scipy_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.scipy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.scipy
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> detect,cpu
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_pip_) --> get,python3
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,generic-python-lib,_pip
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.numpy
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> save,mlperf,inference,state
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> detect,os
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.numpy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> save,mlperf,inference,state
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> detect,os
     detect-cpu,586c8a43320142f7 --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> detect,cpu
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,sys-utils-cm
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,mlperf,inference,nvidia,scratch,space,_version.4_0
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> detect,cpu
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,sys-utils-cm
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,mlperf,inference,nvidia,scratch,space,_version.4_0
     get-generic-python-lib,94b62a682bc44791_(_mlperf_logging_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_mlperf_logging
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,mlcommons,inference,src
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_mlperf_logging
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,mlcommons,inference,src
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,nvidia,mlperf,inference,common-code,_mlcommons
     pull-git-repo,c23132ed65c4421d --> detect,os
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> pull,git,repo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> pull,git,repo
     get-generic-python-lib,94b62a682bc44791_(_package.pycuda_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.pycuda
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,nvidia,mitten
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.pycuda
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,nvidia,mitten
     get-generic-python-lib,94b62a682bc44791_(_package.diffusers_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.diffusers
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.diffusers
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.transformers
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.transformers
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.accelerate
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.accelerate
     get-generic-python-lib,94b62a682bc44791_(_package.torchmetrics_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.torchmetrics
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.torchmetrics
     get-generic-python-lib,94b62a682bc44791_(_package.torch-fidelity_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.torch-fidelity
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.torch-fidelity
     get-generic-python-lib,94b62a682bc44791_(_package.open_clip_torch_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.open_clip_torch
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.open_clip_torch
     get-generic-python-lib,94b62a682bc44791_(_package.opencv-python_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.opencv-python
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.opencv-python
     get-generic-python-lib,94b62a682bc44791_(_package.polygraphy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.polygraphy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.polygraphy
     get-generic-python-lib,94b62a682bc44791_(_package.nvtx_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.nvtx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.nvtx
     get-generic-python-lib,94b62a682bc44791_(_package.cuda-python_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.cuda-python
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.cuda-python
     get-generic-python-lib,94b62a682bc44791_(_package.ninja_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.ninja
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.ninja
     get-generic-python-lib,94b62a682bc44791_(_package.onnxruntime_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.onnxruntime
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.onnxruntime
     get-generic-python-lib,94b62a682bc44791_(_package.colored_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.colored
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.colored
     get-generic-python-lib,94b62a682bc44791_(_package.nvidia-ammo_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.nvidia-ammo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.nvidia-ammo
     get-generic-python-lib,94b62a682bc44791_(_package.optimum_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.optimum
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.optimum
     get-generic-python-lib,94b62a682bc44791_(_package.onnx_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.onnx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.onnx
     get-generic-python-lib,94b62a682bc44791_(_package.scipy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.scipy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.scipy
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> get,generic-python-lib,_package.numpy
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev_) --> save,mlperf,inference,state
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> reproduce,mlperf,inference,nvidia,harness,_download_model,_tensorrt,_sdxl,_cuda,_v4.1-dev
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> get,generic-python-lib,_package.numpy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev_) --> save,mlperf,inference,state
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> reproduce,mlperf,inference,nvidia,harness,_download_model,_sdxl,_cuda,_tensorrt,_v4.1-dev
     get-generic-python-lib,94b62a682bc44791_(_package.diffusers_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.diffusers
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.diffusers
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.transformers
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.transformers
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.accelerate
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.accelerate
     get-generic-python-lib,94b62a682bc44791_(_package.torchmetrics_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.torchmetrics
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.torchmetrics
     get-generic-python-lib,94b62a682bc44791_(_package.torch-fidelity_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.torch-fidelity
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.torch-fidelity
     get-generic-python-lib,94b62a682bc44791_(_package.open_clip_torch_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.open_clip_torch
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.open_clip_torch
     get-generic-python-lib,94b62a682bc44791_(_package.opencv-python_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.opencv-python
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.opencv-python
     get-generic-python-lib,94b62a682bc44791_(_package.polygraphy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.polygraphy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.polygraphy
     get-generic-python-lib,94b62a682bc44791_(_package.nvtx_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.nvtx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.nvtx
     get-generic-python-lib,94b62a682bc44791_(_package.cuda-python_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.cuda-python
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.cuda-python
     get-generic-python-lib,94b62a682bc44791_(_package.ninja_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.ninja
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.ninja
     get-generic-python-lib,94b62a682bc44791_(_package.onnxruntime_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.onnxruntime
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.onnxruntime
     get-generic-python-lib,94b62a682bc44791_(_package.colored_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.colored
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.colored
     get-generic-python-lib,94b62a682bc44791_(_package.nvidia-ammo_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.nvidia-ammo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.nvidia-ammo
     get-generic-python-lib,94b62a682bc44791_(_package.optimum_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.optimum
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.optimum
     get-generic-python-lib,94b62a682bc44791_(_package.onnx_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.onnx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.onnx
     get-generic-python-lib,94b62a682bc44791_(_package.scipy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.scipy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.scipy
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.numpy
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev_) --> save,mlperf,inference,state
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> reproduce,mlperf,inference,nvidia,harness,_build_engine,_tensorrt,_sdxl,_singlestream,_cuda,_batch_size.1,_v4.1-dev
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_tensorrt,_sdxl,_cuda,_v4.1-dev
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> get,generic-python-lib,_package.numpy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev_) --> save,mlperf,inference,state
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> reproduce,mlperf,inference,nvidia,harness,_build_engine,_sdxl,_cuda,_tensorrt,_singlestream,_batch_size.1,_v4.1-dev
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> reproduce,mlperf,inference,nvidia,harness,_preprocess_data,_sdxl,_cuda,_tensorrt,_v4.1-dev
     get-generic-python-lib,94b62a682bc44791_(_package.diffusers_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.diffusers
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.diffusers
     get-generic-python-lib,94b62a682bc44791_(_package.transformers_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.transformers
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.transformers
     get-generic-python-lib,94b62a682bc44791_(_package.accelerate_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.accelerate
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.accelerate
     get-generic-python-lib,94b62a682bc44791_(_package.torchmetrics_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.torchmetrics
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.torchmetrics
     get-generic-python-lib,94b62a682bc44791_(_package.torch-fidelity_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.torch-fidelity
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.torch-fidelity
     get-generic-python-lib,94b62a682bc44791_(_package.open_clip_torch_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.open_clip_torch
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.open_clip_torch
     get-generic-python-lib,94b62a682bc44791_(_package.opencv-python_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.opencv-python
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.opencv-python
     get-generic-python-lib,94b62a682bc44791_(_package.polygraphy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.polygraphy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.polygraphy
     get-generic-python-lib,94b62a682bc44791_(_package.nvtx_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.nvtx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.nvtx
     get-generic-python-lib,94b62a682bc44791_(_package.cuda-python_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.cuda-python
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.cuda-python
     get-generic-python-lib,94b62a682bc44791_(_package.ninja_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.ninja
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.ninja
     get-generic-python-lib,94b62a682bc44791_(_package.onnxruntime_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.onnxruntime
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.onnxruntime
     get-generic-python-lib,94b62a682bc44791_(_package.colored_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.colored
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.colored
     get-generic-python-lib,94b62a682bc44791_(_package.nvidia-ammo_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.nvidia-ammo
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.nvidia-ammo
     get-generic-python-lib,94b62a682bc44791_(_package.optimum_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.optimum
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.optimum
     get-generic-python-lib,94b62a682bc44791_(_package.onnx_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.onnx
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.onnx
     get-generic-python-lib,94b62a682bc44791_(_package.scipy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.scipy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.scipy
     get-generic-python-lib,94b62a682bc44791_(_package.numpy_) --> get,python3
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> get,generic-python-lib,_package.numpy
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> get,generic-python-lib,_package.numpy
     detect-cpu,586c8a43320142f7 --> detect,os
     benchmark-program,19f369ef47084895 --> detect,cpu
     benchmark-program-mlperf,cfff0132a8aa4018 --> benchmark-program,program
-    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_tensorrt,_sdxl,_singlestream,_cuda,_rtx_4090_) --> benchmark-mlperf
+    app-mlperf-inference-nvidia,bc3b17fb430f4732_(_run_harness,_sdxl,_cuda,_tensorrt,_singlestream,_rtx_4090_) --> benchmark-mlperf
