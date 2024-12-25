@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo mlcommons@mlperf-automations --checkout=225220c7d9bb7e66e5b9a1e1ebfc3e0180fbd094
+cm pull repo mlcommons@mlperf-automations --checkout=a90475d2de72bf0622cebe8d5ca8eb8c9d872fbd
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_sdxl,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -126,4 +126,4 @@ Model Precision: int8
 ### Accuracy Results 
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1423589126.0`
+`90th percentile latency (ns)`: `1420891263.0`
