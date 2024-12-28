@@ -3,29 +3,29 @@ Done (t=0.34s)
 creating index...
 index created!
 Loading and preparing results...
-DONE (t=11.19s)
+DONE (t=11.03s)
 creating index...
 index created!
 Running per image evaluation...
 Evaluate annotation type *bbox*
-DONE (t=102.69s).
+DONE (t=101.96s).
 Accumulating evaluation results...
-DONE (t=22.82s).
+DONE (t=22.66s).
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.373
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.522
- Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.404
  Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.023
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.124
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.125
  Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.413
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.419
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.598
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.627
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.082
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.344
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.677
-mAP=37.325%
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.599
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.628
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.083
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.345
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.678
+mAP=37.341%
 found 24784 results
 found 24781 images
 found 0 images with no results
 ignored 3 dupes
-hash=3bb28b37ff904f46c8224a90cd13ef266a112a1e86684835d552a2c067981846
+hash=c9e4016e512d0070c98795db1d1b98030ea27676c11d3ae1cbac38590f6ee50c

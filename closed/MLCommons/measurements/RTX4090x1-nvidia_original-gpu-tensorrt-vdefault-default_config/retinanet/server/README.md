@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo mlcommons@mlperf-automations --checkout=a90475d2de72bf0622cebe8d5ca8eb8c9d872fbd
+cm pull repo mlcommons@mlperf-automations --checkout=467517e4a572872046058e394a0d83512cfff38b
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_retinanet,_tensorrt,_cuda,_valid,_r4.1-dev_default,_server \
@@ -71,7 +71,7 @@ cm run script \
 	--env.CM_DOCKER_REUSE_EXISTING_CONTAINER=yes \
 	--env.CM_DOCKER_DETACHED_MODE=yes \
 	--env.CM_MLPERF_INFERENCE_RESULTS_DIR_=/home/arjun/gh_action_results/valid_results \
-	--env.CM_DOCKER_CONTAINER_ID=9b6c0a3b84af \
+	--env.CM_DOCKER_CONTAINER_ID=d17e4b1c6f16 \
 	--env.CM_MLPERF_LOADGEN_COMPLIANCE_TEST=TEST01 \
 	--add_deps_recursive.compiler.tags=gcc \
 	--add_deps_recursive.coco2014-original.tags=_full \
@@ -129,7 +129,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: int8
 
 ### Accuracy Results 
-`mAP`: `37.362`, Required accuracy for closed division `>= 37.1745`
+`mAP`: `37.355`, Required accuracy for closed division `>= 37.1745`
 
 ### Performance Results 
-`Scheduled samples per second`: `637.176`
+`Scheduled samples per second`: `637.174`
