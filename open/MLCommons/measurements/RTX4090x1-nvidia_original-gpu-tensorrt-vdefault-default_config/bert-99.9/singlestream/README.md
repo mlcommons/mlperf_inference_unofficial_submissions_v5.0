@@ -19,7 +19,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo mlcommons@mlperf-automations --checkout=a90475d2de72bf0622cebe8d5ca8eb8c9d872fbd
+cm pull repo mlcommons@mlperf-automations --checkout=467517e4a572872046058e394a0d83512cfff38b
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99.9,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -123,7 +123,7 @@ Platform: RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config
 Model Precision: fp16
 
 ### Accuracy Results 
-`F1`: `90.8811`, Required accuracy for closed division `>= 90.78313`
+`F1`: `90.87504`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `2167353.0`
+`90th percentile latency (ns)`: `2163963.0`
