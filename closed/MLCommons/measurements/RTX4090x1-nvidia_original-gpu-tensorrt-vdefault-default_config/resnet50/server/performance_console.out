@@ -1,8 +1,8 @@
-[2024-12-24 23:52:05,828 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
-[2024-12-24 23:52:05,943 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/resnet50/Server
-[2024-12-24 23:52:05,943 harness.py:326 INFO] Updated LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libjemalloc.so.2
-[2024-12-24 23:52:05,943 __init__.py:46 INFO] Running command: ./build/bin/harness_default --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/resnet50/server/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=2048 --test_mode="PerformanceOnly" --deque_timeout_usec=2000 --gpu_copy_streams=9 --gpu_inference_streams=2 --use_cuda_thread_per_device=true --use_deque_limit=true --gpu_batch_size=64 --map_path="data_maps/imagenet/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/c1d8c371d52d46a3/inference/mlperf.conf" --tensor_path="build/preprocessed_data/imagenet/ResNet50/int8_linear" --use_graphs=true --user_conf_path="/home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/1ef46f5e08994424ac6a9da0ab3a9b94.conf" --gpu_engines="./build/engines/RTX4090x1/resnet50/Server/resnet50-Server-gpu-b64-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario Server --model resnet50
-[2024-12-24 23:52:05,943 __init__.py:53 INFO] Overriding Environment
+[2024-12-27 22:25:58,978 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
+[2024-12-27 22:25:59,093 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/resnet50/Server
+[2024-12-27 22:25:59,093 harness.py:326 INFO] Updated LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+[2024-12-27 22:25:59,093 __init__.py:46 INFO] Running command: ./build/bin/harness_default --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/resnet50/server/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=2048 --test_mode="PerformanceOnly" --deque_timeout_usec=2000 --gpu_copy_streams=9 --gpu_inference_streams=2 --use_cuda_thread_per_device=true --use_deque_limit=true --gpu_batch_size=64 --map_path="data_maps/imagenet/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/c1d8c371d52d46a3/inference/mlperf.conf" --tensor_path="build/preprocessed_data/imagenet/ResNet50/int8_linear" --use_graphs=true --user_conf_path="/home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/961c62ec21c845998036252930bc152d.conf" --gpu_engines="./build/engines/RTX4090x1/resnet50/Server/resnet50-Server-gpu-b64-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario Server --model resnet50
+[2024-12-27 22:25:59,093 __init__.py:53 INFO] Overriding Environment
 ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
 ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
 benchmark : Benchmark.ResNet50
@@ -14,7 +14,7 @@ gpu_copy_streams : 9
 gpu_inference_streams : 2
 input_dtype : int8
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/dfbf240f980947f5/repo/closed/NVIDIA/build/logs/2024.12.24-23.52.05
+log_dir : /home/cmuser/CM/repos/local/cache/dfbf240f980947f5/repo/closed/NVIDIA/build/logs/2024.12.27-22.25.58
 map_path : data_maps/imagenet/val_map.txt
 mlperf_conf_path : /home/cmuser/CM/repos/local/cache/c1d8c371d52d46a3/inference/mlperf.conf
 precision : int8
@@ -28,7 +28,7 @@ test_mode : PerformanceOnly
 use_cuda_thread_per_device : True
 use_deque_limit : True
 use_graphs : True
-user_conf_path : /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/1ef46f5e08994424ac6a9da0ab3a9b94.conf
+user_conf_path : /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/961c62ec21c845998036252930bc152d.conf
 system_id : RTX4090x1
 config_name : RTX4090x1_resnet50_Server
 workload_setting : WorkloadSetting(HarnessType.LWIS, AccuracyTarget.k_99, PowerSetting.MaxP)
@@ -42,7 +42,7 @@ power_limit : None
 cpu_freq : None
 &&&& RUNNING Default_Harness # ./build/bin/harness_default
 [I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/c1d8c371d52d46a3/inference/mlperf.conf
-[I] user.conf path: /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/1ef46f5e08994424ac6a9da0ab3a9b94.conf
+[I] user.conf path: /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/961c62ec21c845998036252930bc152d.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
@@ -94,7 +94,7 @@ Setting up SUT.
 [I] Creating cuda thread: 0
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.15103s.
+Finished warmup. Ran for 5.15998s.
 Starting running actual test.
 ================================================
 MLPerf Results Summary
@@ -114,17 +114,17 @@ Early Stopping Result:
 ================================================
 Additional Stats
 ================================================
-Completed samples per second    : 35357.73
+Completed samples per second    : 35357.74
 
-Min latency (ns)                : 1961453
-Max latency (ns)                : 198554257
-Mean latency (ns)               : 3256881
-50.00 percentile latency (ns)   : 3133576
-90.00 percentile latency (ns)   : 3878938
-95.00 percentile latency (ns)   : 4016601
-97.00 percentile latency (ns)   : 4092876
-99.00 percentile latency (ns)   : 4208648
-99.90 percentile latency (ns)   : 33872709
+Min latency (ns)                : 1860473
+Max latency (ns)                : 106261620
+Mean latency (ns)               : 3176957
+50.00 percentile latency (ns)   : 3131533
+90.00 percentile latency (ns)   : 3876644
+95.00 percentile latency (ns)   : 4013350
+97.00 percentile latency (ns)   : 4089126
+99.00 percentile latency (ns)   : 4202696
+99.90 percentile latency (ns)   : 5615157
 
 ================================================
 Test Parameters Used
@@ -154,38 +154,48 @@ No warnings encountered during test.
 No errors encountered during test.
 Finished running actual test.
 Device Device:0.GPU processed:
+  1 batches of size 2
+  1 batches of size 3
+  2 batches of size 5
+  1 batches of size 6
+  1 batches of size 7
+  1 batches of size 9
+  1 batches of size 15
+  1 batches of size 18
+  1 batches of size 31
   1 batches of size 34
-  1 batches of size 37
+  1 batches of size 36
+  2 batches of size 39
   5 batches of size 40
-  9 batches of size 41
-  5 batches of size 42
-  23 batches of size 43
-  25 batches of size 44
-  38 batches of size 45
-  76 batches of size 46
-  92 batches of size 47
-  152 batches of size 48
-  225 batches of size 49
-  351 batches of size 50
-  470 batches of size 51
-  683 batches of size 52
-  926 batches of size 53
-  1232 batches of size 54
-  1586 batches of size 55
-  2089 batches of size 56
-  2748 batches of size 57
-  3360 batches of size 58
-  4142 batches of size 59
-  4961 batches of size 60
+  4 batches of size 41
+  9 batches of size 42
+  19 batches of size 43
+  39 batches of size 44
+  42 batches of size 45
+  71 batches of size 46
+  88 batches of size 47
+  159 batches of size 48
+  215 batches of size 49
+  356 batches of size 50
+  452 batches of size 51
+  701 batches of size 52
+  906 batches of size 53
+  1229 batches of size 54
+  1630 batches of size 55
+  2085 batches of size 56
+  2663 batches of size 57
+  3374 batches of size 58
+  4110 batches of size 59
+  5072 batches of size 60
   5956 batches of size 61
-  7122 batches of size 62
-  8097 batches of size 63
-  290290 batches of size 64
+  7009 batches of size 62
+  8193 batches of size 63
+  290271 batches of size 64
   Memcpy Calls: 0
   PerSampleCudaMemcpy Calls: 21214751
   BatchedCudaMemcpy Calls: 0
 &&&& PASSED Default_Harness # ./build/bin/harness_default
-[2024-12-25 00:02:24,721 run_harness.py:166 INFO] Result: result_scheduled_samples_per_sec: 35357.9, Result is VALID
+[2024-12-27 22:36:17,663 run_harness.py:166 INFO] Result: result_scheduled_samples_per_sec: 35357.9, Result is VALID
  
 ======================== Result summaries: ========================
 
