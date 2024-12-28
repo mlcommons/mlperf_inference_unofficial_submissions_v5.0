@@ -154,7 +154,7 @@
     "UsedModel": "retinanet",
     "Model": "retinanet",
     "Scenario": "MultiStream",
-    "Accuracy": "mAP: 37.325",
+    "Accuracy": "mAP: 37.341",
     "Nodes": 1,
     "Processor": "13th Gen Intel(R) Core(TM) i9-13900K",
     "host_processors_per_node": 1,
@@ -176,7 +176,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 10.91103,
+    "Performance_Result": 10.870502,
     "Performance_Units": "Latency (ms)"
   },
   {
@@ -190,7 +190,7 @@
     "UsedModel": "retinanet",
     "Model": "retinanet",
     "Scenario": "Offline",
-    "Accuracy": "mAP: 37.321",
+    "Accuracy": "mAP: 37.376",
     "Nodes": 1,
     "Processor": "13th Gen Intel(R) Core(TM) i9-13900K",
     "host_processors_per_node": 1,
@@ -212,7 +212,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 863.829,
+    "Performance_Result": 863.003,
     "Performance_Units": "Samples/s"
   },
   {
@@ -226,7 +226,7 @@
     "UsedModel": "retinanet",
     "Model": "retinanet",
     "Scenario": "Server",
-    "Accuracy": "mAP: 37.362",
+    "Accuracy": "mAP: 37.355",
     "Nodes": 1,
     "Processor": "13th Gen Intel(R) Core(TM) i9-13900K",
     "host_processors_per_node": 1,
@@ -248,7 +248,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 637.176,
+    "Performance_Result": 637.174,
     "Performance_Units": "Queries/s"
   },
   {
@@ -262,7 +262,7 @@
     "UsedModel": "retinanet",
     "Model": "retinanet",
     "Scenario": "SingleStream",
-    "Accuracy": "mAP: 37.335",
+    "Accuracy": "mAP: 37.331",
     "Nodes": 1,
     "Processor": "13th Gen Intel(R) Core(TM) i9-13900K",
     "host_processors_per_node": 1,
@@ -284,7 +284,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.745946,
+    "Performance_Result": 1.750733,
     "Performance_Units": "Latency (ms)"
   },
   {
