@@ -1,6 +1,6 @@
-| Model     | Scenario     |   Accuracy |   Throughput | Latency (in ms)   | Power Efficiency (in samples/J)   | TEST01   |
-|-----------|--------------|------------|--------------|-------------------|-----------------------------------|----------|
-| retinanet | server       |     37.355 |      637.174 | -                 |                                   | passed   |
-| retinanet | multistream  |     37.341 |      735.903 | 10.871            |                                   | passed   |
-| retinanet | offline      |     37.376 |      863.003 | -                 |                                   | passed   |
-| retinanet | singlestream |     37.331 |      571.102 | 1.751             |                                   | passed   |
+| Model    | Scenario     |   Accuracy |   Throughput | Latency (in ms)   | Power Efficiency (in samples/J)   | TEST01   | TEST04   |
+|----------|--------------|------------|--------------|-------------------|-----------------------------------|----------|----------|
+| resnet50 | server       |     76.078 |     35357.7  | -                 |                                   | passed   | passed   |
+| resnet50 | multistream  |     76.064 |     17094    | 0.468             |                                   | passed   | passed   |
+| resnet50 | offline      |     76.078 |     43769.9  | -                 |                                   | passed   | passed   |
+| resnet50 | singlestream |     76.064 |      3610.11 | 0.277             |                                   | passed   | passed   |
