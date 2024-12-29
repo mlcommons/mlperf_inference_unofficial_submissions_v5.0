@@ -4,15 +4,15 @@ MLPerf Results Summary
 SUT name : PySUT
 Scenario : SingleStream
 Mode     : PerformanceOnly
-90th percentile latency (ns) : 1423422235
+90th percentile latency (ns) : 1421325902
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
   Early stopping satisfied: Yes
 Early Stopping Result:
- * Processed at least 64 queries (424).
+ * Processed at least 64 queries (425).
  * Would discard 27 highest latency queries.
- * Early stopping 90th percentile estimate: 1423638707
+ * Early stopping 90th percentile estimate: 1421673104
  * Not enough queries processed for 99th percentile
  early stopping estimate (would need to process at
  least 662 total queries).
@@ -20,18 +20,18 @@ Early Stopping Result:
 ================================================
 Additional Stats
 ================================================
-QPS w/ loadgen overhead         : 0.70
-QPS w/o loadgen overhead        : 0.70
+QPS w/ loadgen overhead         : 0.71
+QPS w/o loadgen overhead        : 0.71
 
-Min latency (ns)                : 1400471398
-Max latency (ns)                : 1425092295
-Mean latency (ns)               : 1419651686
-50.00 percentile latency (ns)   : 1421227822
-90.00 percentile latency (ns)   : 1423422235
-95.00 percentile latency (ns)   : 1423765652
-97.00 percentile latency (ns)   : 1424000200
-99.00 percentile latency (ns)   : 1424302215
-99.90 percentile latency (ns)   : 1425092295
+Min latency (ns)                : 1399351440
+Max latency (ns)                : 1424006568
+Mean latency (ns)               : 1418027570
+50.00 percentile latency (ns)   : 1419472339
+90.00 percentile latency (ns)   : 1421325902
+95.00 percentile latency (ns)   : 1421878868
+97.00 percentile latency (ns)   : 1422338237
+99.00 percentile latency (ns)   : 1423127686
+99.90 percentile latency (ns)   : 1424006568
 
 ================================================
 Test Parameters Used
