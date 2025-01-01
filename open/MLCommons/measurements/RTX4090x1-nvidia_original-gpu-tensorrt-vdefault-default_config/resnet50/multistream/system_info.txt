@@ -2,10 +2,10 @@ Platform Details
 
 ------------------------------------------------------------
 1. uname -a
-Linux 2a6a3464ad42 6.8.0-51-generic #52-Ubuntu SMP PREEMPT_DYNAMIC Thu Dec  5 13:09:44 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Linux bec71595fc42 6.8.0-51-generic #52-Ubuntu SMP PREEMPT_DYNAMIC Thu Dec  5 13:09:44 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ------------------------------------------------------------
 2. w
- 00:37:22 up 6 days, 10:30,  0 users,  load average: 1.01, 1.02, 1.00
+ 09:50:53 up 13 days, 19:43,  0 users,  load average: 8.35, 9.50, 16.06
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 ------------------------------------------------------------
 3. Username
@@ -40,7 +40,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 3226.111
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -96,7 +96,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 5489.211
+cpu MHz		: 5476.790
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -124,7 +124,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5488.645
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -152,7 +152,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5486.737
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -180,7 +180,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 5397.675
+cpu MHz		: 5489.475
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -236,7 +236,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 5126.050
+cpu MHz		: 400.000
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -264,7 +264,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 5262.304
+cpu MHz		: 5209.237
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -292,7 +292,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5202.496
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -348,7 +348,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 3640.092
+cpu MHz		: 5286.767
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -376,7 +376,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 3530.331
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -404,7 +404,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 4237.595
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -432,7 +432,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 5239.853
+cpu MHz		: 400.000
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -488,7 +488,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5402.497
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -516,7 +516,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5461.655
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -544,7 +544,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 5386.313
+cpu MHz		: 5483.904
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -600,7 +600,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5487.854
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -656,7 +656,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5476.667
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -712,7 +712,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 3800.620
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -740,7 +740,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 5270.714
+cpu MHz		: 400.000
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -768,7 +768,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 3841.209
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -796,7 +796,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5229.635
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -852,7 +852,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 5221.417
+cpu MHz		: 400.000
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -908,7 +908,7 @@ model		: 97
 model name	: AMD Ryzen 9 7950X 16-Core Processor
 stepping	: 2
 microcode	: 0xa601206
-cpu MHz		: 400.000
+cpu MHz		: 5227.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 32
@@ -946,7 +946,7 @@ CPU family:                           25
 Model:                                97
 Model name:                           AMD Ryzen 9 7950X 16-Core Processor
 Stepping:                             2
-CPU MHz:                              400.000
+CPU MHz:                              3226.111
 CPU max MHz:                          5881.0000
 CPU min MHz:                          400.0000
 BogoMIPS:                             8982.90
@@ -976,49 +976,49 @@ Flags:                                fpu vme de pse tsc msr pae mce cx8 apic se
 available: 1 nodes (0)
 node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 node 0 size: 128007 MB
-node 0 free: 26449 MB
+node 0 free: 10099 MB
 node distances:
 node   0 
   0:  10 
 ------------------------------------------------------------
 9. /proc/meminfo
 MemTotal:       131080068 kB
-MemFree:        27084660 kB
-MemAvailable:   127533888 kB
-Buffers:         2618264 kB
-Cached:         95786576 kB
-SwapCached:       119020 kB
-Active:         28196288 kB
-Inactive:       70569692 kB
-Active(anon):     359664 kB
-Inactive(anon):    40528 kB
-Active(file):   27836624 kB
-Inactive(file): 70529164 kB
+MemFree:        10338352 kB
+MemAvailable:   57737092 kB
+Buffers:           15372 kB
+Cached:         47052800 kB
+SwapCached:     67681200 kB
+Active:         55891384 kB
+Inactive:       60971372 kB
+Active(anon):   30874416 kB
+Inactive(anon): 38926248 kB
+Active(file):   25016968 kB
+Inactive(file): 22045124 kB
 Unevictable:           0 kB
 Mlocked:               0 kB
 SwapTotal:      683591672 kB
-SwapFree:       683135880 kB
+SwapFree:       503833560 kB
 Zswap:                 0 kB
 Zswapped:              0 kB
-Dirty:                84 kB
-Writeback:            24 kB
-AnonPages:        350444 kB
-Mapped:           267784 kB
-Shmem:             39052 kB
-KReclaimable:    3330928 kB
-Slab:            4054304 kB
-SReclaimable:    3330928 kB
-SUnreclaim:       723376 kB
-KernelStack:       16352 kB
-PageTables:        19788 kB
+Dirty:               108 kB
+Writeback:             0 kB
+AnonPages:      69743812 kB
+Mapped:            65292 kB
+Shmem:              6016 kB
+KReclaimable:    1584136 kB
+Slab:            2096112 kB
+SReclaimable:    1584136 kB
+SUnreclaim:       511976 kB
+KernelStack:       21408 kB
+PageTables:       387184 kB
 SecPageTables:         0 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    749131704 kB
-Committed_AS:    4986900 kB
+Committed_AS:   190622584 kB
 VmallocTotal:   34359738367 kB
-VmallocUsed:      252628 kB
+VmallocUsed:      260108 kB
 VmallocChunk:          0 kB
 Percpu:            38400 kB
 HardwareCorrupted:     0 kB
@@ -1034,9 +1034,9 @@ HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
 Hugetlb:               0 kB
-DirectMap4k:    20658592 kB
-DirectMap2M:    109584384 kB
-DirectMap1G:     4194304 kB
+DirectMap4k:    36536736 kB
+DirectMap2M:    95803392 kB
+DirectMap1G:     2097152 kB
 ------------------------------------------------------------
 10. who -r
 ------------------------------------------------------------
@@ -1290,16 +1290,16 @@ dev.tty.ldisc_autoload = 1
 dev.tty.legacy_tiocsti = 0
 fs.aio-max-nr = 65536
 fs.aio-nr = 0
-fs.dentry-state = 1332263	917667	45	0	225578	0
+fs.dentry-state = 165402	89865	45	0	8424	0
 fs.dir-notify-enable = 1
 fs.epoll.max_user_watches = 29163675
 fs.fanotify.max_queued_events = 16384
 fs.fanotify.max_user_groups = 128
 fs.fanotify.max_user_marks = 1048576
 fs.file-max = 9223372036854775807
-fs.file-nr = 5376	0	9223372036854775807
-fs.inode-nr = 1121004	15671
-fs.inode-state = 1121004	15671	0	0	0	0	0
+fs.file-nr = 6336	0	9223372036854775807
+fs.inode-nr = 229651	66261
+fs.inode-state = 229651	66261	0	0	0	0	0
 fs.inotify.max_queued_events = 16384
 fs.inotify.max_user_instances = 128
 fs.inotify.max_user_watches = 65536
@@ -1327,7 +1327,7 @@ fs.quota.drops = 0
 fs.quota.free_dquots = 0
 fs.quota.lookups = 0
 fs.quota.reads = 0
-fs.quota.syncs = 540
+fs.quota.syncs = 784
 fs.quota.writes = 0
 fs.suid_dumpable = 2
 fs.verity.require_signatures = 0
@@ -1354,7 +1354,7 @@ kernel.ftrace_dump_on_oops = 0
 kernel.ftrace_enabled = 1
 kernel.hardlockup_all_cpu_backtrace = 0
 kernel.hardlockup_panic = 0
-kernel.hostname = 2a6a3464ad42
+kernel.hostname = bec71595fc42
 kernel.hotplug = 
 kernel.hung_task_all_cpu_backtrace = 0
 kernel.hung_task_check_count = 4194304
@@ -1386,7 +1386,7 @@ kernel.msgmnb = 16384
 kernel.msgmni = 32000
 kernel.ngroups_max = 65536
 kernel.nmi_watchdog = 1
-kernel.ns_last_pid = 25458
+kernel.ns_last_pid = 25491
 kernel.numa_balancing = 0
 kernel.numa_balancing_promote_rate_limit_MBps = 65536
 kernel.oops_all_cpu_backtrace = 0
@@ -1417,13 +1417,13 @@ kernel.printk_devkmsg = on
 kernel.printk_ratelimit = 5
 kernel.printk_ratelimit_burst = 10
 kernel.pty.max = 4096
-kernel.pty.nr = 10
+kernel.pty.nr = 19
 kernel.pty.reserve = 1024
 kernel.random.boot_id = d972d8ae-c9e1-46e1-875d-9f419475517a
 kernel.random.entropy_avail = 256
 kernel.random.poolsize = 256
 kernel.random.urandom_min_reseed_secs = 60
-kernel.random.uuid = bdef5c46-3ded-4aa8-8d1a-c5bc852c2738
+kernel.random.uuid = e49113aa-2004-4d35-aa1d-3380930623a0
 kernel.random.write_wakeup_threshold = 256
 kernel.randomize_va_space = 2
 kernel.real-root-dev = 0
@@ -2243,7 +2243,7 @@ loop17        7:17   0  65.5M  1 loop
 loop18        7:18   0  10.8M  1 loop 
 loop19        7:19   0  89.4M  1 loop 
 loop20        7:20   0  91.7M  1 loop 
-loop22        7:22   0  89.4M  1 loop 
+loop21        7:21   0  89.4M  1 loop 
 loop23        7:23   0   9.1M  1 loop 
 loop24        7:24   0 150.6M  1 loop 
 loop25        7:25   0  10.8M  1 loop 

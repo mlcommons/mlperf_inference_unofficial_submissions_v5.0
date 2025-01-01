@@ -1,9 +1,9 @@
-[2024-12-29 02:34:24,192 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
-[2024-12-29 02:34:24,267 harness.py:249 INFO] The harness will load 2 plugins: ['build/plugins/NMSOptPlugin/libnmsoptplugin.so', 'build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so']
-[2024-12-29 02:34:24,267 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/retinanet/Server
-[2024-12-29 02:34:24,267 harness.py:326 INFO] Updated LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libjemalloc.so.2
-[2024-12-29 02:34:24,267 __init__.py:46 INFO] Running command: ./build/bin/harness_default --plugins="build/plugins/NMSOptPlugin/libnmsoptplugin.so,build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet/server/accuracy" --logfile_prefix="mlperf_log_" --performance_sample_count=64 --test_mode="AccuracyOnly" --gpu_copy_streams=2 --gpu_inference_streams=2 --use_cuda_thread_per_device=true --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/open-images-v6-mlperf/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/c1d8c371d52d46a3/inference/mlperf.conf" --tensor_path="build/preprocessed_data/open-images-v6-mlperf/validation/Retinanet/int8_linear" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/d2c941db985646ffad8486423f0de083.conf" --gpu_engines="./build/engines/RTX4090x1/retinanet/Server/retinanet-Server-gpu-b8-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario Server --model retinanet --response_postprocess openimageeffnms
-[2024-12-29 02:34:24,267 __init__.py:53 INFO] Overriding Environment
+[2025-01-01 02:34:22,724 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x1
+[2025-01-01 02:34:22,801 harness.py:249 INFO] The harness will load 2 plugins: ['build/plugins/NMSOptPlugin/libnmsoptplugin.so', 'build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so']
+[2025-01-01 02:34:22,802 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x1_TRT/retinanet/Server
+[2025-01-01 02:34:22,802 harness.py:326 INFO] Updated LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+[2025-01-01 02:34:22,802 __init__.py:46 INFO] Running command: ./build/bin/harness_default --plugins="build/plugins/NMSOptPlugin/libnmsoptplugin.so,build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so" --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet/server/accuracy" --logfile_prefix="mlperf_log_" --performance_sample_count=64 --test_mode="AccuracyOnly" --gpu_copy_streams=2 --gpu_inference_streams=2 --use_cuda_thread_per_device=true --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/open-images-v6-mlperf/val_map.txt" --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/c1d8c371d52d46a3/inference/mlperf.conf" --tensor_path="build/preprocessed_data/open-images-v6-mlperf/validation/Retinanet/int8_linear" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/dc423c05aab0472bafeb537477df1d8f.conf" --gpu_engines="./build/engines/RTX4090x1/retinanet/Server/retinanet-Server-gpu-b8-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario Server --model retinanet --response_postprocess openimageeffnms
+[2025-01-01 02:34:22,802 __init__.py:53 INFO] Overriding Environment
 ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
 ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
 benchmark : Benchmark.Retinanet
@@ -14,7 +14,7 @@ gpu_copy_streams : 2
 gpu_inference_streams : 2
 input_dtype : int8
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/dfbf240f980947f5/repo/closed/NVIDIA/build/logs/2024.12.29-02.34.23
+log_dir : /home/cmuser/CM/repos/local/cache/dfbf240f980947f5/repo/closed/NVIDIA/build/logs/2025.01.01-02.34.21
 map_path : data_maps/open-images-v6-mlperf/val_map.txt
 mlperf_conf_path : /home/cmuser/CM/repos/local/cache/c1d8c371d52d46a3/inference/mlperf.conf
 precision : int8
@@ -28,7 +28,7 @@ test_mode : AccuracyOnly
 use_cuda_thread_per_device : True
 use_deque_limit : True
 use_graphs : False
-user_conf_path : /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/d2c941db985646ffad8486423f0de083.conf
+user_conf_path : /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/dc423c05aab0472bafeb537477df1d8f.conf
 system_id : RTX4090x1
 config_name : RTX4090x1_retinanet_Server
 workload_setting : WorkloadSetting(HarnessType.LWIS, AccuracyTarget.k_99, PowerSetting.MaxP)
@@ -42,11 +42,11 @@ power_limit : None
 cpu_freq : None
 &&&& RUNNING Default_Harness # ./build/bin/harness_default
 [I] mlperf.conf path: /home/cmuser/CM/repos/local/cache/c1d8c371d52d46a3/inference/mlperf.conf
-[I] user.conf path: /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/d2c941db985646ffad8486423f0de083.conf
+[I] user.conf path: /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/dc423c05aab0472bafeb537477df1d8f.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
-[I] [TRT] Loaded engine size: 74 MiB
+[I] [TRT] Loaded engine size: 73 MiB
 [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +6, GPU +10, now: CPU 122, GPU 883 (MiB)
 [I] [TRT] [MemUsageChange] Init cuDNN: CPU +2, GPU +10, now: CPU 124, GPU 893 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +68, now: CPU 0, GPU 68 (MiB)
@@ -63,7 +63,7 @@ Setting up SUT.
 [I] Creating cuda thread: 0
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.14371s.
+Finished warmup. Ran for 5.15118s.
 Starting running actual test.
 
 No warnings encountered during test.
@@ -71,46 +71,46 @@ No warnings encountered during test.
 No errors encountered during test.
 Finished running actual test.
 Device Device:0.GPU processed:
-  193 batches of size 1
-  118 batches of size 2
-  309 batches of size 3
-  572 batches of size 4
-  1092 batches of size 5
-  524 batches of size 6
-  651 batches of size 7
-  997 batches of size 8
+  188 batches of size 1
+  100 batches of size 2
+  326 batches of size 3
+  559 batches of size 4
+  1142 batches of size 5
+  482 batches of size 6
+  663 batches of size 7
+  992 batches of size 8
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 24588
-  BatchedCudaMemcpy Calls: 193
+  PerSampleCudaMemcpy Calls: 24593
+  BatchedCudaMemcpy Calls: 188
 &&&& PASSED Default_Harness # ./build/bin/harness_default
-[2024-12-29 02:35:27,953 run_harness.py:166 INFO] Result: Accuracy run detected.
-[2024-12-29 02:35:27,953 __init__.py:46 INFO] Running command: python3 /home/cmuser/CM/repos/local/cache/dfbf240f980947f5/repo/closed/NVIDIA/build/inference/vision/classification_and_detection/tools/accuracy-openimages.py --mlperf-accuracy-file /cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet/server/accuracy/mlperf_log_accuracy.json --openimages-dir /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data/open-images-v6-mlperf --output-file build/retinanet-results.json
+[2025-01-01 02:35:23,066 run_harness.py:166 INFO] Result: Accuracy run detected.
+[2025-01-01 02:35:23,066 __init__.py:46 INFO] Running command: python3 /home/cmuser/CM/repos/local/cache/dfbf240f980947f5/repo/closed/NVIDIA/build/inference/vision/classification_and_detection/tools/accuracy-openimages.py --mlperf-accuracy-file /cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet/server/accuracy/mlperf_log_accuracy.json --openimages-dir /home/cmuser/CM/repos/local/cache/5b2b0cc913a4453a/preprocessed_data/open-images-v6-mlperf --output-file build/retinanet-results.json
 loading annotations into memory...
-Done (t=0.32s)
+Done (t=0.33s)
 creating index...
 index created!
 Loading and preparing results...
-DONE (t=11.40s)
+DONE (t=12.85s)
 creating index...
 index created!
 Running per image evaluation...
 Evaluate annotation type *bbox*
-DONE (t=103.80s).
+DONE (t=103.18s).
 Accumulating evaluation results...
-DONE (t=23.04s).
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.373
+DONE (t=23.12s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.374
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.522
- Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.403
- Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.404
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.022
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.125
  Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.413
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.419
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.599
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.628
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.082
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.345
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.677
-mAP=37.334%
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.081
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.344
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.678
+mAP=37.353%
  
 ======================== Result summaries: ========================
 
