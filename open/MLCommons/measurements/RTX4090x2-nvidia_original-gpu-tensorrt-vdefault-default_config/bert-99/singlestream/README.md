@@ -1,5 +1,3 @@
-This experiment is generated using the [MLCommons Collective Mind automation framework (CM)](https://github.com/mlcommons/cm4mlops).
-
 *Check [CM MLPerf docs](https://docs.mlcommons.org/inference) for more details.*
 
 ## Host platform
@@ -19,7 +17,7 @@ pip install -U cmind
 
 cm rm cache -f
 
-cm pull repo mlcommons@mlperf-automations --checkout=c52956b27fa8d06ec8db53f885e1f05021e379e9
+cm pull repo mlcommons@mlperf-automations --checkout=48ea6b46a7606d1c5d74909e94d5599dbe7ff9e1
 
 cm run script \
 	--tags=app,mlperf,inference,generic,_nvidia,_bert-99,_tensorrt,_cuda,_valid,_r4.1-dev_default,_singlestream \
@@ -41,8 +39,8 @@ cm run script \
 	--env.CM_RUN_MLPERF_SUBMISSION_PREPROCESSOR=yes \
 	--env.CM_MLPERF_INFERENCE_PULL_CODE_CHANGES=yes \
 	--env.CM_MLPERF_INFERENCE_PULL_SRC_CHANGES=yes \
-	--env.OUTPUT_BASE_DIR=/home/arjun/gh_action_results \
-	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/home/arjun/gh_action_submissions \
+	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
+	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
 	--env.CM_MLPERF_SUBMITTER=MLCommons \
 	--env.CM_USE_DATASET_FROM_HOST=yes \
 	--env.CM_USE_MODEL_FROM_HOST=yes \
@@ -101,10 +99,7 @@ cm run script \
 	--v=False \
 	--print_env=False \
 	--print_deps=False \
-	--dump_version_info=True \
-	--env.OUTPUT_BASE_DIR=/cm-mount/home/arjun/gh_action_results \
-	--env.CM_MLPERF_INFERENCE_SUBMISSION_DIR=/cm-mount/home/arjun/gh_action_submissions \
-	--env.MLPERF_SCRATCH_PATH=/home/cmuser/CM/repos/local/cache/4db00c74da1e44c8
+	--dump_version_info=True
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload mlcommons@mlperf-automations without checkout and clean CM cache as follows:*
@@ -126,4 +121,4 @@ Model Precision: int8
 `F1`: `90.26682`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1030838.0`
+`90th percentile latency (ns)`: `1033728.0`
