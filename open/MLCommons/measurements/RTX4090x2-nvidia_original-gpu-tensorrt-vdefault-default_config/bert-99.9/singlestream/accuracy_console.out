@@ -1,7 +1,7 @@
-[2024-12-28 21:16:03,489 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x2
-[2024-12-28 21:16:03,810 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x2_TRT/bert-99.9/SingleStream
-[2024-12-28 21:16:03,810 __init__.py:46 INFO] Running command: ./build/bin/harness_bert --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/singlestream/accuracy" --logfile_prefix="mlperf_log_" --performance_sample_count=10833 --test_mode="AccuracyOnly" --gpu_batch_size=1 --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/11daf5a55e5449f4/inference/mlperf.conf" --tensor_path="build/preprocessed_data/squad_tokenized/input_ids.npy,build/preprocessed_data/squad_tokenized/segment_ids.npy,build/preprocessed_data/squad_tokenized/input_mask.npy" --use_graphs=true --user_conf_path="/home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/82adddb918304bf6bafa1733ccc34249.conf" --gpu_inference_streams=1 --gpu_copy_streams=1 --gpu_engines="./build/engines/RTX4090x2/bert/SingleStream/bert-SingleStream-gpu-fp16_S_384_B_1_P_1_vs.custom_k_99_9_MaxP.plan" --scenario SingleStream --model bert
-[2024-12-28 21:16:03,810 __init__.py:53 INFO] Overriding Environment
+[2024-12-31 21:18:23,176 main.py:229 INFO] Detected system ID: KnownSystem.RTX4090x2
+[2024-12-31 21:18:23,490 generate_conf_files.py:107 INFO] Generated measurements/ entries for RTX4090x2_TRT/bert-99.9/SingleStream
+[2024-12-31 21:18:23,490 __init__.py:46 INFO] Running command: ./build/bin/harness_bert --logfile_outdir="/cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/singlestream/accuracy" --logfile_prefix="mlperf_log_" --performance_sample_count=10833 --test_mode="AccuracyOnly" --gpu_batch_size=1 --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/fe9ab9b6109f4c4b/inference/mlperf.conf" --tensor_path="build/preprocessed_data/squad_tokenized/input_ids.npy,build/preprocessed_data/squad_tokenized/segment_ids.npy,build/preprocessed_data/squad_tokenized/input_mask.npy" --use_graphs=true --user_conf_path="/home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e16570f24b33401c908c3ca2c7f3a28b.conf" --gpu_inference_streams=1 --gpu_copy_streams=1 --gpu_engines="./build/engines/RTX4090x2/bert/SingleStream/bert-SingleStream-gpu-fp16_S_384_B_1_P_1_vs.custom_k_99_9_MaxP.plan" --scenario SingleStream --model bert
+[2024-12-31 21:18:23,490 __init__.py:53 INFO] Overriding Environment
 benchmark : Benchmark.BERT
 buffer_manager_thread_count : 0
 coalesced_tensor : True
@@ -11,8 +11,8 @@ gpu_copy_streams : 1
 gpu_inference_streams : 1
 input_dtype : int32
 input_format : linear
-log_dir : /home/cmuser/CM/repos/local/cache/94a57f78972843c6/repo/closed/NVIDIA/build/logs/2024.12.28-21.16.02
-mlperf_conf_path : /home/cmuser/CM/repos/local/cache/11daf5a55e5449f4/inference/mlperf.conf
+log_dir : /home/cmuser/CM/repos/local/cache/94a57f78972843c6/repo/closed/NVIDIA/build/logs/2024.12.31-21.18.21
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/fe9ab9b6109f4c4b/inference/mlperf.conf
 precision : fp16
 preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/4db00c74da1e44c8/preprocessed_data
 scenario : Scenario.SingleStream
@@ -22,7 +22,7 @@ tensor_path : build/preprocessed_data/squad_tokenized/input_ids.npy,build/prepro
 test_mode : AccuracyOnly
 use_graphs : True
 use_small_tile_gemm_plugin : False
-user_conf_path : /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/82adddb918304bf6bafa1733ccc34249.conf
+user_conf_path : /home/cmuser/CM/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e16570f24b33401c908c3ca2c7f3a28b.conf
 system_id : RTX4090x2
 config_name : RTX4090x2_bert_SingleStream
 workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99_9, PowerSetting.MaxP)
@@ -35,47 +35,47 @@ skip_file_checks : True
 power_limit : None
 cpu_freq : None
 &&&& RUNNING BERT_HARNESS # ./build/bin/harness_bert
-I1228 21:16:03.858678 13813 main_bert.cc:163] Found 2 GPUs
-I1228 21:16:03.977523 13813 bert_server.cc:147] Engine Path: ./build/engines/RTX4090x2/bert/SingleStream/bert-SingleStream-gpu-fp16_S_384_B_1_P_1_vs.custom_k_99_9_MaxP.plan
+I1231 21:18:23.541177 13812 main_bert.cc:163] Found 2 GPUs
+I1231 21:18:23.667955 13812 bert_server.cc:147] Engine Path: ./build/engines/RTX4090x2/bert/SingleStream/bert-SingleStream-gpu-fp16_S_384_B_1_P_1_vs.custom_k_99_9_MaxP.plan
 [I] [TRT] Loaded engine size: 638 MiB
 [I] [TRT] Loaded engine size: 638 MiB
 [W] [TRT] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +68, GPU +10, now: CPU 822, GPU 1449 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +2, GPU +10, now: CPU 824, GPU 1459 (MiB)
-[I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +1153, now: CPU 0, GPU 1153 (MiB)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +7, GPU +10, now: CPU 832, GPU 1192 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +68, GPU +10, now: CPU 823, GPU 1449 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 824, GPU 1459 (MiB)
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +1152, now: CPU 0, GPU 1152 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +6, GPU +10, now: CPU 832, GPU 1192 (MiB)
 [I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 833, GPU 1202 (MiB)
-[I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +577, now: CPU 0, GPU 1153 (MiB)
-I1228 21:16:04.530006 13813 bert_server.cc:208] Engines Creation Completed
-I1228 21:16:04.560478 13813 bert_server.cc:213] Use CUDA graphs
-I1228 21:16:04.560621 13813 bert_core_vs.cc:385] Engine - Device Memory requirements: 8652288
-I1228 21:16:04.560624 13813 bert_core_vs.cc:393] Engine - Number of Optimization Profiles: 1
-I1228 21:16:04.560631 13813 bert_core_vs.cc:415] Engine - Profile 0 maxDims 384 Bmax=1 Smax=384
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +576, now: CPU 0, GPU 1152 (MiB)
+I1231 21:18:24.232435 13812 bert_server.cc:208] Engines Creation Completed
+I1231 21:18:24.254905 13812 bert_server.cc:213] Use CUDA graphs
+I1231 21:18:24.255029 13812 bert_core_vs.cc:385] Engine - Device Memory requirements: 8652288
+I1231 21:18:24.255033 13812 bert_core_vs.cc:393] Engine - Number of Optimization Profiles: 1
+I1231 21:18:24.255038 13812 bert_core_vs.cc:415] Engine - Profile 0 maxDims 384 Bmax=1 Smax=384
 [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 195, GPU 1461 (MiB)
 [I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 195, GPU 1469 (MiB)
-I1228 21:16:04.597190 13813 bert_core_vs.cc:426] Setting Opt.Prof. to 0
-I1228 21:16:04.597214 13813 bert_core_vs.cc:444] Context creation complete. Max supported batchSize: 1
-I1228 21:16:04.597275 13813 bert_core_vs.cc:476] Setup complete
-[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +0, now: CPU 1, GPU 1153 (MiB)
-I1228 21:16:04.597422 13813 bert_core_vs.cc:385] Engine - Device Memory requirements: 8652288
-I1228 21:16:04.597425 13813 bert_core_vs.cc:393] Engine - Number of Optimization Profiles: 1
-I1228 21:16:04.597429 13813 bert_core_vs.cc:415] Engine - Profile 0 maxDims 384 Bmax=1 Smax=384
+I1231 21:18:24.287451 13812 bert_core_vs.cc:426] Setting Opt.Prof. to 0
+I1231 21:18:24.287472 13812 bert_core_vs.cc:444] Context creation complete. Max supported batchSize: 1
+I1231 21:18:24.287531 13812 bert_core_vs.cc:476] Setup complete
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +0, now: CPU 1, GPU 1152 (MiB)
+I1231 21:18:24.287670 13812 bert_core_vs.cc:385] Engine - Device Memory requirements: 8652288
+I1231 21:18:24.287673 13812 bert_core_vs.cc:393] Engine - Number of Optimization Profiles: 1
+I1231 21:18:24.287675 13812 bert_core_vs.cc:415] Engine - Profile 0 maxDims 384 Bmax=1 Smax=384
 [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 257, GPU 1204 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +38, GPU +8, now: CPU 295, GPU 1212 (MiB)
-I1228 21:16:04.633455 13813 bert_core_vs.cc:426] Setting Opt.Prof. to 0
-[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +1, now: CPU 1, GPU 1154 (MiB)
-I1228 21:16:04.633471 13813 bert_core_vs.cc:444] Context creation complete. Max supported batchSize: 1
-I1228 21:16:04.633538 13813 bert_core_vs.cc:476] Setup complete
-I1228 21:16:04.902868 13825 bert_core_vs.cc:352] Created 96 CUDA graphs
-I1228 21:16:04.902961 13823 bert_core_vs.cc:352] Created 96 CUDA graphs
-I1228 21:16:04.907305 13813 main_bert.cc:184] Starting running actual test.
-I1228 21:16:21.462282 13813 main_bert.cc:190] Finished running actual test.
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +8, now: CPU 258, GPU 1212 (MiB)
+I1231 21:18:24.322588 13812 bert_core_vs.cc:426] Setting Opt.Prof. to 0
+I1231 21:18:24.322600 13812 bert_core_vs.cc:444] Context creation complete. Max supported batchSize: 1
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +0, now: CPU 2, GPU 1152 (MiB)
+I1231 21:18:24.322789 13812 bert_core_vs.cc:476] Setup complete
+I1231 21:18:24.548982 13822 bert_core_vs.cc:352] Created 96 CUDA graphs
+I1231 21:18:24.574097 13824 bert_core_vs.cc:352] Created 96 CUDA graphs
+I1231 21:18:24.578598 13812 main_bert.cc:184] Starting running actual test.
+I1231 21:18:41.254029 13812 main_bert.cc:190] Finished running actual test.
 
 No warnings encountered during test.
 
 No errors encountered during test.
-[2024-12-28 21:16:21,713 run_harness.py:166 INFO] Result: Accuracy run detected.
-[2024-12-28 21:16:21,713 __init__.py:46 INFO] Running command: PYTHONPATH=code/bert/tensorrt/helpers python3 /home/cmuser/CM/repos/local/cache/94a57f78972843c6/repo/closed/NVIDIA/build/inference/language/bert/accuracy-squad.py --log_file /cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/singlestream/accuracy/mlperf_log_accuracy.json --vocab_file build/models/bert/vocab.txt --val_data /home/cmuser/CM/repos/local/cache/4db00c74da1e44c8/data/squad/dev-v1.1.json --out_file /cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/singlestream/accuracy/predictions.json --output_dtype float16
+[2024-12-31 21:18:41,453 run_harness.py:166 INFO] Result: Accuracy run detected.
+[2024-12-31 21:18:41,453 __init__.py:46 INFO] Running command: PYTHONPATH=code/bert/tensorrt/helpers python3 /home/cmuser/CM/repos/local/cache/94a57f78972843c6/repo/closed/NVIDIA/build/inference/language/bert/accuracy-squad.py --log_file /cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/singlestream/accuracy/mlperf_log_accuracy.json --vocab_file build/models/bert/vocab.txt --val_data /home/cmuser/CM/repos/local/cache/4db00c74da1e44c8/data/squad/dev-v1.1.json --out_file /cm-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/singlestream/accuracy/predictions.json --output_dtype float16
 {"exact_match": 83.69914853358561, "f1": 90.88109554940347}
 Reading examples...
 No cached features at 'eval_features.pickle'... converting from examples...
