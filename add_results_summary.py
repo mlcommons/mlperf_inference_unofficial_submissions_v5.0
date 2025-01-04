@@ -296,7 +296,7 @@ for details, entries in tables.items():
 {html_table}
 """
             readme_content = f"""
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/{submitter}/results/{sut_name}/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_unofficial_submissions_v5.0/blob/main/closed/{submitter}/results/{sut_name}/summary.html)
 {html_table}
 """
             with open(out_path, "w") as f:
