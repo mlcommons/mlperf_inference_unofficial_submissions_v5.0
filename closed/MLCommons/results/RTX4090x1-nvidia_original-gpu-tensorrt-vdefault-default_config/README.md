@@ -1,5 +1,5 @@
 
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_test_submissions_v5.0/blob/main/closed/MLCommons/results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/mlperf_inference_unofficial_submissions_v5.0/blob/refs/heads/auto-update/closed/MLCommons/results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/summary.html)
 
 
 
@@ -25,15 +25,15 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
   <tbody>
    <tr>
     <th id="license_num"><a href="">MLPerf Inference Category:</a></th>
-    <td id="license_num_val">Datacenter</td>
+    <td id="license_num_val">datacenter,edge</td>
     <th id="test_date"><a href="">MLPerf Inference Division:</a></th>
-    <td id="test_date_val">Closed</td>
+    <td id="test_date_val">closed</td>
    </tr>
    <tr>
     <th id="tester"><a href="">Submitted by:</a></th>
     <td id="tester_val">MLCommons</td>
     <th id="sw_avail"><a href="">Availability:</a></th>
-    <td id="sw_avail_val">Available as of Feb 2025</td>
+    <td id="sw_avail_val">Available  as of February 2025</td>
    </tr>
   </tbody>
  </table>
@@ -52,11 +52,10 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
         <th colspan="2">Server</th>
         <th colspan="2">Offline</th>
     </tr>
-    <tr> 
+    <tr>
     <td>Metric</td>
     <td>Performance</td>
     <td>Metric</td>
     <td>Performance</td>
-    </tr>
-    <tr><td>retinanet</td><td>mAP: 37.1745</td><td>Queries/s</td> <td>637.176</td><td>Samples/s</td> <td>862.711</td><tr><td>resnet</td><td>acc: 75.6954</td><td>Queries/s</td> <td>35357.7</td><td>Samples/s</td> <td>43726.6</td></table>
+    </tr><tr><td>resnet</td><td>acc: 75.6954</td><td>Queries/s</td> <td>35357.7</td><td>Samples/s</td> <td>43726.6</td><tr><td>retinanet</td><td>mAP: 37.1745</td><td>Queries/s</td> <td>637.176</td><td>Samples/s</td> <td>862.711</td></table>
 
