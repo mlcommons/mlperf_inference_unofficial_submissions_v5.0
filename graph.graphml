@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="app-mlperf-inference,d775cac873ee4231 ( reference,_rgat,_pytorch,_cuda,_valid,_r5.0-dev_default,_offline )" />
+    <node id="detect,os" />
+    <node id="get,sys-utils-cm" />
+    <node id="get,python" />
+    <node id="get-mlperf-inference-src,4b57186581024797" />
+    <node id="get,python3" />
+    <node id="get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference" />
+    <node id="get,mlcommons,inference,src" />
+    <node id="get-mlperf-inference-utils,e341e5f86d8342e5" />
+    <node id="get,mlperf,inference,src" />
+    <node id="get,mlperf,inference,utils" />
+    <node id="get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" />
+    <node id="get,cuda,_toolkit" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.pycuda )" />
+    <node id="get,generic-python-lib,_package.pycuda" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.numpy )" />
+    <node id="get,generic-python-lib,_package.numpy" />
+    <node id="get,cuda-devices,_with-pycuda" />
+    <node id="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" />
+    <node id="detect-cpu,586c8a43320142f7" />
+    <node id="detect,cpu" />
+    <node id="get,cuda,_cudnn" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( torch_cuda )" />
+    <node id="get,generic-python-lib,_torch_cuda" />
+    <node id="get,ml-model,rgat" />
+    <node id="get,dataset,mlperf,inference,igbh,_full" />
+    <node id="generate-mlperf-inference-user-conf,3af4475745964b93" />
+    <node id="get-mlperf-inference-sut-configs,c2fbf72009e2445b" />
+    <node id="get,cache,dir,_name.mlperf-inference-sut-configs" />
+    <node id="get,sut,configs" />
+    <node id="generate,user-conf,mlperf,inference" />
+    <node id="get,loadgen" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.psutil )" />
+    <node id="get,generic-python-lib,_package.psutil" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.colorama )" />
+    <node id="get,generic-python-lib,_package.colorama" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.tqdm )" />
+    <node id="get,generic-python-lib,_package.tqdm" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.requests )" />
+    <node id="get,generic-python-lib,_package.requests" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.torchdata )" />
+    <node id="get,generic-python-lib,_package.torchdata" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.pybind11 )" />
+    <node id="get,generic-python-lib,_package.pybind11" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.PyYAML )" />
+    <node id="get,generic-python-lib,_package.PyYAML" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.pydantic )" />
+    <node id="get,generic-python-lib,_package.pydantic" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.igb,_url.git+https://github.com/IllinoisGraphBenchmark/IGB-Datasets.git )" />
+    <node id="get,generic-python-lib,_package.igb,_url.git+https://github.com/IllinoisGraphBenchmark/IGB-Datasets.git" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.torch-geometric,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html )" />
+    <node id="get,generic-python-lib,_package.torch-geometric,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.torch-scatter,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html )" />
+    <node id="get,generic-python-lib,_package.torch-scatter,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.torch-sparse,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html )" />
+    <node id="get,generic-python-lib,_package.torch-sparse,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html" />
+    <node id="get-generic-python-lib,94b62a682bc44791 ( package.dgl,_find_links_url.https://data.dgl.ai/wheels/torch-2.4/cu121/repo.html )" />
+    <node id="get,generic-python-lib,_package.dgl,_find_links_url.https://data.dgl.ai/wheels/torch-2.4/cu121/repo.html" />
+    <node id="benchmark-program,19f369ef47084895" />
+    <node id="benchmark-program-mlperf,cfff0132a8aa4018" />
+    <node id="benchmark-program,program" />
+    <node id="benchmark-mlperf" />
+    <edge source="app-mlperf-inference,d775cac873ee4231 ( reference,_rgat,_pytorch,_cuda,_valid,_r5.0-dev_default,_offline )" target="detect,os" />
+    <edge source="app-mlperf-inference,d775cac873ee4231 ( reference,_rgat,_pytorch,_cuda,_valid,_r5.0-dev_default,_offline )" target="get,sys-utils-cm" />
+    <edge source="app-mlperf-inference,d775cac873ee4231 ( reference,_rgat,_pytorch,_cuda,_valid,_r5.0-dev_default,_offline )" target="get,python" />
+    <edge source="app-mlperf-inference,d775cac873ee4231 ( reference,_rgat,_pytorch,_cuda,_valid,_r5.0-dev_default,_offline )" target="get,mlcommons,inference,src" />
+    <edge source="app-mlperf-inference,d775cac873ee4231 ( reference,_rgat,_pytorch,_cuda,_valid,_r5.0-dev_default,_offline )" target="get,mlperf,inference,utils" />
+    <edge source="app-mlperf-inference,d775cac873ee4231 ( reference,_rgat,_pytorch,_cuda,_valid,_r5.0-dev_default,_offline )" target="get,cuda-devices,_with-pycuda" />
+    <edge source="get-mlperf-inference-src,4b57186581024797" target="detect,os" />
+    <edge source="get-mlperf-inference-src,4b57186581024797" target="get,python3" />
+    <edge source="get-mlperf-inference-src,4b57186581024797" target="get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference" />
+    <edge source="get-mlperf-inference-utils,e341e5f86d8342e5" target="get,mlperf,inference,src" />
+    <edge source="get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" target="get,cuda,_toolkit" />
+    <edge source="get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" target="get,python3" />
+    <edge source="get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" target="get,generic-python-lib,_package.pycuda" />
+    <edge source="get-cuda-devices,7a3ede4d3558427a ( with-pycuda )" target="get,generic-python-lib,_package.numpy" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.pycuda )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.numpy )" target="get,python3" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="detect,os" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="detect,cpu" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,sys-utils-cm" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,python" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,cuda,_cudnn" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_torch_cuda" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,ml-model,rgat" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,dataset,mlperf,inference,igbh,_full" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="generate,user-conf,mlperf,inference" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,loadgen" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,mlcommons,inference,src" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.psutil" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.colorama" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.tqdm" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.requests" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.torchdata" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.pybind11" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.PyYAML" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.numpy" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.pydantic" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.igb,_url.git+https://github.com/IllinoisGraphBenchmark/IGB-Datasets.git" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.torch-geometric,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.torch-scatter,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.torch-sparse,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="get,generic-python-lib,_package.dgl,_find_links_url.https://data.dgl.ai/wheels/torch-2.4/cu121/repo.html" />
+    <edge source="app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( batch_size.2048,_cuda,_offline,_pytorch,_rgat,_fp32 )" target="benchmark-mlperf" />
+    <edge source="detect-cpu,586c8a43320142f7" target="detect,os" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( torch_cuda )" target="get,python3" />
+    <edge source="generate-mlperf-inference-user-conf,3af4475745964b93" target="detect,os" />
+    <edge source="generate-mlperf-inference-user-conf,3af4475745964b93" target="detect,cpu" />
+    <edge source="generate-mlperf-inference-user-conf,3af4475745964b93" target="get,python" />
+    <edge source="generate-mlperf-inference-user-conf,3af4475745964b93" target="get,mlcommons,inference,src" />
+    <edge source="generate-mlperf-inference-user-conf,3af4475745964b93" target="get,sut,configs" />
+    <edge source="get-mlperf-inference-sut-configs,c2fbf72009e2445b" target="get,cache,dir,_name.mlperf-inference-sut-configs" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.psutil )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.colorama )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.tqdm )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.requests )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.torchdata )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.pybind11 )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.PyYAML )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.pydantic )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.igb,_url.git+https://github.com/IllinoisGraphBenchmark/IGB-Datasets.git )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.torch-geometric,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.torch-scatter,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.torch-sparse,_find_links_url.https://data.pyg.org/whl/torch-2.4.0.html )" target="get,python3" />
+    <edge source="get-generic-python-lib,94b62a682bc44791 ( package.dgl,_find_links_url.https://data.dgl.ai/wheels/torch-2.4/cu121/repo.html )" target="get,python3" />
+    <edge source="benchmark-program,19f369ef47084895" target="detect,cpu" />
+    <edge source="benchmark-program-mlperf,cfff0132a8aa4018" target="benchmark-program,program" />
+  </graph>
+</graphml>
