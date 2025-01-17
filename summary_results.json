@@ -10,7 +10,7 @@
     "UsedModel": "rgat",
     "Model": "rgat",
     "Scenario": "Offline",
-    "Accuracy": "acc: 72.813",
+    "Accuracy": "acc: 72.838",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) Platinum 8480+",
     "host_processors_per_node": 2,
@@ -32,7 +32,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/closed/MLCommons/mlc-server-reference-gpu-pytorch_v2.4.0-cu124",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 316.253,
+    "Performance_Result": 282.683,
     "Performance_Units": "Samples/s"
   }
 ]
