@@ -7,7 +7,7 @@ on:
     types: [published]
   push:
     branches:
-      - auto-update
+      - main
 
 jobs:
 
