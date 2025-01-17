@@ -1,3 +1,32 @@
 {
-
+    "0":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"closed",
+        "SystemType":"datacenter",
+        "SystemName":"5234c0b61ae3",
+        "Platform":"mlc-server-reference-gpu-pytorch_v2.4.0-cu124",
+        "Model":"rgat",
+        "MlperfModel":"rgat",
+        "Scenario":"Offline",
+        "Result":282.683,
+        "Accuracy":"acc: 72.838",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) Platinum 8480+",
+        "host_processors_per_node":2,
+        "host_processor_core_count":56,
+        "accelerator_model_name":"NVIDIA H100 80GB HBM3",
+        "accelerators_per_node":8,
+        "Location":"closed\/MLCommons\/results\/mlc-server-reference-gpu-pytorch_v2.4.0-cu124\/rgat\/offline",
+        "framework":"pytorch v2.4.0",
+        "operating_system":"Ubuntu 22.04 (linux-5.15.0-113-generic-glibc2.35)",
+        "notes":null,
+        "compliance":1,
+        "errors":0,
+        "version":"v5.0",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    }
 }
