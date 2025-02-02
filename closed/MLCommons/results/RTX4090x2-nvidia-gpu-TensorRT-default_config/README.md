@@ -27,7 +27,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <div class="test-details">
 <div class="details-group">
 <span id="license_num" class="details-cell"><a href="">MLPerf Inference Category:</a></span>
-<span id="license_num_val" class="details-cell">datacenter,edge</span>
+<span id="license_num_val" class="details-cell">edge</span>
 </div>
 <div class="details-group">
 <span id="sw_avail" class="details-cell"><a href="">Availability:</a></span>
@@ -171,7 +171,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <h3>Software Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>framework</td><td>TensorRT</td></tr><tr><td>operating_system</td><td>Ubuntu 20.04 (linux-6.8.0-51-generic-glibc2.31)</td></tr><tr><td>other_software_stack</td><td>Python: 3.8.10, GCC-9.4.0, Using Docker  , CUDA 12.2</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
+<tr><td>framework</td><td>TensorRT</td></tr><tr><td>operating_system</td><td>Ubuntu 20.04 (linux-6.8.0-52-generic-glibc2.31)</td></tr><tr><td>other_software_stack</td><td>Python: 3.8.10, GCC-9.4.0, Using Docker  , CUDA 12.2</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
 </div>
 <div class="table-full table-striped">
 <div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
