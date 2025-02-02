@@ -14,8 +14,6 @@ jobs:
 
     runs-on: ubuntu-latest
     if: ${{ !contains(github.event.head_commit.message, 'Updated results summary') }}
-    env:
-      CM_INDEX: "on"
     strategy:
       fail-fast: false
       matrix:
@@ -33,12 +31,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python3 -m pip install cm4mlops
+        python3 -m pip install mlc-scripts
 
     - name: Run MLPerf Inference Submission Checker and generate results summary
       run: |
-        cm run script --tags=run,mlperf,inference,submission-checker --quiet --adr.inference-src.tags=_branch.dev --src_version=v5.0 --extra_args="  --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
-        cm run script --tags=convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
+        mlcr run,mlperf,inference,submission-checker --quiet --adr.inference-src.tags=_branch.dev --src_version=v5.0 --extra_args="  --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
+        mlcr convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
 
         git config --global user.name mlcommons-bot
         git config --global user.email "mlcommons-bot@users.noreply.github.com"

@@ -10,8 +10,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    env:
-      CM_INDEX: "on"
     strategy:
       fail-fast: false
       matrix:
