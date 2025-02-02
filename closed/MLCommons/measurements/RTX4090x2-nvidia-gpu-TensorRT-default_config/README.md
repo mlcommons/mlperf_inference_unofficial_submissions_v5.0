@@ -1,4 +1,4 @@
-| Model     | Scenario     |   Accuracy |   Throughput | Latency (in ms)   | Power Efficiency (in samples/J)   | TEST01   |
-|-----------|--------------|------------|--------------|-------------------|-----------------------------------|----------|
-| bert-99.9 | singlestream |    90.8811 |      461.255 | 2.168             |                                   | passed   |
-| bert-99.9 | offline      |    90.8832 |     3332.01  | -                 |                                   | passed   |
+| Model        | Scenario     |   Accuracy |   Throughput | Latency (in ms)   | Power Efficiency (in samples/J)   | TEST01   |
+|--------------|--------------|------------|--------------|-------------------|-----------------------------------|----------|
+| 3d-unet-99.9 | singlestream |    0.86236 |        2.326 | 429.856           |                                   | passed   |
+| 3d-unet-99.9 | offline      |    0.86236 |        8.321 | -                 |                                   | passed   |
