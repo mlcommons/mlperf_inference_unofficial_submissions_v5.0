@@ -170,7 +170,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <h3>Software Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>framework</td><td>TensorRT</td></tr><tr><td>operating_system</td><td>Ubuntu 20.04 (linux-6.8.0-51-generic-glibc2.31)</td></tr><tr><td>other_software_stack</td><td>Python: 3.8.10, GCC-9.4.0, Using Docker  , CUDA 12.2</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
+<tr><td>framework</td><td>TensorRT</td></tr><tr><td>operating_system</td><td>Ubuntu 20.04 (linux-6.8.0-52-generic-glibc2.31)</td></tr><tr><td>other_software_stack</td><td>Python: 3.8.10, GCC-9.4.0, Using Docker  , CUDA 12.2</td></tr><tr><td>sw_notes</td><td></td></tr></table></div></div>
 </div>
 <div class="table-full table-striped">
 <div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">
