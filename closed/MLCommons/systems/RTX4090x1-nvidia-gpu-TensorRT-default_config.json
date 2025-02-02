@@ -32,6 +32,6 @@
   "submitter": "MLCommons",
   "sw_notes": "",
   "system_name": "RTX4090x1",
-  "system_type": "edge",
+  "system_type": "datacenter,edge",
   "system_type_detail": "edge server"
 }
