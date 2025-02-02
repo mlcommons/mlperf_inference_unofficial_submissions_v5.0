@@ -2,7 +2,7 @@
 
 ## Host platform
 
-* OS version: Linux-6.8.0-51-generic-x86_64-with-glibc2.29
+* OS version: Linux-6.8.0-52-generic-x86_64-with-glibc2.29
 * CPU version: x86_64
 * Python version: 3.8.10 (default, Jan 17 2025, 14:40:23) 
 [GCC 9.4.0]
@@ -17,7 +17,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo mlcommons@mlperf-automations --checkout=7f1550ac1c2f254c951802093923a3c1423f7b86
+mlc pull repo mlcommons@mlperf-automations --checkout=03d9201c1c9305c7c3eaa0262984af76c7f2287f
 
 
 ```
@@ -40,4 +40,4 @@ Model Precision: int8
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per query`: `5656717.0`
+`Samples per query`: `5646056.0`
