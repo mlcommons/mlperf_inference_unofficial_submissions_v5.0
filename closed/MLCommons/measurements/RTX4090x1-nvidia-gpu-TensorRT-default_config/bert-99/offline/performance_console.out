@@ -1,7 +1,7 @@
-[2025-02-01 22:30:48,369 main.py:229 INFO] Detected system ID: KnownSystem.Nvidia_7115fae9a234
-[2025-02-01 22:30:48,859 generate_conf_files.py:107 INFO] Generated measurements/ entries for Nvidia_7115fae9a234_TRT/bert-99.9/Offline
-[2025-02-01 22:30:48,859 __init__.py:46 INFO] Running command: ./build/bin/harness_bert --logfile_outdir="/mlc-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99.9/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=10833 --test_mode="PerformanceOnly" --gpu_batch_size=256 --mlperf_conf_path="/home/mlcuser/MLC/repos/local/cache/get-git-repo_f5fb9036/inference/mlperf.conf" --tensor_path="build/preprocessed_data/squad_tokenized/input_ids.npy,build/preprocessed_data/squad_tokenized/segment_ids.npy,build/preprocessed_data/squad_tokenized/input_mask.npy" --use_graphs=false --user_conf_path="/home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e4112da85cb94cfb908d3daca70bf596.conf" --gpu_inference_streams=2 --gpu_copy_streams=2 --gpu_engines="./build/engines/Nvidia_7115fae9a234/bert/Offline/bert-Offline-gpu-fp16_S_384_B_256_P_2_vs.custom_k_99_9_MaxP.plan" --scenario Offline --model bert
-[2025-02-01 22:30:48,859 __init__.py:53 INFO] Overriding Environment
+[2025-02-02 23:54:35,108 main.py:229 INFO] Detected system ID: KnownSystem.f3e350fa53ad
+[2025-02-02 23:54:35,609 generate_conf_files.py:107 INFO] Generated measurements/ entries for f3e350fa53ad_TRT/bert-99/Offline
+[2025-02-02 23:54:35,609 __init__.py:46 INFO] Running command: ./build/bin/harness_bert --logfile_outdir="/mlc-mount/home/arjun/gh_action_results/valid_results/RTX4090x1-nvidia_original-gpu-tensorrt-vdefault-default_config/bert-99/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=10833 --test_mode="PerformanceOnly" --gpu_batch_size=256 --mlperf_conf_path="/home/mlcuser/MLC/repos/local/cache/get-git-repo_4c0712da/inference/mlperf.conf" --tensor_path="build/preprocessed_data/squad_tokenized/input_ids.npy,build/preprocessed_data/squad_tokenized/segment_ids.npy,build/preprocessed_data/squad_tokenized/input_mask.npy" --use_graphs=false --user_conf_path="/home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/d137146e2baa4f3daca720c8f77fa6d0.conf" --gpu_inference_streams=2 --gpu_copy_streams=2 --gpu_engines="./build/engines/f3e350fa53ad/bert/Offline/bert-Offline-gpu-int8_S_384_B_256_P_2_vs.custom_k_99_MaxP.plan" --scenario Offline --model bert
+[2025-02-02 23:54:35,609 __init__.py:53 INFO] Overriding Environment
 benchmark : Benchmark.BERT
 buffer_manager_thread_count : 0
 coalesced_tensor : True
@@ -11,64 +11,64 @@ gpu_copy_streams : 2
 gpu_inference_streams : 2
 input_dtype : int32
 input_format : linear
-log_dir : /home/mlcuser/MLC/repos/local/cache/get-git-repo_e7fa5107/repo/closed/NVIDIA/build/logs/2025.02.01-22.30.47
-mlperf_conf_path : /home/mlcuser/MLC/repos/local/cache/get-git-repo_f5fb9036/inference/mlperf.conf
+log_dir : /home/mlcuser/MLC/repos/local/cache/get-git-repo_e7fa5107/repo/closed/NVIDIA/build/logs/2025.02.02-23.54.34
+mlperf_conf_path : /home/mlcuser/MLC/repos/local/cache/get-git-repo_4c0712da/inference/mlperf.conf
 offline_expected_qps : 0.0
-precision : fp16
+precision : int8
 preprocessed_data_dir : /home/mlcuser/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_fe95ede4/preprocessed_data
 scenario : Scenario.Offline
-system : SystemConfiguration(host_cpu_conf=CPUConfiguration(layout={CPU(name='AMD Ryzen 9 7950X 16-Core Processor', architecture=<CPUArchitecture.x86_64: AliasedName(name='x86_64', aliases=(), patterns=())>, core_count=16, threads_per_core=2): 1}), host_mem_conf=MemoryConfiguration(host_memory_capacity=Memory(quantity=131.080068, byte_suffix=<ByteSuffix.GB: (1000, 3)>, _num_bytes=131080068000), comparison_tolerance=0.05), accelerator_conf=AcceleratorConfiguration(layout=defaultdict(<class 'int'>, {GPU(name='NVIDIA GeForce RTX 4090', accelerator_type=<AcceleratorType.Discrete: AliasedName(name='Discrete', aliases=(), patterns=())>, vram=Memory(quantity=23.98828125, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25757220864), max_power_limit=450.0, pci_id='0x268410DE', compute_sm=89): 1})), numa_conf=None, system_id='Nvidia_7115fae9a234')
+system : SystemConfiguration(host_cpu_conf=CPUConfiguration(layout={CPU(name='AMD Ryzen 9 7950X 16-Core Processor', architecture=<CPUArchitecture.x86_64: AliasedName(name='x86_64', aliases=(), patterns=())>, core_count=16, threads_per_core=2): 1}), host_mem_conf=MemoryConfiguration(host_memory_capacity=Memory(quantity=131.080068, byte_suffix=<ByteSuffix.GB: (1000, 3)>, _num_bytes=131080068000), comparison_tolerance=0.05), accelerator_conf=AcceleratorConfiguration(layout=defaultdict(<class 'int'>, {GPU(name='NVIDIA GeForce RTX 4090', accelerator_type=<AcceleratorType.Discrete: AliasedName(name='Discrete', aliases=(), patterns=())>, vram=Memory(quantity=23.98828125, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25757220864), max_power_limit=450.0, pci_id='0x268410DE', compute_sm=89): 1})), numa_conf=None, system_id='f3e350fa53ad')
 tensor_path : build/preprocessed_data/squad_tokenized/input_ids.npy,build/preprocessed_data/squad_tokenized/segment_ids.npy,build/preprocessed_data/squad_tokenized/input_mask.npy
 test_mode : PerformanceOnly
 use_graphs : False
-user_conf_path : /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e4112da85cb94cfb908d3daca70bf596.conf
-system_id : Nvidia_7115fae9a234
-config_name : Nvidia_7115fae9a234_bert_Offline
-workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99_9, PowerSetting.MaxP)
+user_conf_path : /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/d137146e2baa4f3daca720c8f77fa6d0.conf
+system_id : f3e350fa53ad
+config_name : f3e350fa53ad_bert_Offline
+workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99, PowerSetting.MaxP)
 optimization_level : plugin-enabled
 num_profiles : 2
-config_ver : custom_k_99_9_MaxP
-accuracy_level : 99.9%
+config_ver : custom_k_99_MaxP
+accuracy_level : 99%
 inference_server : custom
 skip_file_checks : True
 power_limit : None
 cpu_freq : None
 &&&& RUNNING BERT_HARNESS # ./build/bin/harness_bert
-I0201 22:30:48.912647 17534 main_bert.cc:164] Found 1 GPUs
-I0201 22:30:49.315340 17534 bert_server.cc:147] Engine Path: ./build/engines/Nvidia_7115fae9a234/bert/Offline/bert-Offline-gpu-fp16_S_384_B_256_P_2_vs.custom_k_99_9_MaxP.plan
-[I] [TRT] Loaded engine size: 699 MiB
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +6, GPU +10, now: CPU 863, GPU 1518 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +2, GPU +10, now: CPU 865, GPU 1528 (MiB)
-[I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +576, now: CPU 0, GPU 576 (MiB)
-I0201 22:30:49.824712 17534 bert_server.cc:208] Engines Creation Completed
-I0201 22:30:49.856014 17534 bert_core_vs.cc:385] Engine - Device Memory requirements: 1409287680
-I0201 22:30:49.856024 17534 bert_core_vs.cc:393] Engine - Number of Optimization Profiles: 2
-I0201 22:30:49.856027 17534 bert_core_vs.cc:415] Engine - Profile 0 maxDims 98304 Bmax=256 Smax=384
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +8, now: CPU 166, GPU 2866 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 166, GPU 2874 (MiB)
-I0201 22:30:49.910353 17534 bert_core_vs.cc:426] Setting Opt.Prof. to 0
-I0201 22:30:49.910388 17534 bert_core_vs.cc:444] Context creation complete. Max supported batchSize: 256
-[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +0, now: CPU 1, GPU 576 (MiB)
-I0201 22:30:49.911317 17534 bert_core_vs.cc:476] Setup complete
-I0201 22:30:49.911507 17534 bert_core_vs.cc:385] Engine - Device Memory requirements: 1409287680
-I0201 22:30:49.911511 17534 bert_core_vs.cc:393] Engine - Number of Optimization Profiles: 2
-I0201 22:30:49.911513 17534 bert_core_vs.cc:415] Engine - Profile 1 maxDims 98304 Bmax=256 Smax=384
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 289, GPU 4352 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 289, GPU 4362 (MiB)
-I0201 22:30:49.967316 17534 bert_core_vs.cc:426] Setting Opt.Prof. to 1
+I0202 23:54:35.666258 17560 main_bert.cc:164] Found 1 GPUs
+I0202 23:54:36.063896 17560 bert_server.cc:147] Engine Path: ./build/engines/f3e350fa53ad/bert/Offline/bert-Offline-gpu-int8_S_384_B_256_P_2_vs.custom_k_99_MaxP.plan
+[I] [TRT] Loaded engine size: 414 MiB
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +7, GPU +8, now: CPU 582, GPU 1232 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 583, GPU 1242 (MiB)
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +290, now: CPU 0, GPU 290 (MiB)
+I0202 23:54:36.395845 17560 bert_server.cc:208] Engines Creation Completed
+I0202 23:54:36.415136 17560 bert_core_vs.cc:385] Engine - Device Memory requirements: 704644608
+I0202 23:54:36.415143 17560 bert_core_vs.cc:393] Engine - Number of Optimization Profiles: 2
+I0202 23:54:36.415148 17560 bert_core_vs.cc:415] Engine - Profile 0 maxDims 98304 Bmax=256 Smax=384
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +8, now: CPU 170, GPU 1908 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 170, GPU 1916 (MiB)
+I0202 23:54:36.472074 17560 bert_core_vs.cc:426] Setting Opt.Prof. to 0
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +0, now: CPU 0, GPU 290 (MiB)
+I0202 23:54:36.472110 17560 bert_core_vs.cc:444] Context creation complete. Max supported batchSize: 256
+I0202 23:54:36.473085 17560 bert_core_vs.cc:476] Setup complete
+I0202 23:54:36.473276 17560 bert_core_vs.cc:385] Engine - Device Memory requirements: 704644608
+I0202 23:54:36.473281 17560 bert_core_vs.cc:393] Engine - Number of Optimization Profiles: 2
+I0202 23:54:36.473284 17560 bert_core_vs.cc:415] Engine - Profile 1 maxDims 98304 Bmax=256 Smax=384
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 292, GPU 2722 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 293, GPU 2732 (MiB)
+I0202 23:54:36.529080 17560 bert_core_vs.cc:426] Setting Opt.Prof. to 1
 [I] [TRT] Could not set default profile 0 for execution context. Profile index must be set explicitly.
-[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +0, now: CPU 1, GPU 576 (MiB)
-I0201 22:30:49.967725 17534 bert_core_vs.cc:444] Context creation complete. Max supported batchSize: 256
-I0201 22:30:49.968638 17534 bert_core_vs.cc:476] Setup complete
-I0201 22:30:50.576651 17534 main_bert.cc:185] Starting running actual test.
-I0201 22:44:08.612274 17534 main_bert.cc:191] Finished running actual test.
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +0, now: CPU 1, GPU 290 (MiB)
+I0202 23:54:36.529469 17560 bert_core_vs.cc:444] Context creation complete. Max supported batchSize: 256
+I0202 23:54:36.530481 17560 bert_core_vs.cc:476] Setup complete
+I0202 23:54:36.757923 17560 main_bert.cc:185] Starting running actual test.
+I0203 00:05:24.188309 17560 main_bert.cc:191] Finished running actual test.
 ================================================
 MLPerf Results Summary
 ================================================
 SUT name : BERT SERVER
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 1671.25
+Samples per second: 4121.11
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -77,21 +77,21 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 834162674
-Max latency (ns)                : 797723943694
-Mean latency (ns)               : 482649261745
-50.00 percentile latency (ns)   : 513829205594
-90.00 percentile latency (ns)   : 760662772880
-95.00 percentile latency (ns)   : 782668844502
-97.00 percentile latency (ns)   : 789887156174
-99.00 percentile latency (ns)   : 795615402555
-99.90 percentile latency (ns)   : 797587853043
+Min latency (ns)                : 714853262
+Max latency (ns)                : 647010213910
+Mean latency (ns)               : 392185239652
+50.00 percentile latency (ns)   : 417598126191
+90.00 percentile latency (ns)   : 616994700587
+95.00 percentile latency (ns)   : 634727225093
+97.00 percentile latency (ns)   : 640574235247
+99.00 percentile latency (ns)   : 645254434497
+99.90 percentile latency (ns)   : 646869275523
 
 ================================================
 Test Parameters Used
 ================================================
-samples_per_query : 1333200
-target_qps : 2020
+samples_per_query : 2666400
+target_qps : 4040
 target_latency (ns): 0
 max_async_queries : 1
 min_duration (ms): 600000
@@ -113,7 +113,7 @@ performance_sample_count : 10833
 No warnings encountered during test.
 
 No errors encountered during test.
-[2025-02-01 22:44:09,302 run_harness.py:166 INFO] Result: result_samples_per_second: 1671.25, Result is VALID
+[2025-02-03 00:05:24,466 run_harness.py:166 INFO] Result: result_samples_per_second: 4121.11, Result is VALID
  
 ======================== Result summaries: ========================
 
