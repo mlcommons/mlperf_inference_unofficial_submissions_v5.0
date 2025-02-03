@@ -28,7 +28,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <div class="test-details">
 <div class="details-group">
 <span id="license_num" class="details-cell"><a href="https://github.com/mlcommons/inference/blob/master/README.md">MLPerf Inference Category:</a></span>
-<span id="license_num_val" class="details-cell">edge</span>
+<span id="license_num_val" class="details-cell">datacenter,edge</span>
 </div>
 <div class="details-group">
 <span id="sw_avail" class="details-cell"><a href="https://github.com/mlcommons/policies/blob/master/submission_rules.adoc#results-categories">Availability:</a></span>
