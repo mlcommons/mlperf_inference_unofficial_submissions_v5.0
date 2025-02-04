@@ -208,7 +208,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <th>Accuracy</th>
 <th>Metric</th>
 <th>Performance</th>
-</tr><tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 76.078</td><td>Queries/s</td> <td>35342.5</td><td>acc: 76.078</td><td>Samples/s</td> <td>44252.9</td><tr><td>retinanet</td><td>mAP: 37.1745</td><td></td><td>Queries/s</td> <td>637.535</td><td></td><td>Samples/s</td> <td>868.952</td></table></div></div>
+</tr><tr><td>resnet</td><td>acc: 75.6954</td><td>acc: 76.078</td><td>Queries/s</td> <td>35342.5</td><td>acc: 76.078</td><td>Samples/s</td> <td>44252.9</td><tr><td>retinanet</td><td>mAP: 37.1745</td><td></td><td>Queries/s</td> <td>637.535</td><td></td><td>Samples/s</td> <td>870.202</td><tr><td>bert-99</td><td>F1: 89.9653</td><td colspan="3"> N/A </td><td>F1: 90.15279</td><td>Samples/s</td> <td>3480.29</td></table></div></div>
 </div>
 </div>
 </main>
