@@ -40,4 +40,4 @@ Model Precision: int8
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per second`: `870.202`
+`Samples per second`: `871.582`

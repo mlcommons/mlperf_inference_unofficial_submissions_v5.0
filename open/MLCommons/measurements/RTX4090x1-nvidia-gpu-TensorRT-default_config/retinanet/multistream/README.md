@@ -40,4 +40,4 @@ Model Precision: int8
 ### Accuracy Results 
 
 ### Performance Results 
-`Samples per query`: `11520571.0`
+`Samples per query`: `11595368.0`
