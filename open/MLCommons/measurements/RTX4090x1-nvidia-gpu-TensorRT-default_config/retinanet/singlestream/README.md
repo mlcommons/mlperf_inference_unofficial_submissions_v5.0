@@ -40,4 +40,4 @@ Model Precision: int8
 ### Accuracy Results 
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1695376.0`
+`90th percentile latency (ns)`: `1694856.0`
