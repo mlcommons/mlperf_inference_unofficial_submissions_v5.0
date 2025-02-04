@@ -35,10 +35,10 @@ mlc rm cache -f
 
 Platform: RTX4090x1-nvidia-gpu-TensorRT-default_config
 
-Model Precision: fp16
+Model Precision: int8
 
 ### Accuracy Results 
-`F1`: `90.8811`, Required accuracy for closed division `>= 90.78313`
+`F1`: `90.26682`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `2170590.0`
+`90th percentile latency (ns)`: `1010858.0`
