@@ -879,7 +879,7 @@
         "Model":"bert-99.9",
         "MlperfModel":"bert-99.9",
         "Scenario":"SingleStream",
-        "Result":2.164641,
+        "Result":2.17059,
         "Accuracy":"F1: 90.88109554940347",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD Ryzen 9 7950X 16-Core Processor",
@@ -909,7 +909,7 @@
         "Model":"bert-99.9",
         "MlperfModel":"bert-99.9",
         "Scenario":"Offline",
-        "Result":1674.52,
+        "Result":1671.64,
         "Accuracy":"F1: 90.8832407068292",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD Ryzen 9 7950X 16-Core Processor",
@@ -999,8 +999,8 @@
         "Model":"bert-99",
         "MlperfModel":"bert-99",
         "Scenario":"SingleStream",
-        "Result":2.164641,
-        "Accuracy":"F1: 90.88109554940347",
+        "Result":1.010858,
+        "Accuracy":"F1: 90.26682135974633",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD Ryzen 9 7950X 16-Core Processor",
         "host_processors_per_node":1,
@@ -1017,7 +1017,7 @@
         "inferred":0,
         "has_power":false,
         "Units":"Latency (ms)",
-        "weight_data_types":"fp16"
+        "weight_data_types":"int8"
     },
     "34":{
         "Organization":"MLCommons",
@@ -1029,8 +1029,8 @@
         "Model":"bert-99",
         "MlperfModel":"bert-99",
         "Scenario":"Offline",
-        "Result":1674.52,
-        "Accuracy":"F1: 90.8832407068292",
+        "Result":4128.85,
+        "Accuracy":"F1: 90.15279313202916",
         "number_of_nodes":1,
         "host_processor_model_name":"AMD Ryzen 9 7950X 16-Core Processor",
         "host_processors_per_node":1,
@@ -1047,7 +1047,7 @@
         "inferred":0,
         "has_power":false,
         "Units":"Samples\/s",
-        "weight_data_types":"fp16"
+        "weight_data_types":"int8"
     },
     "35":{
         "Organization":"MLCommons",
