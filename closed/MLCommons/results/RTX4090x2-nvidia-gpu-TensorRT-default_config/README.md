@@ -209,7 +209,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 
 <th>Metric</th>
 <th>Performance</th>
-</tr><tr><td>resnet</td><td>acc: 75.6954</td><td>Queries/s</td> <td>73725.3</td><td>Samples/s</td> <td>87871.6</td><tr><td>bert-99</td><td>F1: 89.9653</td><td colspan="2"> N/A </td><td>Samples/s</td> <td>8264.12</td><tr><td>bert-99.9</td><td>F1: 90.7831</td><td colspan="2"> N/A </td><td>Samples/s</td> <td>3338.12</td><tr><td>3d-unet-99</td><td>DICE: 0.8531</td><td colspan="2"> N/A </td><td>Samples/s</td> <td>8.31821</td><tr><td>3d-unet-99.9</td><td>DICE: 0.8608</td><td colspan="2"> N/A </td><td>Samples/s</td> <td>8.31821</td></table></div></div>
+</tr><tr><td>resnet</td><td>acc: 75.6954</td><td>Queries/s</td> <td>73725.3</td><td>Samples/s</td> <td>87871.6</td><tr><td>bert-99</td><td>F1: 89.9653</td><td colspan="2"> N/A </td><td>Samples/s</td> <td>3338.15</td><tr><td>bert-99.9</td><td>F1: 90.7831</td><td colspan="2"> N/A </td><td>Samples/s</td> <td>3338.15</td><tr><td>3d-unet-99</td><td>DICE: 0.8531</td><td colspan="2"> N/A </td><td>Samples/s</td> <td>8.32011</td><tr><td>3d-unet-99.9</td><td>DICE: 0.8608</td><td colspan="2"> N/A </td><td>Samples/s</td> <td>8.32011</td></table></div></div>
 </div>
 </div>
 </main>
