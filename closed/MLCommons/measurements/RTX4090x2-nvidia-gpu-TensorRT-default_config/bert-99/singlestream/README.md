@@ -38,7 +38,7 @@ Platform: RTX4090x2-nvidia-gpu-TensorRT-default_config
 Model Precision: fp16
 
 ### Accuracy Results 
-`F1`: `90.26682`, Required accuracy for closed division `>= 89.96526`
+`F1`: `90.8811`, Required accuracy for closed division `>= 90.78313`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `1027345.0`
+`90th percentile latency (ns)`: `2176258.0`
