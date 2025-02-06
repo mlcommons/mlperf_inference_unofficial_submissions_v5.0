@@ -1,4 +1,6 @@
-| Model        | Scenario     |   Accuracy |   Throughput | Latency (in ms)   | Power Efficiency (in samples/J)   | TEST01   |
-|--------------|--------------|------------|--------------|-------------------|-----------------------------------|----------|
-| 3d-unet-99.9 | singlestream |    0.86236 |        2.325 | 430.145           |                                   | passed   |
-| 3d-unet-99.9 | offline      |    0.86236 |        8.32  | -                 |                                   | passed   |
+| Model    | Scenario     |   Accuracy |   Throughput | Latency (in ms)   | Power Efficiency (in samples/J)   | TEST01   | TEST04   |
+|----------|--------------|------------|--------------|-------------------|-----------------------------------|----------|----------|
+| resnet50 | multistream  |     76.064 |     15936.3  | 0.502             |                                   | passed   | passed   |
+| resnet50 | singlestream |     76.064 |      3289.47 | 0.304             |                                   | passed   | passed   |
+| resnet50 | server       |     76.078 |     73725.3  | -                 |                                   | passed   | passed   |
+| resnet50 | offline      |     76.078 |     88009.6  | -                 |                                   | passed   | passed   |
