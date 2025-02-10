@@ -212,7 +212,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <th>Accuracy</th>
 <th>Metric</th>
 <th>Performance</th>
-</tr><tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td></td><td>Samples/s</td> <td>0.82137</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table></div></div>
+</tr><tr><td>stable-diffusion-xl</td><td>CLIP_SCORE: 31.6863, FID_SCORE: 23.0109</td><td>CLIP_SCORE: 31.21908, FID_SCORE: 23.52917</td><td>Samples/s</td> <td>0.82137</td><td></td><td></td><td></td><td colspan="3"> N/A </td></table></div></div>
 </div>
 </div>
 </main>
