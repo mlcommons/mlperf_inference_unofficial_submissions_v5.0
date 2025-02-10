@@ -208,7 +208,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <th>Accuracy</th>
 <th>Metric</th>
 <th>Performance</th>
-</tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td></td><td>Queries/s</td> <td>1414.96</td><td></td><td>Samples/s</td> <td>1733.84</td></table></div></div>
+</tr><tr><td>retinanet</td><td>mAP: 37.1745</td><td>mAP: 37.321</td><td>Queries/s</td> <td>1414.96</td><td>mAP: 37.328</td><td>Samples/s</td> <td>1733.84</td></table></div></div>
 </div>
 </div>
 </main>
