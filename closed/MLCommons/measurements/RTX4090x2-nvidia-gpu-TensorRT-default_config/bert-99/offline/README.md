@@ -41,4 +41,4 @@ Model Precision: fp16
 `F1`: `90.15279`, Required accuracy for closed division `>= 89.96526`
 
 ### Performance Results 
-`Samples per second`: `8252.75`
+`Samples per second`: `8273.6`
