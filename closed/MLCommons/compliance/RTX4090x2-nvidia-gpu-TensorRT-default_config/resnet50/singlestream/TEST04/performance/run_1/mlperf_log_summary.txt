@@ -4,38 +4,38 @@ MLPerf Results Summary
 SUT name : LWIS_Server
 Scenario : SingleStream
 Mode     : PerformanceOnly
-90th percentile latency (ns) : 304544
+90th percentile latency (ns) : 303332
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
   Early stopping satisfied: Yes
 Early Stopping Result:
- * Processed at least 64 queries (1973403).
- * Would discard 196358 highest latency queries.
- * Early stopping 90th percentile estimate: 304569
- * Early stopping 99th percentile estimate: 315071
+ * Processed at least 64 queries (1988320).
+ * Would discard 197846 highest latency queries.
+ * Early stopping 90th percentile estimate: 303360
+ * Early stopping 99th percentile estimate: 315694
 
 ================================================
 Additional Stats
 ================================================
-QPS w/ loadgen overhead         : 3289.00
-QPS w/o loadgen overhead        : 3386.43
+QPS w/ loadgen overhead         : 3313.86
+QPS w/o loadgen overhead        : 3415.81
 
-Min latency (ns)                : 269452
-Max latency (ns)                : 1515186
-Mean latency (ns)               : 295296
-50.00 percentile latency (ns)   : 294984
-90.00 percentile latency (ns)   : 304544
-95.00 percentile latency (ns)   : 307789
-97.00 percentile latency (ns)   : 310209
-99.00 percentile latency (ns)   : 314996
-99.90 percentile latency (ns)   : 370898
+Min latency (ns)                : 266175
+Max latency (ns)                : 1297795
+Mean latency (ns)               : 292756
+50.00 percentile latency (ns)   : 291861
+90.00 percentile latency (ns)   : 303332
+95.00 percentile latency (ns)   : 307167
+97.00 percentile latency (ns)   : 309344
+99.00 percentile latency (ns)   : 315574
+99.90 percentile latency (ns)   : 400366
 
 ================================================
 Test Parameters Used
 ================================================
 samples_per_query : 1
-target_qps : 8450.97
+target_qps : 8499.41
 target_latency (ns): 0
 max_async_queries : 1
 min_duration (ms): 600000
