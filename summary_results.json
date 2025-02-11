@@ -586,7 +586,7 @@
     "UsedModel": "bert-99",
     "Model": "bert-99",
     "Scenario": "Offline",
-    "Accuracy": "F1: 90.15279313202916",
+    "Accuracy": "F1: 90.8832407068292",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
@@ -608,7 +608,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x2-nvidia-gpu-TensorRT-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 8252.75,
+    "Performance_Result": 3341.97,
     "Performance_Units": "Samples/s"
   },
   {
@@ -622,7 +622,7 @@
     "UsedModel": "bert-99",
     "Model": "bert-99",
     "Scenario": "SingleStream",
-    "Accuracy": "F1: 90.26682135974633",
+    "Accuracy": "F1: 90.88109554940347",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
@@ -644,7 +644,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x2-nvidia-gpu-TensorRT-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.030837,
+    "Performance_Result": 2.170812,
     "Performance_Units": "Latency (ms)"
   },
   {
@@ -680,7 +680,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x2-nvidia-gpu-TensorRT-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 3332.18,
+    "Performance_Result": 3341.97,
     "Performance_Units": "Samples/s"
   },
   {
@@ -716,7 +716,7 @@
     "Code": "https://github.com/mlcommons/submissions_inference_4.1/tree/main/closed/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter,edge/closed/MLCommons/RTX4090x2-nvidia-gpu-TensorRT-default_config",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 2.176028,
+    "Performance_Result": 2.170812,
     "Performance_Units": "Latency (ms)"
   },
   {
