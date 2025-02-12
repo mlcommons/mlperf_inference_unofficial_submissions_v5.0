@@ -1,8 +1,8 @@
-[2025-02-11 09:38:50,166 main.py:229 INFO] Detected system ID: KnownSystem.Nvidia_63a1c57d0136
-[2025-02-11 09:38:50,524 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
-[2025-02-11 09:38:50,525 generate_conf_files.py:107 INFO] Generated measurements/ entries for Nvidia_63a1c57d0136_TRT/3d-unet-99.9/Offline
-[2025-02-11 09:38:50,525 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/mlc-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/mlcuser/MLC/repos/local/cache/get-git-repo_14157262/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e0a9ff4f57ec47f8ae57b5a1429321fb.conf" --unet3d_sw_gaussian_patch_path="/home/mlcuser/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_5aab030f/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/Nvidia_63a1c57d0136/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario Offline --model 3d-unet
-[2025-02-11 09:38:50,525 __init__.py:53 INFO] Overriding Environment
+[2025-02-12 07:02:39,589 main.py:229 INFO] Detected system ID: KnownSystem.Nvidia_93ed7bef5954
+[2025-02-12 07:02:39,948 harness.py:249 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
+[2025-02-12 07:02:39,949 generate_conf_files.py:107 INFO] Generated measurements/ entries for Nvidia_93ed7bef5954_TRT/3d-unet-99.9/Offline
+[2025-02-12 07:02:39,949 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/mlc-mount/home/arjun/gh_action_results/valid_results/RTX4090x2-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99.9/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/mlcuser/MLC/repos/local/cache/get-git-repo_14157262/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/8062a07952784f65857400d7d4975fd2.conf" --unet3d_sw_gaussian_patch_path="/home/mlcuser/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_5aab030f/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/Nvidia_93ed7bef5954/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario Offline --model 3d-unet
+[2025-02-12 07:02:39,949 __init__.py:53 INFO] Overriding Environment
 benchmark : Benchmark.UNET3D
 buffer_manager_thread_count : 0
 data_dir : /home/mlcuser/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_5aab030f/data
@@ -11,7 +11,7 @@ gpu_copy_streams : 1
 gpu_inference_streams : 1
 input_dtype : int8
 input_format : linear
-log_dir : /home/mlcuser/MLC/repos/local/cache/get-git-repo_0ab377fc/repo/closed/NVIDIA/build/logs/2025.02.11-09.38.48
+log_dir : /home/mlcuser/MLC/repos/local/cache/get-git-repo_0ab377fc/repo/closed/NVIDIA/build/logs/2025.02.12-07.02.38
 map_path : data_maps/kits19/val_map.txt
 mlperf_conf_path : /home/mlcuser/MLC/repos/local/cache/get-git-repo_14157262/inference/mlperf.conf
 offline_expected_qps : 0.0
@@ -19,15 +19,15 @@ precision : int8
 preprocessed_data_dir : /home/mlcuser/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_5aab030f/preprocessed_data
 scenario : Scenario.Offline
 slice_overlap_patch_kernel_cg_impl : False
-system : SystemConfiguration(host_cpu_conf=CPUConfiguration(layout={CPU(name='Intel(R) Xeon(R) w7-2495X', architecture=<CPUArchitecture.x86_64: AliasedName(name='x86_64', aliases=(), patterns=())>, core_count=24, threads_per_core=2): 1}), host_mem_conf=MemoryConfiguration(host_memory_capacity=Memory(quantity=197.33452799999998, byte_suffix=<ByteSuffix.GB: (1000, 3)>, _num_bytes=197334528000), comparison_tolerance=0.05), accelerator_conf=AcceleratorConfiguration(layout=defaultdict(<class 'int'>, {GPU(name='NVIDIA GeForce RTX 4090', accelerator_type=<AcceleratorType.Discrete: AliasedName(name='Discrete', aliases=(), patterns=())>, vram=Memory(quantity=23.98828125, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25757220864), max_power_limit=450.0, pci_id='0x268410DE', compute_sm=89): 1, GPU(name='NVIDIA GeForce RTX 4090', accelerator_type=<AcceleratorType.Discrete: AliasedName(name='Discrete', aliases=(), patterns=())>, vram=Memory(quantity=23.98828125, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25757220864), max_power_limit=500.0, pci_id='0x268410DE', compute_sm=89): 1})), numa_conf=NUMAConfiguration(numa_nodes={}, num_numa_nodes=1), system_id='Nvidia_63a1c57d0136')
+system : SystemConfiguration(host_cpu_conf=CPUConfiguration(layout={CPU(name='Intel(R) Xeon(R) w7-2495X', architecture=<CPUArchitecture.x86_64: AliasedName(name='x86_64', aliases=(), patterns=())>, core_count=24, threads_per_core=2): 1}), host_mem_conf=MemoryConfiguration(host_memory_capacity=Memory(quantity=197.33452799999998, byte_suffix=<ByteSuffix.GB: (1000, 3)>, _num_bytes=197334528000), comparison_tolerance=0.05), accelerator_conf=AcceleratorConfiguration(layout=defaultdict(<class 'int'>, {GPU(name='NVIDIA GeForce RTX 4090', accelerator_type=<AcceleratorType.Discrete: AliasedName(name='Discrete', aliases=(), patterns=())>, vram=Memory(quantity=23.98828125, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25757220864), max_power_limit=450.0, pci_id='0x268410DE', compute_sm=89): 1, GPU(name='NVIDIA GeForce RTX 4090', accelerator_type=<AcceleratorType.Discrete: AliasedName(name='Discrete', aliases=(), patterns=())>, vram=Memory(quantity=23.98828125, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25757220864), max_power_limit=500.0, pci_id='0x268410DE', compute_sm=89): 1})), numa_conf=NUMAConfiguration(numa_nodes={}, num_numa_nodes=1), system_id='Nvidia_93ed7bef5954')
 tensor_path : build/preprocessed_data/KiTS19/inference/int8
 test_mode : PerformanceOnly
 unet3d_sw_gaussian_patch_path : /home/mlcuser/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_5aab030f/preprocessed_data/KiTS19/etc/gaussian_patches.npy
 use_deque_limit : True
 use_graphs : False
-user_conf_path : /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e0a9ff4f57ec47f8ae57b5a1429321fb.conf
-system_id : Nvidia_63a1c57d0136
-config_name : Nvidia_63a1c57d0136_3d-unet_Offline
+user_conf_path : /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/8062a07952784f65857400d7d4975fd2.conf
+system_id : Nvidia_93ed7bef5954
+config_name : Nvidia_93ed7bef5954_3d-unet_Offline
 workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99_9, PowerSetting.MaxP)
 optimization_level : plugin-enabled
 num_profiles : 1
@@ -39,33 +39,33 @@ power_limit : None
 cpu_freq : None
 &&&& RUNNING MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
 [I] mlperf.conf path: /home/mlcuser/MLC/repos/local/cache/get-git-repo_14157262/inference/mlperf.conf
-[I] user.conf path: /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e0a9ff4f57ec47f8ae57b5a1429321fb.conf
+[I] user.conf path: /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/8062a07952784f65857400d7d4975fd2.conf
 Creating QSL.
 Finished Creating QSL.
 Setting up SUT.
 [I] [TRT] Loaded engine size: 31 MiB
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 85, GPU 1097 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 85, GPU 1107 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 86, GPU 1097 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 87, GPU 1107 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +29, now: CPU 0, GPU 29 (MiB)
-[I] Device:0: ./build/engines/Nvidia_63a1c57d0136/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan has been successfully loaded.
+[I] Device:0: ./build/engines/Nvidia_93ed7bef5954/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan has been successfully loaded.
 [I] [TRT] Loaded engine size: 31 MiB
 [W] [TRT] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 121, GPU 842 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 121, GPU 852 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 123, GPU 852 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 123, GPU 862 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +30, now: CPU 0, GPU 59 (MiB)
-[I] Device:1: ./build/engines/Nvidia_63a1c57d0136/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan has been successfully loaded.
+[I] Device:1: ./build/engines/Nvidia_93ed7bef5954/3d-unet/Offline/3d-unet-Offline-gpu-b8-int8.custom_k_99_9_MaxP.plan has been successfully loaded.
 [E] [TRT] 3: [runtime.cpp::~Runtime::401] Error Code 3: API Usage Error (Parameter check failed at: runtime/rt/runtime.cpp::~Runtime::401, condition: mEngineCounter.use_count() == 1 Destroying a runtime before destroying deserialized engines created by the runtime leads to undefined behavior.)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 90, GPU 1813 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 90, GPU 1821 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 91, GPU 1813 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +1, GPU +8, now: CPU 92, GPU 1821 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +2218, now: CPU 0, GPU 2277 (MiB)
-[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 97, GPU 1558 (MiB)
-[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 97, GPU 1566 (MiB)
+[I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 99, GPU 1568 (MiB)
+[I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +8, now: CPU 99, GPU 1576 (MiB)
 [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +2217, now: CPU 0, GPU 4494 (MiB)
 [I] Creating batcher thread: 0 EnableBatcherThreadPerDevice: true
 [I] Creating batcher thread: 1 EnableBatcherThreadPerDevice: true
 Finished setting up SUT.
 Starting warmup. Running for a minimum of 5 seconds.
-Finished warmup. Ran for 5.45456s.
+Finished warmup. Ran for 5.42517s.
 Starting running actual test.
 ================================================
 MLPerf Results Summary
@@ -73,7 +73,7 @@ MLPerf Results Summary
 SUT name : Server_3DUNet
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 8.32671
+Samples per second: 8.32038
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -82,15 +82,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 186041657
-Max latency (ns)                : 640349263708
-Mean latency (ns)               : 320005175221
-50.00 percentile latency (ns)   : 319957073671
-90.00 percentile latency (ns)   : 575756800635
-95.00 percentile latency (ns)   : 608360700820
-97.00 percentile latency (ns)   : 621167436669
-99.00 percentile latency (ns)   : 633763124620
-99.90 percentile latency (ns)   : 639750668301
+Min latency (ns)                : 186039601
+Max latency (ns)                : 640836052952
+Mean latency (ns)               : 320292290448
+50.00 percentile latency (ns)   : 320249460844
+90.00 percentile latency (ns)   : 576218891218
+95.00 percentile latency (ns)   : 608832470428
+97.00 percentile latency (ns)   : 621645309218
+99.00 percentile latency (ns)   : 634242881809
+99.90 percentile latency (ns)   : 640230809185
 
 ================================================
 Test Parameters Used
@@ -124,25 +124,25 @@ No warnings encountered during test.
 No errors encountered during test.
 Finished running actual test.
 Device Device:0 processed:
-  475 batches of size 2
-  121 batches of size 3
-  448 batches of size 4
-  179 batches of size 5
-  20887 batches of size 8
+  479 batches of size 2
+  146 batches of size 3
+  427 batches of size 4
+  194 batches of size 5
+  20895 batches of size 8
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 2657
+  PerSampleCudaMemcpy Calls: 2674
   BatchedCudaMemcpy Calls: 0
 Device Device:1 processed:
-  517 batches of size 2
-  127 batches of size 3
-  420 batches of size 4
-  193 batches of size 5
-  20901 batches of size 8
+  513 batches of size 2
+  102 batches of size 3
+  441 batches of size 4
+  178 batches of size 5
+  20893 batches of size 8
   Memcpy Calls: 0
-  PerSampleCudaMemcpy Calls: 2675
+  PerSampleCudaMemcpy Calls: 2658
   BatchedCudaMemcpy Calls: 0
 &&&& PASSED MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
-[2025-02-11 09:49:38,475 run_harness.py:166 INFO] Result: result_samples_per_second: 8.32671, Result is VALID
+[2025-02-12 07:13:28,380 run_harness.py:166 INFO] Result: result_samples_per_second: 8.32038, Result is VALID
  
 ======================== Result summaries: ========================
 

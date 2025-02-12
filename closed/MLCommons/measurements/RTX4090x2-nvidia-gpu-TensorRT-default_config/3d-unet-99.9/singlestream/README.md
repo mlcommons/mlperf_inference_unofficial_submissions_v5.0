@@ -17,7 +17,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo mlcommons@mlperf-automations --checkout=0e0f74d2ce0795a81963d4afd8942ec9e431d73c
+mlc pull repo mlcommons@mlperf-automations --checkout=4be38a9703985e7e5949a74effeeda6b2b8910f3
 
 
 ```
@@ -41,4 +41,4 @@ Model Precision: int8
 `DICE`: `0.86236`, Required accuracy for closed division `>= 0.86084`
 
 ### Performance Results 
-`90th percentile latency (ns)`: `429812714.0`
+`90th percentile latency (ns)`: `430905420.0`
