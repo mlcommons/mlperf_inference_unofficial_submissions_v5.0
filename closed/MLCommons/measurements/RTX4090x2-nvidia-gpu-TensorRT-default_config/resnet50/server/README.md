@@ -17,7 +17,7 @@ pip install -U mlcflow
 
 mlc rm cache -f
 
-mlc pull repo mlcommons@mlperf-automations --checkout=fef145811e83568c1e9d99f1fecdeb198d04492d
+mlc pull repo mlcommons@mlperf-automations --checkout=275e911f4d50cb85c8e166305ad009e6b3d6cc62
 
 
 ```
