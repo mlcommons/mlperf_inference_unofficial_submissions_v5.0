@@ -1,4 +1,4 @@
 Verifying performance.
-reference score = 1995.0801323935175
-test score = 2002.8079367272917
+reference score = 1979.8177379790416
+test score = 1991.0323901149225
 TEST PASS
