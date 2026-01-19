@@ -1,0 +1,36 @@
+# Publish the github io website
+
+name: Publish site
+
+on:
+  release:
+    types: [published]
+  push:
+    branches:
+      - auto-update
+
+jobs:
+
+  publish:
+    name: Publish the site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository normally
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Configure Git user
+        run: |
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
+
+      - name: Init docs
+        run: INFERENCE_RESULTS_REPO_OWNER=${{ github.repository_owner }} INFERENCE_RESULTS_REPO_BRANCH=${{ github.ref }} INFERENCE_RESULTS_REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2) INFERENCE_RESULTS_VERSION=v5.0 bash run.sh
+
+      - name: Run Mkdocs deploy
+        run: mkdocs gh-deploy --force
