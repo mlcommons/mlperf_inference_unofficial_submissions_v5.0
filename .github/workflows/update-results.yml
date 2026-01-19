@@ -35,7 +35,7 @@ jobs:
 
     - name: Run MLPerf Inference Submission Checker and generate results summary
       run: |
-        mlcr run,mlperf,inference,submission-checker --quiet --adr.inference-src.tags=_branch.dev --src_version=v5.0 --extra_args="  --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
+        mlcr run,mlperf,inference,submission-checker --quiet --adr.inference-src.tags=_branch.anandhu-eng-patch-13 --src_version=v6.0 --extra_args="  --skip-extra-files-in-root-check"  --submission_dir=./ > >(tee -a out.txt) 2> >(tee -a checker_log.txt >&2)
         mlcr convert,from-csv,to-md --csv_file=summary.csv --md_file=README.md
 
         git config --global user.name mlcommons-bot

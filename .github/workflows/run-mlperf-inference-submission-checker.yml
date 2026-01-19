@@ -4,7 +4,7 @@ name: MLPerf inference submission checker
 
 on:
   pull_request:
-    branches: [ "main", "dev" ]
+    branches: [ "v6.0" ]
 
 jobs:
   build:
@@ -25,5 +25,5 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Run MLPerf Inference Submission Checker
       run: |
-        git clone -b dev https://github.com/mlcommons/inference
+        git clone -b dev https://github.com/mlcommons/inference --branch=anandhu-eng-patch-13
         python3 inference/tools/submission/submission_checker.py --input=./submission_dir  --skip-extra-files-in-root-check
