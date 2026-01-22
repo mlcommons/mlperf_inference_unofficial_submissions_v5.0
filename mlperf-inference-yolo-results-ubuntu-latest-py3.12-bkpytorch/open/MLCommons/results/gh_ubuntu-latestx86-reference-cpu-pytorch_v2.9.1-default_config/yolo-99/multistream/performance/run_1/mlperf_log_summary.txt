@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : PySUT
 Scenario : MultiStream
 Mode     : PerformanceOnly
-99.0th percentile latency (ns) : 4132364952
+99.0th percentile latency (ns) : 5036030073
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -12,21 +12,21 @@ Result is : VALID
 Early Stopping Result:
  * Processed at least 662 queries (662).
  * Would discard 0 highest latency queries.
- * Early stopping 99.0th percentile estimate: 4221193830
+ * Early stopping 99.0th percentile estimate: 5230120272
 
 ================================================
 Additional Stats
 ================================================
 Per-query latency:  
-Min latency (ns)                : 3266464600
-Max latency (ns)                : 4221193830
-Mean latency (ns)               : 3707051226
-50.00 percentile latency (ns)   : 3687824923
-90.00 percentile latency (ns)   : 3906466943
-95.00 percentile latency (ns)   : 3979154631
-97.00 percentile latency (ns)   : 4026403918
-99.00 percentile latency (ns)   : 4132364952
-99.90 percentile latency (ns)   : 4221193830
+Min latency (ns)                : 4034461467
+Max latency (ns)                : 5230120272
+Mean latency (ns)               : 4567664384
+50.00 percentile latency (ns)   : 4557527368
+90.00 percentile latency (ns)   : 4786958798
+95.00 percentile latency (ns)   : 4867203030
+97.00 percentile latency (ns)   : 4915109460
+99.00 percentile latency (ns)   : 5036030073
+99.90 percentile latency (ns)   : 5230120272
 
 ================================================
 Test Parameters Used
