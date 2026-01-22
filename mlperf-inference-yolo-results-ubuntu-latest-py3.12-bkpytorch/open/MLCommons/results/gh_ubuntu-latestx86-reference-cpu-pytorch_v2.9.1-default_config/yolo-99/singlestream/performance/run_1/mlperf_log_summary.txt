@@ -4,16 +4,16 @@ MLPerf Results Summary
 SUT name : PySUT
 Scenario : SingleStream
 Mode     : PerformanceOnly
-90.0th percentile latency (ns) : 625564806
+90.0th percentile latency (ns) : 622521171
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
   Early stopping satisfied: Yes
 Early Stopping Result:
- * Processed at least 64 queries (1051).
+ * Processed at least 64 queries (1049).
  * Would discard 81 highest latency queries.
- * Early stopping 90.0th percentile estimate: 659359571
- * Early stopping 99.0th percentile estimate: 776446924
+ * Early stopping 90.0th percentile estimate: 659322212
+ * Early stopping 99.0th percentile estimate: 782220267
 
 ================================================
 Additional Stats
@@ -21,21 +21,21 @@ Additional Stats
 QPS w/ loadgen overhead         : 1.75
 QPS w/o loadgen overhead        : 1.75
 
-Min latency (ns)                : 268811800
-Max latency (ns)                : 788719702
-Mean latency (ns)               : 571509523
-50.00 percentile latency (ns)   : 568468045
-90.00 percentile latency (ns)   : 625564806
-95.00 percentile latency (ns)   : 741597530
-97.00 percentile latency (ns)   : 763063343
-99.00 percentile latency (ns)   : 769266983
-99.90 percentile latency (ns)   : 779071983
+Min latency (ns)                : 270360396
+Max latency (ns)                : 793483131
+Mean latency (ns)               : 572457384
+50.00 percentile latency (ns)   : 570083625
+90.00 percentile latency (ns)   : 622521171
+95.00 percentile latency (ns)   : 748524709
+97.00 percentile latency (ns)   : 765366611
+99.00 percentile latency (ns)   : 775544583
+99.90 percentile latency (ns)   : 787524673
 
 ================================================
 Test Parameters Used
 ================================================
 samples_per_query : 1
-target_qps : 1.87099
+target_qps : 10
 target_latency (ns): 0
 max_async_queries : 1
 min_duration (ms): 600000
