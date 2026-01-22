@@ -3,7 +3,7 @@
 name: MLPerf inference submission checker
 
 on:
-  pull_request:
+  push:
     branches: [ "v6.0" ]
 
 jobs:
