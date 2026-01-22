@@ -1,5 +1,5 @@
 | Model   | Scenario     |   Accuracy |   Throughput | Latency (in ms)   |
 |---------|--------------|------------|--------------|-------------------|
-| yolo-99 | offline      |     53.108 |        1.765 | -                 |
-| yolo-99 | multistream  |     53.108 |        1.53  | 5229.626          |
-| yolo-99 | singlestream |     53.108 |        1.517 | 659.322           |
+| yolo-99 | offline      |     53.108 |        2.131 | -                 |
+| yolo-99 | multistream  |     53.108 |        1.895 | 4221.194          |
+| yolo-99 | singlestream |     53.108 |        1.875 | 533.369           |
