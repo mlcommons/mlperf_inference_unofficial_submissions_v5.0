@@ -4,7 +4,7 @@ name: MLPerf inference results updater
 
 on:
   push:
-    branches: [ "auto-update", "dev" ]
+    branches: [ "v6.0" ]
     paths-ignore:
       - 'README.md'
       - 'summary*'
