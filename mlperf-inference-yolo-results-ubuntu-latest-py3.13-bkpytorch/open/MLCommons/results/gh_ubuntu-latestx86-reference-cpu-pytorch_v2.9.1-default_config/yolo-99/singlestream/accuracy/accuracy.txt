@@ -3,14 +3,14 @@ Done (t=0.11s)
 creating index...
 index created!
 Loading and preparing results...
-DONE (t=0.64s)
+DONE (t=0.63s)
 creating index...
 index created!
 Running per image evaluation...
 Evaluate annotation type *bbox*
-DONE (t=9.18s).
+DONE (t=8.84s).
 Accumulating evaluation results...
-DONE (t=1.61s).
+DONE (t=1.63s).
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.531
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.697
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.582
