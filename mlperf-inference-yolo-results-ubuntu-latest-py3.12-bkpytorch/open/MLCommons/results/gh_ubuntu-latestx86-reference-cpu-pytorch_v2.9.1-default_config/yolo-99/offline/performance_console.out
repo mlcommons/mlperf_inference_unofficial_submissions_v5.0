@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : PySUT
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 1.73673
+Samples per second: 2.07915
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -13,21 +13,21 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 763188688
-Max latency (ns)                : 675408421236
-Mean latency (ns)               : 337561726234
-50.00 percentile latency (ns)   : 337736564351
-90.00 percentile latency (ns)   : 608029408036
-95.00 percentile latency (ns)   : 641754414301
-97.00 percentile latency (ns)   : 655103444870
-99.00 percentile latency (ns)   : 669381115167
-99.90 percentile latency (ns)   : 674854296287
+Min latency (ns)                : 660699625
+Max latency (ns)                : 684413854603
+Mean latency (ns)               : 341365488955
+50.00 percentile latency (ns)   : 340307162071
+90.00 percentile latency (ns)   : 617108499586
+95.00 percentile latency (ns)   : 650646337401
+97.00 percentile latency (ns)   : 664148347768
+99.00 percentile latency (ns)   : 677660120964
+99.90 percentile latency (ns)   : 683972028218
 
 ================================================
 Test Parameters Used
 ================================================
-samples_per_query : 1173
-target_qps : 1.7775
+samples_per_query : 1423
+target_qps : 2.1568
 target_latency (ns): 0
 max_async_queries : 1
 min_duration (ms): 600000
@@ -49,14 +49,14 @@ performance_sample_count : 5000
 No warnings encountered during test.
 
 No errors encountered during test.
-Loading official COCO annotations from: /home/runner/MLC/repos/local/cache/download-file_ml-dataset-yolo_c22383a3/yolo-coco2017-filtered-dataset/val2017_safe/annotations/instances_val2017.json
+Loading official COCO annotations from: /home/runner/MLC/repos/local/cache/download-file_ml-dataset-yolo_74e00045/yolo-coco2017-filtered-dataset/val2017_safe/annotations/instances_val2017.json
 Loaded 1525 images in official COCO order.
 Starting MLPerf run
 Scenario: Offline
 Performance run
-Log directory: /home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_6e91a10d/valid_results/gh_ubuntu-latestx86-reference-cpu-pytorch-v2.9.1-default_config/yolo-99/offline/performance/run_1
+Log directory: /home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_8c8e3d6c/valid_results/gh_ubuntu-latestx86-reference-cpu-pytorch-v2.9.1-default_config/yolo-99/offline/performance/run_1
 MLPerf run complete - cleaning up
 cleaning up LoadGen and flushing logs
-Checking for logs in /home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_6e91a10d/valid_results/gh_ubuntu-latestx86-reference-cpu-pytorch-v2.9.1-default_config/yolo-99/offline/performance/run_1:
+Checking for logs in /home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_8c8e3d6c/valid_results/gh_ubuntu-latestx86-reference-cpu-pytorch-v2.9.1-default_config/yolo-99/offline/performance/run_1:
  [OK] mlperf_log_summary.txt present (1580 bytes)
  [OK] mlperf_log_detail.txt present (33936 bytes)

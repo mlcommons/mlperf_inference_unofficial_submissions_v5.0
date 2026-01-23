@@ -8,9 +8,9 @@ creating index...
 index created!
 Running per image evaluation...
 Evaluate annotation type *bbox*
-DONE (t=9.94s).
+DONE (t=9.18s).
 Accumulating evaluation results...
-DONE (t=1.57s).
+DONE (t=1.49s).
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.531
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.697
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.582
@@ -25,4 +25,4 @@ DONE (t=1.57s).
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.838
 mAP=53.108%
 
-hash=453ab1fe6cfec795321693a1e265eddaf9f24d7eca88cbb2debcdddbe928ff20
+hash=d59a55d187e14432c86a5324c65d48729c8219c36e858c13c2d92c39ad41b30f
