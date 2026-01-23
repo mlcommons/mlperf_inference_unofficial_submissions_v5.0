@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : PySUT
 Scenario : MultiStream
 Mode     : PerformanceOnly
-99.0th percentile latency (ns) : 5016103078
+99.0th percentile latency (ns) : 5054703705
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -12,21 +12,21 @@ Result is : VALID
 Early Stopping Result:
  * Processed at least 662 queries (662).
  * Would discard 0 highest latency queries.
- * Early stopping 99.0th percentile estimate: 5217032348
+ * Early stopping 99.0th percentile estimate: 5238773145
 
 ================================================
 Additional Stats
 ================================================
 Per-query latency:  
-Min latency (ns)                : 4110309978
-Max latency (ns)                : 5217032348
-Mean latency (ns)               : 4519202474
-50.00 percentile latency (ns)   : 4503647071
-90.00 percentile latency (ns)   : 4737571165
-95.00 percentile latency (ns)   : 4822682350
-97.00 percentile latency (ns)   : 4881332379
-99.00 percentile latency (ns)   : 5016103078
-99.90 percentile latency (ns)   : 5217032348
+Min latency (ns)                : 4086612610
+Max latency (ns)                : 5238773145
+Mean latency (ns)               : 4546068689
+50.00 percentile latency (ns)   : 4529252365
+90.00 percentile latency (ns)   : 4762031963
+95.00 percentile latency (ns)   : 4846111124
+97.00 percentile latency (ns)   : 4902481434
+99.00 percentile latency (ns)   : 5054703705
+99.90 percentile latency (ns)   : 5238773145
 
 ================================================
 Test Parameters Used
@@ -54,14 +54,14 @@ performance_sample_count : 5000
 No warnings encountered during test.
 
 No errors encountered during test.
-Loading official COCO annotations from: /home/runner/MLC/repos/local/cache/download-file_ml-dataset-yolo_51b98db2/yolo-coco2017-filtered-dataset/val2017_safe/annotations/instances_val2017.json
+Loading official COCO annotations from: /home/runner/MLC/repos/local/cache/download-file_ml-dataset-yolo_0b48c37d/yolo-coco2017-filtered-dataset/val2017_safe/annotations/instances_val2017.json
 Loaded 1525 images in official COCO order.
 Starting MLPerf run
 Scenario: MultiStream
 Performance run
-Log directory: /home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_07e8fdf5/valid_results/gh_ubuntu-latestx86-reference-cpu-pytorch-v2.9.1-default_config/yolo-99/multistream/performance/run_1
+Log directory: /home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_df21f2b3/valid_results/gh_ubuntu-latestx86-reference-cpu-pytorch-v2.9.1-default_config/yolo-99/multistream/performance/run_1
 MLPerf run complete - cleaning up
 cleaning up LoadGen and flushing logs
-Checking for logs in /home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_07e8fdf5/valid_results/gh_ubuntu-latestx86-reference-cpu-pytorch-v2.9.1-default_config/yolo-99/multistream/performance/run_1:
+Checking for logs in /home/runner/MLC/repos/local/cache/get-mlperf-inference-results-dir_df21f2b3/valid_results/gh_ubuntu-latestx86-reference-cpu-pytorch-v2.9.1-default_config/yolo-99/multistream/performance/run_1:
  [OK] mlperf_log_summary.txt present (1771 bytes)
  [OK] mlperf_log_detail.txt present (37337 bytes)
